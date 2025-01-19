@@ -1,0 +1,47 @@
+[gd_scene load_steps=8 format=3 uid="uid://cr5tbmvafii63"]
+
+[ext_resource type="Script" path="res://Scripts/RoomScripts/doorway.gd" id="1_nudar"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bfo68"]
+albedo_color = Color(0.467112, 0.54559, 0.916938, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_h0gdj"]
+material = SubResource("StandardMaterial3D_bfo68")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_shub0"]
+albedo_color = Color(0.677691, 0.0590164, 0.534651, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_xvywj"]
+material = SubResource("StandardMaterial3D_shub0")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_wdao5"]
+size = Vector3(0.1, 2, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_yurqg"]
+size = Vector3(1, 2, 1.5)
+
+[node name="Doorway" type="StaticBody3D"]
+script = ExtResource("1_nudar")
+
+[node name="Door" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.1, 0, 0, 0, 1.5, 0, 0, 0, 1, -0.00097549, 0.753014, -0.00173163)
+mesh = SubResource("BoxMesh_h0gdj")
+skeleton = NodePath("")
+
+[node name="Wall" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.1, 0, 0, 0, 2, 0, 0, 0, 1, 0, 1, 0)
+visible = false
+mesh = SubResource("BoxMesh_xvywj")
+skeleton = NodePath("")
+
+[node name="DoorCollider" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("BoxShape3D_wdao5")
+
+[node name="Exit" type="Area3D" parent="."]
+
+[node name="ExitCollider" type="CollisionShape3D" parent="Exit"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.564178, 0.734131, 0)
+shape = SubResource("BoxShape3D_yurqg")
+
+[connection signal="body_entered" from="Exit" to="." method="_on_exit_body_entered"]

@@ -1,6 +1,6 @@
 class_name Doorway extends Node3D
 
-enum DoorwayDirection {NORTH,SOUTH,EAST,WEST}
+enum DoorwayDirection {North,East,South,West}
 
 @onready var collider: CollisionShape3D = $DoorCollider
 @onready var door: MeshInstance3D = $Door
@@ -12,16 +12,17 @@ enum DoorwayDirection {NORTH,SOUTH,EAST,WEST}
 var doorLocked: bool = true
 
 func _ready() -> void:
-	setupDoorway(doorwayActive) #TODO: Remove this after testing
-
-## Setup doorway as either a door or a wall
-func setupDoorway(isDoor: bool) -> void:
-	if isDoor:
-		wall.visible = false
-		door.visible = true
-	else:
+	#setupDoorway(doorwayActive) #TODO: Remove this after testing
+	if !doorwayActive:
 		wall.visible = true
 		door.visible = false
+	pass
+
+## Setup doorway as either a door or a wall
+func setupDoor() -> void:
+	doorwayActive = true
+	wall.visible = false
+	door.visible = true
 
 ## Called when opening doors in room
 func unlockDoor() -> void:

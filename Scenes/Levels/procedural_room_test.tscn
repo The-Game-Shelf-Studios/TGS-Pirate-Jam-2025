@@ -1,0 +1,247 @@
+[gd_scene load_steps=5 format=3 uid="uid://p2u2ayqe0ov2"]
+
+[ext_resource type="Script" path="res://Scripts/5x5_procedural_room_generator.gd" id="1_ops7q"]
+[ext_resource type="Script" path="res://Scripts/character_body_3d.gd" id="2_wjat1"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_fp67p"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ptmgh"]
+
+[node name="Node3D" type="Node3D"]
+script = ExtResource("1_ops7q")
+room_spawn_chance = 0.6
+
+[node name="Main Grid Node" type="Node3D" parent="."]
+
+[node name="Grid(0,0)" type="Node3D" parent="Main Grid Node"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, 0, -20)
+
+[node name="Grid(1,0)" type="Node3D" parent="Main Grid Node"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, 0, -10)
+
+[node name="Grid(2,0)" type="Node3D" parent="Main Grid Node"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, 0, 0)
+
+[node name="Grid(3,0)" type="Node3D" parent="Main Grid Node"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, 0, 10)
+
+[node name="Grid(4,0)" type="Node3D" parent="Main Grid Node"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, 0, 20)
+
+[node name="Grid(0,1)" type="Node3D" parent="Main Grid Node"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, -20)
+
+[node name="Grid(0,2)" type="Node3D" parent="Main Grid Node"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -20)
+
+[node name="Grid(0,3)" type="Node3D" parent="Main Grid Node"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, -20)
+
+[node name="Grid(0,4)" type="Node3D" parent="Main Grid Node"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, -20)
+
+[node name="Grid(1,1)" type="Node3D" parent="Main Grid Node"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, -10)
+
+[node name="Grid(1,2)" type="Node3D" parent="Main Grid Node"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -10)
+
+[node name="Grid(1,3)" type="Node3D" parent="Main Grid Node"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, -10)
+
+[node name="Grid(1,4)" type="Node3D" parent="Main Grid Node"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, -10)
+
+[node name="Grid(2,1)" type="Node3D" parent="Main Grid Node"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Grid(2,2)" type="Node3D" parent="Main Grid Node"]
+
+[node name="Grid(2,3)" type="Node3D" parent="Main Grid Node"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 0)
+
+[node name="Grid(2,4)" type="Node3D" parent="Main Grid Node"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, 0)
+
+[node name="Grid(3,1)" type="Node3D" parent="Main Grid Node"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 10)
+
+[node name="Grid(3,2)" type="Node3D" parent="Main Grid Node"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 10)
+
+[node name="Grid(3,3)" type="Node3D" parent="Main Grid Node"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 10)
+
+[node name="Grid(3,4)" type="Node3D" parent="Main Grid Node"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, 10)
+
+[node name="Grid(4,1)" type="Node3D" parent="Main Grid Node"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 20)
+
+[node name="Grid(4,2)" type="Node3D" parent="Main Grid Node"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 20)
+
+[node name="Grid(4,3)" type="Node3D" parent="Main Grid Node"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 20)
+
+[node name="Grid(4,4)" type="Node3D" parent="Main Grid Node"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, 20)
+
+[node name="Horizontal Grid Node" type="Node3D" parent="."]
+
+[node name="HGrid(0,0)" type="Node3D" parent="Horizontal Grid Node"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15, 0, -20)
+
+[node name="HGrid(1,0)" type="Node3D" parent="Horizontal Grid Node"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15, 0, -10)
+
+[node name="HGrid(2,0)" type="Node3D" parent="Horizontal Grid Node"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15, 0, 0)
+
+[node name="HGrid(3,0)" type="Node3D" parent="Horizontal Grid Node"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15, 0, 10)
+
+[node name="HGrid(4,0)" type="Node3D" parent="Horizontal Grid Node"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15, 0, 20)
+
+[node name="HGrid(0,1)" type="Node3D" parent="Horizontal Grid Node"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, -20)
+
+[node name="HGrid(0,2)" type="Node3D" parent="Horizontal Grid Node"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, -20)
+
+[node name="HGrid(0,3)" type="Node3D" parent="Horizontal Grid Node"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, -20)
+
+[node name="HGrid(1,1)" type="Node3D" parent="Horizontal Grid Node"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, -10)
+
+[node name="HGrid(1,2)" type="Node3D" parent="Horizontal Grid Node"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, -10)
+
+[node name="HGrid(1,3)" type="Node3D" parent="Horizontal Grid Node"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, -10)
+
+[node name="HGrid(2,1)" type="Node3D" parent="Horizontal Grid Node"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 0)
+
+[node name="HGrid(2,2)" type="Node3D" parent="Horizontal Grid Node"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 0)
+
+[node name="HGrid(2,3)" type="Node3D" parent="Horizontal Grid Node"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, 0)
+
+[node name="HGrid(3,1)" type="Node3D" parent="Horizontal Grid Node"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 10)
+
+[node name="HGrid(3,2)" type="Node3D" parent="Horizontal Grid Node"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 10)
+
+[node name="HGrid(3,3)" type="Node3D" parent="Horizontal Grid Node"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, 10)
+
+[node name="HGrid(4,1)" type="Node3D" parent="Horizontal Grid Node"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 20)
+
+[node name="HGrid(4,2)" type="Node3D" parent="Horizontal Grid Node"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 20)
+
+[node name="HGrid(4,3)" type="Node3D" parent="Horizontal Grid Node"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, 20)
+
+[node name="Vertical Grid Node" type="Node3D" parent="."]
+
+[node name="VGrid(0,0)" type="Node3D" parent="Vertical Grid Node"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, 0, -15)
+
+[node name="VGrid(1,0)" type="Node3D" parent="Vertical Grid Node"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, 0, -5)
+
+[node name="VGrid(2,0)" type="Node3D" parent="Vertical Grid Node"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, 0, 5)
+
+[node name="VGrid(3,0)" type="Node3D" parent="Vertical Grid Node"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, 0, 15)
+
+[node name="VGrid(0,1)" type="Node3D" parent="Vertical Grid Node"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, -15)
+
+[node name="VGrid(0,2)" type="Node3D" parent="Vertical Grid Node"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -15)
+
+[node name="VGrid(0,3)" type="Node3D" parent="Vertical Grid Node"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, -15)
+
+[node name="VGrid(0,4)" type="Node3D" parent="Vertical Grid Node"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, -15)
+
+[node name="VGrid(1,1)" type="Node3D" parent="Vertical Grid Node"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, -5)
+
+[node name="VGrid(1,2)" type="Node3D" parent="Vertical Grid Node"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+
+[node name="VGrid(1,3)" type="Node3D" parent="Vertical Grid Node"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, -5)
+
+[node name="VGrid(1,4)" type="Node3D" parent="Vertical Grid Node"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, -5)
+
+[node name="VGrid(2,1)" type="Node3D" parent="Vertical Grid Node"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 5)
+
+[node name="VGrid(2,2)" type="Node3D" parent="Vertical Grid Node"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 5)
+
+[node name="VGrid(2,3)" type="Node3D" parent="Vertical Grid Node"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 5)
+
+[node name="VGrid(2,4)" type="Node3D" parent="Vertical Grid Node"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, 5)
+
+[node name="VGrid(3,1)" type="Node3D" parent="Vertical Grid Node"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 15)
+
+[node name="VGrid(3,2)" type="Node3D" parent="Vertical Grid Node"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 15)
+
+[node name="VGrid(3,3)" type="Node3D" parent="Vertical Grid Node"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 15)
+
+[node name="VGrid(3,4)" type="Node3D" parent="Vertical Grid Node"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, 15)
+
+[node name="Camera3D2" type="Camera3D" parent="."]
+transform = Transform3D(0.707107, -0.5, 0.5, 0, 0.707107, 0.707107, -0.707107, -0.5, 0.5, 20, 20, 20)
+current = true
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -0.707107, 0.707107, 0, -0.707107, -0.707107, 0, 0, 0)
+
+[node name="DirectionalLight3D2" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, 0, 0, 0)
+
+[node name="DirectionalLight3D3" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-4.37114e-08, -0.707107, -0.707107, 0, -0.707107, 0.707107, -1, 3.09086e-08, 3.09086e-08, 0, 0, 0)
+
+[node name="DirectionalLight3D4" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-4.37114e-08, -0.707107, 0.707107, 0, 0.707107, 0.707107, -1, 3.09086e-08, -3.09086e-08, 0, 0, 0)
+
+[node name="CharacterBody3D" type="CharacterBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+script = ExtResource("2_wjat1")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D"]
+shape = SubResource("CapsuleShape3D_fp67p")
+
+[node name="camera_rig" type="Node3D" parent="CharacterBody3D"]
+
+[node name="Camera3D" type="Camera3D" parent="CharacterBody3D/camera_rig"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+current = true
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(60, 0, 0, 0, 2, 0, 0, 0, 60, 0, -1, 0)
+shape = SubResource("BoxShape3D_ptmgh")

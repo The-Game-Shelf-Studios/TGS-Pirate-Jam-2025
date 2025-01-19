@@ -123,49 +123,49 @@ func create_rooms():
 			match node_groups:
 				
 				[&"North"]:
-					mesh_instance.mesh = load("res://procedural_map_assets/room_north.res")
+					mesh_instance.mesh = load("res://Assets/procedural_map_assets/room_north.res")
 					
 				[&"North",&"East"]:
-					mesh_instance.mesh = load("res://procedural_map_assets/room_east_north.res")
+					mesh_instance.mesh = load("res://Assets/procedural_map_assets/room_east_north.res")
 					
 				[&"North",&"West"]:
-					mesh_instance.mesh = load("res://procedural_map_assets/room_north_west.res")
+					mesh_instance.mesh = load("res://Assets/procedural_map_assets/room_north_west.res")
 					
 				[&"North",&"South"]:
-					mesh_instance.mesh = load("res://procedural_map_assets/room_north_south.res")
+					mesh_instance.mesh = load("res://Assets/procedural_map_assets/room_north_south.res")
 					
 				[&"North",&"South",&"East"]:
-					mesh_instance.mesh = load("res://procedural_map_assets/room_north_south_east.res")
+					mesh_instance.mesh = load("res://Assets/procedural_map_assets/room_north_south_east.res")
 					
 				[&"North",&"South",&"West"]:
-					mesh_instance.mesh = load("res://procedural_map_assets/room_north_south_west.res")
+					mesh_instance.mesh = load("res://Assets/procedural_map_assets/room_north_south_west.res")
 					
 				[&"North",&"East",&"West"]:
-					mesh_instance.mesh = load("res://procedural_map_assets/room_east_west_north.res")
+					mesh_instance.mesh = load("res://Assets/procedural_map_assets/room_east_west_north.res")
 				
 				[&"South"]:
-					mesh_instance.mesh = load("res://procedural_map_assets/room_south.res")
+					mesh_instance.mesh = load("res://Assets/procedural_map_assets/room_south.res")
 				
 				[&"South",&"West"]:
-					mesh_instance.mesh = load("res://procedural_map_assets/room_south_west.res")
+					mesh_instance.mesh = load("res://Assets/procedural_map_assets/room_south_west.res")
 					
 				[&"South",&"East"]:
-					mesh_instance.mesh = load("res://procedural_map_assets/room_east_south.res")
+					mesh_instance.mesh = load("res://Assets/procedural_map_assets/room_east_south.res")
 					
 				[&"South",&"East",&"West"]:
-					mesh_instance.mesh = load("res://procedural_map_assets/room_east_west_south.res")
+					mesh_instance.mesh = load("res://Assets/procedural_map_assets/room_east_west_south.res")
 				
 				[&"East",&"West"]:
-					mesh_instance.mesh = load("res://procedural_map_assets/room_east_west.res")
+					mesh_instance.mesh = load("res://Assets/procedural_map_assets/room_east_west.res")
 					
 				[&"East"]:
-					mesh_instance.mesh = load("res://procedural_map_assets/room_east.res")
+					mesh_instance.mesh = load("res://Assets/procedural_map_assets/room_east.res")
 					
 				[&"West"]:
-					mesh_instance.mesh = load("res://procedural_map_assets/room_west.res")
+					mesh_instance.mesh = load("res://Assets/procedural_map_assets/room_west.res")
 					
 				[&"North",&"South",&"East",&"West"]:
-					mesh_instance.mesh = load("res://procedural_map_assets/room_all.res")
+					mesh_instance.mesh = load("res://Assets/procedural_map_assets/room_all.res")
 				_:
 					continue
 					

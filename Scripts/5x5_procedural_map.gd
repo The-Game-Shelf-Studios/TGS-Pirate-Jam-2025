@@ -2,8 +2,8 @@ extends Node3D
 
 #controls room spawn chance
 @export var room_spawn_chance = 0.2
-@export var test_material = preload("res://test_material.tres")
-@export var bridge = preload("res://procedural_map_assets/bridge.res")
+@export var test_material = preload("res://Assets/Materials/test_material.tres")
+@export var bridge = preload("res://Assets/procedural_map_assets/bridge.res")
 
 var rng = RandomNumberGenerator.new()
 #base grid for rooms

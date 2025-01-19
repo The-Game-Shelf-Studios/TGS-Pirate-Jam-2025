@@ -1,10 +1,10 @@
-[gd_scene load_steps=8 format=3 uid="uid://c3log3dnq3lfb"]
+[gd_scene load_steps=9 format=3 uid="uid://c3log3dnq3lfb"]
 
 [ext_resource type="Script" path="res://Scripts/RoomScripts/Room.gd" id="1_4buox"]
 [ext_resource type="PackedScene" uid="uid://cr5tbmvafii63" path="res://Scenes/Environment/doorway.tscn" id="1_b7jeh"]
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_a4pvu"]
-size = Vector3(3.5, 2, 0.1)
+[sub_resource type="BoxShape3D" id="BoxShape3D_r2j6u"]
+size = Vector3(8, 0.1, 8)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_m5av3"]
 resource_local_to_scene = true
@@ -13,6 +13,9 @@ albedo_color = Color(0.420552, 0.630006, 0.434932, 1)
 [sub_resource type="BoxMesh" id="BoxMesh_3fd5r"]
 resource_local_to_scene = true
 material = SubResource("StandardMaterial3D_m5av3")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_a4pvu"]
+size = Vector3(3.5, 2, 0.1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wv7bs"]
 resource_local_to_scene = true
@@ -27,10 +30,11 @@ script = ExtResource("1_4buox")
 
 [node name="Floor" type="StaticBody3D" parent="." groups=["Ground"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00420094, 0.00879002, -0.0212865)
-collision_layer = 17
+collision_layer = 3
+collision_mask = 3
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Floor"]
-shape = SubResource("BoxShape3D_a4pvu")
+shape = SubResource("BoxShape3D_r2j6u")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Floor"]
 transform = Transform3D(8, 0, 0, 0, 0.1, 0, 0, 0, 8, 0, 0, 0)

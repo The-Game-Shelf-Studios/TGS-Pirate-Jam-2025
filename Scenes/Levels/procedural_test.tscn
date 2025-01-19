@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://ccm6pqyd7oj3h"]
 
-[ext_resource type="Script" path="res://5x5_procedural_map.gd" id="1_0oktr"]
-[ext_resource type="Script" path="res://character_body_3d.gd" id="2_wdb1s"]
+[ext_resource type="Script" path="res://Scripts/5x5_procedural_map.gd" id="1_0oktr"]
+[ext_resource type="Script" path="res://Scripts/character_body_3d.gd" id="2_wdb1s"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_fp67p"]
 

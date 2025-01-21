@@ -1,0 +1,54 @@
+[gd_scene load_steps=2 format=3 uid="uid://b83kcn56pn7mb"]
+
+[ext_resource type="PackedScene" uid="uid://ia0nkss57hyg" path="res://Assets/Player/PlayerArms.glb" id="1_wrk11"]
+
+[node name="PlayerArms" instance=ExtResource("1_wrk11")]
+
+[node name="Skeleton3D" parent="OrcSkeleton_Object" index="0"]
+bones/1/rotation = Quaternion(0.115075, -0.277816, -0.88112, 0.364971)
+bones/2/rotation = Quaternion(0.843198, 0.0180603, 0.0115056, 0.537176)
+bones/4/rotation = Quaternion(-1.28102e-07, 2.00597e-07, -0.5373, 0.843391)
+bones/5/rotation = Quaternion(8.15201e-08, -7.17069e-08, -0.5373, 0.843391)
+bones/6/rotation = Quaternion(3.9112e-08, 2.29279e-08, -0.5373, 0.843391)
+bones/7/rotation = Quaternion(-1.74485e-07, 3.07832e-07, -0.5373, 0.843391)
+bones/8/rotation = Quaternion(3.07734e-08, 1.61149e-08, -0.5373, 0.843391)
+bones/9/rotation = Quaternion(5.34803e-09, 3.71936e-08, -0.5373, 0.843391)
+bones/10/rotation = Quaternion(7.73022e-08, -8.35621e-08, -0.5373, 0.843391)
+bones/11/rotation = Quaternion(2.00933e-09, 4.15322e-08, -0.5373, 0.843391)
+bones/12/rotation = Quaternion(2.91429e-08, 5.53945e-08, -0.5373, 0.843391)
+bones/13/rotation = Quaternion(7.73022e-08, -8.35621e-08, -0.5373, 0.843391)
+bones/14/rotation = Quaternion(6.37306e-09, 4.43122e-08, -0.5373, 0.843391)
+bones/15/rotation = Quaternion(3.36609e-09, 3.69733e-08, -0.5373, 0.843391)
+bones/16/rotation = Quaternion(0.412637, -0.0964525, -0.313455, 0.849808)
+bones/17/rotation = Quaternion(-0.67559, 1.06051e-07, -3.16539e-07, 0.737277)
+bones/19/rotation = Quaternion(0.115075, 0.277816, 0.88112, 0.364971)
+bones/20/rotation = Quaternion(0.843198, -0.0180603, -0.0115056, 0.537176)
+bones/21/rotation = Quaternion(-0.388921, 0.287232, -0.522426, 0.70236)
+bones/22/rotation = Quaternion(-4.13469e-08, -2.22553e-07, 0.0871558, 0.996195)
+bones/23/rotation = Quaternion(2.91267e-08, 9.79395e-08, 0.0871558, 0.996195)
+bones/24/rotation = Quaternion(7.38981e-09, -5.57845e-09, 0.258819, 0.965926)
+bones/25/rotation = Quaternion(-0.0432462, 0.0056931, -0.130402, 0.990501)
+bones/26/rotation = Quaternion(-2.0322e-07, 1.54331e-08, 0.21644, 0.976296)
+bones/27/rotation = Quaternion(-4.60681e-08, -3.39975e-08, 0.422618, 0.906308)
+bones/28/rotation = Quaternion(0.0434534, -0.0038016, -0.173483, 0.98387)
+bones/29/rotation = Quaternion(1.35489e-07, -1.09997e-07, 0.34202, 0.939693)
+bones/30/rotation = Quaternion(-1.17634e-08, -3.1835e-08, 0.382683, 0.92388)
+bones/31/rotation = Quaternion(0.0432462, 0.00569358, -0.130402, 0.990501)
+bones/32/rotation = Quaternion(9.32132e-08, -1.40169e-07, 0.258819, 0.965926)
+bones/33/rotation = Quaternion(1.39377e-08, -4.53459e-08, 0.422618, 0.906308)
+bones/34/rotation = Quaternion(0.349675, -0.186947, 0.164738, 0.903128)
+bones/35/rotation = Quaternion(-0.42101, 0.0225576, 0.0841863, 0.902859)
+bones/36/position = Vector3(-0.155548, 0.301816, 0.84521)
+bones/36/rotation = Quaternion(-0.5, 0.5, -0.5, 0.5)
+
+[node name="BoneAttachment3D" type="BoneAttachment3D" parent="OrcSkeleton_Object/Skeleton3D" index="1"]
+transform = Transform3D(-0.57527, -0.195556, 0.794243, -0.188512, -0.913165, -0.361376, 0.795944, -0.357613, 0.488452, 0.825043, 2.05732, -0.70857)
+bone_name = "Weapone.Orc.Bone.R"
+bone_idx = 36
+
+[node name="GoblinAttatchmentNode" type="Node3D" parent="OrcSkeleton_Object/Skeleton3D/BoneAttachment3D" index="0"]
+
+[node name="Camera3D" type="Camera3D" parent="." index="2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+fov = 90.0
+near = 0.005

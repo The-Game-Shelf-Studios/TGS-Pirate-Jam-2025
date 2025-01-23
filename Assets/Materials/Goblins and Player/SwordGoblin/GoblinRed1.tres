@@ -1,0 +1,12 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://diqvw0u6i0nu8"]
+
+[ext_resource type="Shader" path="res://Assets/Shaders/toon_shader.gdshader" id="1_mvoly"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_mvoly")
+shader_parameter/color = Color(0.551472, 0.00493906, 0.017088, 1)
+shader_parameter/specular = Color(0, 0, 0, 0.5)
+shader_parameter/fresnel = Color(0, 0, 0, 0.3)
+shader_parameter/uv_scale = Vector2(1, 1)
+shader_parameter/uv_offset = Vector2(0, 0)

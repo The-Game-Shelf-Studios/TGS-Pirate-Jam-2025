@@ -33,6 +33,7 @@ func _physics_process(delta: float) -> void:
 
 func MoveTowardsPlayer() -> void:
 	# Get the Player's direction and handle the movement/deceleration.
+	look_at(PlayerNode.position, Vector3.UP)
 	var direction := Vector3( PlayerNode.position.x - position.x, 0, PlayerNode.position.z - position.z)
 	if direction:
 		velocity.x = direction.x * SPEED

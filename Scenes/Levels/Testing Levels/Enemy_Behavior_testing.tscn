@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://cxxeahtecs4yv"]
+
+[ext_resource type="PackedScene" uid="uid://c3log3dnq3lfb" path="res://Scenes/Environment/room_template.tscn" id="1_3ueer"]
+[ext_resource type="PackedScene" uid="uid://blgohsh2xhruv" path="res://Scenes/Characters/Player/player.tscn" id="2_jo4pe"]
+[ext_resource type="PackedScene" uid="uid://7wqcft2xijw1" path="res://Scenes/Characters/Enemies/enemy_tower.tscn" id="4_sgt72"]
+
+[node name="EnemyBehaviorTesting" type="Node3D"]
+
+[node name="RoomTemplate" parent="." instance=ExtResource("1_3ueer")]
+transform = Transform3D(3.82717, 0, 0, 0, 1, 0, 0, 0, 2.58176, -0.0858806, 0.0404682, 0.749227)
+
+[node name="Player" parent="." instance=ExtResource("2_jo4pe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.76131, 1.29669, 4.40534)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.615001, 0.788526, 0, -0.788526, 0.615001, 0.667951, 1.88422, -0.788787)
+
+[node name="EnemyTower" parent="." instance=ExtResource("4_sgt72")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.91706, 0.709607, -1.28955)

@@ -6,6 +6,7 @@ class_name Player extends CharacterBody3D
 
 @export_category("Camera Settings")
 @export var look_sensitivity: float = .003
+@onready var first_person_camera: Camera3D = $FirstPersonCamera
 
 var direction: Vector3 ## Input Direction
 
@@ -53,5 +54,5 @@ func _unhandled_input(event):
 	
 	if event is InputEventMouseMotion:
 		rotate_y(-event.relative.x * look_sensitivity)
-		$FirstPersonCamera.rotate_x(-event.relative.y * look_sensitivity)
-		$FirstPersonCamera.rotation.x = clamp($FirstPersonCamera.rotation.x, -deg_to_rad(89), deg_to_rad(89))
+		first_person_camera.rotate_x(-event.relative.y * look_sensitivity)
+		first_person_camera.rotation.x = clamp(first_person_camera.rotation.x, -deg_to_rad(89), deg_to_rad(89))

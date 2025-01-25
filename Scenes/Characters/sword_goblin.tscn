@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://cml0kol8ukrxj"]
+[gd_scene load_steps=10 format=3 uid="uid://bkns2e231634x"]
 
 [ext_resource type="PackedScene" uid="uid://cpkbffbit72ha" path="res://Assets/Goblins/SwordGoblin.glb" id="1_5duub"]
 
@@ -39,67 +39,67 @@ graph_offset = Vector2(-92, 10)
 [node name="SwordGoblin" instance=ExtResource("1_5duub")]
 
 [node name="Skeleton3D" parent="GoblinTemplate_Skeleton" index="0"]
-bones/1/position = Vector3(-5.71646e-11, 0.3, 1.16415e-10)
-bones/1/rotation = Quaternion(-0.0149808, 0.000654078, -0.0436145, 0.998936)
-bones/2/rotation = Quaternion(0.014995, 2.35649e-09, 3.20409e-09, 0.999888)
-bones/3/rotation = Quaternion(9.31323e-10, -1.28257e-14, -1.86264e-09, 1)
-bones/5/rotation = Quaternion(-0.1461, 0.21364, -0.105899, 0.960103)
-bones/6/rotation = Quaternion(4.80259e-08, -3.48987e-09, -0.416785, 0.909005)
-bones/7/rotation = Quaternion(8.14947e-10, -5.23864e-10, 2.13913e-09, 1)
-bones/8/rotation = Quaternion(1.17142e-07, 8.44284e-10, -0.365804, 0.930692)
-bones/9/rotation = Quaternion(2.31484e-07, -7.38772e-09, -0.850922, 0.525292)
-bones/10/position = Vector3(0.03, 0.0400001, 1.35841e-09)
-bones/11/rotation = Quaternion(0.447214, -4.21097e-09, 1.85628e-07, 0.894427)
-bones/12/rotation = Quaternion(0.381102, 0.0622461, -0.723366, 0.572388)
-bones/14/rotation = Quaternion(6.66134e-16, 1.19209e-07, -1.86265e-09, 1)
-bones/15/rotation = Quaternion(-9.71446e-17, -1.19209e-07, -1.86264e-09, 1)
-bones/26/rotation = Quaternion(0.169745, 0.248215, 0.10456, 0.947968)
-bones/27/rotation = Quaternion(0.224802, 0.128263, 0.324526, 0.909778)
-bones/28/rotation = Quaternion(4.65657e-09, 3.72528e-09, 5.58794e-09, 1)
-bones/29/rotation = Quaternion(9.10618e-08, -4.00276e-09, 0.365804, 0.930692)
-bones/30/rotation = Quaternion(2.23275e-07, -3.28339e-09, 0.850922, 0.525292)
-bones/31/position = Vector3(-0.03, 0.04, -1.23139e-08)
-bones/33/rotation = Quaternion(0.447214, 9.03573e-09, -1.64236e-07, 0.894427)
+bones/1/position = Vector3(-2.63908e-17, 0.27, 8.93674e-10)
+bones/1/rotation = Quaternion(-0.0149951, -2.27883e-09, -1.34007e-09, 0.999888)
+bones/2/rotation = Quaternion(0.0149951, 2.30742e-09, 1.34049e-09, 0.999888)
+bones/3/rotation = Quaternion(9.31323e-10, -7.10543e-15, 8.14721e-17, 1)
+bones/5/rotation = Quaternion(4.16086e-08, -2.09096e-08, -0.28057, 0.959834)
+bones/6/rotation = Quaternion(6.70902e-08, -1.16399e-10, -0.252606, 0.967569)
+bones/7/rotation = Quaternion(1.89765e-14, 3.43371e-14, -6.72537e-16, 1)
+bones/8/rotation = Quaternion(-1.37343e-13, 3.43371e-14, -6.72578e-16, 1)
+bones/9/rotation = Quaternion(6.87145e-14, 3.43336e-14, -6.72509e-16, 1)
+bones/10/position = Vector3(0.03, 0.04, 7.77864e-09)
+bones/11/rotation = Quaternion(0.447214, -4.71587e-09, 1.88915e-07, 0.894427)
+bones/12/rotation = Quaternion(0.316228, -1.44306e-09, 1.31428e-07, 0.948683)
+bones/14/rotation = Quaternion(-5.87298e-23, 1.19209e-07, -2.64698e-23, 1)
+bones/15/rotation = Quaternion(-1.51374e-22, -1.19209e-07, 1.32349e-23, 1)
+bones/26/rotation = Quaternion(5.16447e-08, 1.10929e-08, 0.28057, 0.959834)
+bones/27/rotation = Quaternion(6.70901e-08, 1.16397e-10, 0.252606, 0.967569)
+bones/28/rotation = Quaternion(-2.09913e-14, 1.37044e-15, -2.91031e-11, 1)
+bones/29/rotation = Quaternion(9.73221e-08, 1.33872e-10, 0.365804, 0.930692)
+bones/30/rotation = Quaternion(2.25842e-07, -2.74832e-10, 0.850922, 0.525292)
+bones/31/position = Vector3(-0.03, 0.04, 1.57599e-08)
+bones/33/rotation = Quaternion(0.447214, -4.76028e-09, -1.70093e-07, 0.894427)
 bones/34/rotation = Quaternion(0.381102, -0.0622457, 0.723366, 0.572389)
-bones/35/rotation = Quaternion(0.911605, 0.0413594, -0.0185418, 0.408561)
-bones/36/rotation = Quaternion(0.340899, 0.0276674, 0.00909324, 0.939649)
-bones/37/rotation = Quaternion(-0.81884, -0.00874146, -0.00873884, 0.573889)
-bones/38/rotation = Quaternion(0.898945, -0.0407697, -0.0197559, -0.435712)
-bones/39/rotation = Quaternion(0.130099, -0.0105587, -0.00959423, 0.991399)
-bones/40/rotation = Quaternion(-0.88647, 0.0151428, 0.0151385, 0.46229)
+bones/35/rotation = Quaternion(0.99886, 0.0453099, 0.000670462, -0.0149789)
+bones/36/rotation = Quaternion(1.16066e-07, -2.64831e-08, 0.00967586, 0.999953)
+bones/37/rotation = Quaternion(-0.707106, 8.52999e-06, 8.61164e-06, 0.707107)
+bones/38/rotation = Quaternion(0.99886, -0.0453099, -0.000670409, -0.0149789)
+bones/39/rotation = Quaternion(1.30822e-07, 2.16967e-08, -0.00967586, 0.999953)
+bones/40/rotation = Quaternion(-0.707106, -8.62946e-06, -8.70585e-06, 0.707107)
 
 [node name="GoblinSwordArmorPauldron_Object" parent="GoblinTemplate_Skeleton/Skeleton3D" index="0"]
-transform = Transform3D(0.996195, -0.0871557, 2.04785e-08, 0.0871556, 0.996195, -1.141e-07, -1.06335e-08, 1.16415e-07, 1, -0.186479, 0.639057, 0.00300002)
+transform = Transform3D(1, 2.98021e-08, 5.58657e-10, -1.49012e-07, 1, -9.31294e-10, -5.58543e-10, 9.31379e-10, 1, -0.156219, 0.624019, 0.00299999)
 
 [node name="AngryEyebrows_Object" parent="GoblinTemplate_Skeleton/Skeleton3D" index="1"]
-transform = Transform3D(0.996195, -0.0871558, 1.9922e-08, 0.0871558, 0.996195, -1.14149e-07, -1.00749e-08, 1.16415e-07, 1, 0.0143026, 0.939681, -0.155)
+transform = Transform3D(1, -2.45727e-15, 5.68434e-14, 1.35063e-15, 1, -9.31323e-10, 5.68434e-14, 9.31323e-10, 1, 0.0700001, 0.906, -0.155)
 
 [node name="AngryMouth_Object" parent="GoblinTemplate_Skeleton/Skeleton3D" index="2"]
-transform = Transform3D(0.996195, -0.0871558, 1.9922e-08, 0.0871558, 0.996195, -1.14149e-07, -1.00749e-08, 1.16415e-07, 1, -0.0447108, 0.811048, -0.18)
+transform = Transform3D(1, -2.45727e-15, 5.68434e-14, 1.35063e-15, 1, -9.31323e-10, 5.68434e-14, 9.31323e-10, 1, 5.8366e-08, 0.783, -0.18)
 
 [node name="DeathEyes_Object" parent="GoblinTemplate_Skeleton/Skeleton3D" index="3"]
-transform = Transform3D(0.996195, -0.0871558, 1.9922e-08, 0.0871558, 0.996195, -1.14149e-07, -1.00749e-08, 1.16415e-07, 1, -0.0016121, 0.892112, -0.157)
+transform = Transform3D(1, -2.45727e-15, 5.68434e-14, 1.35063e-15, 1, -9.31323e-10, 5.68434e-14, 9.31323e-10, 1, 0.05, 0.86, -0.157)
 
 [node name="DeathMouth_Object" parent="GoblinTemplate_Skeleton/Skeleton3D" index="4"]
-transform = Transform3D(0.996195, -0.0871558, 1.9922e-08, 0.0871558, 0.996195, -1.14149e-07, -1.00749e-08, 1.16415e-07, 1, -0.0447108, 0.811048, -0.18)
+transform = Transform3D(1, -2.45727e-15, 5.68434e-14, 1.35063e-15, 1, -9.31323e-10, 5.68434e-14, 9.31323e-10, 1, 5.8366e-08, 0.783, -0.18)
 
 [node name="Eyes_Object" parent="GoblinTemplate_Skeleton/Skeleton3D" index="5"]
-transform = Transform3D(0.996195, -0.0871558, 1.9922e-08, 0.0871558, 0.996195, -1.14149e-07, -1.00749e-08, 1.16415e-07, 1, -0.0016121, 0.892112, -0.147)
+transform = Transform3D(1, -2.45727e-15, 5.68434e-14, 1.35063e-15, 1, -9.31323e-10, 5.68434e-14, 9.31323e-10, 1, 0.05, 0.86, -0.147)
 
 [node name="GoblinEars_Object" parent="GoblinTemplate_Skeleton/Skeleton3D" index="6"]
-transform = Transform3D(0.996195, -0.0871558, 1.9922e-08, 0.0871558, 0.996195, -1.14149e-07, -1.00749e-08, 1.16415e-07, 1, 0.118803, 0.892609, -0.00699985)
+transform = Transform3D(1, -2.45727e-15, 5.68434e-14, 1.35063e-15, 1, -9.31323e-10, 5.68434e-14, 9.31323e-10, 1, 0.17, 0.85, -0.00699991)
 
 [node name="GoblinSwordHelmet_Object" parent="GoblinTemplate_Skeleton/Skeleton3D" index="7"]
-transform = Transform3D(0.996195, -0.0871558, 1.9922e-08, 0.0871558, 0.996195, -1.14149e-07, -1.00749e-08, 1.16415e-07, 1, -0.053165, 0.907679, 5.9139e-08)
+transform = Transform3D(1, -2.45727e-15, 5.68434e-14, 1.35063e-15, 1, -9.31323e-10, 5.68434e-14, 9.31323e-10, 1, -2.75113e-10, 0.88, -1.16415e-09)
 
 [node name="NeutralEyebrows_Object" parent="GoblinTemplate_Skeleton/Skeleton3D" index="8"]
-transform = Transform3D(0.996195, -0.0871558, 1.9922e-08, 0.0871558, 0.996195, -1.14149e-07, -1.00749e-08, 1.16415e-07, 1, -0.125165, 0.927479, -0.155)
+transform = Transform3D(1, -2.45727e-15, 5.68434e-14, 1.35063e-15, 1, -9.31323e-10, 5.68434e-14, 9.31323e-10, 1, -0.0699999, 0.906, -0.155)
 
 [node name="NeutralMouth_Object" parent="GoblinTemplate_Skeleton/Skeleton3D" index="9"]
-transform = Transform3D(0.996195, -0.0871558, 1.9922e-08, 0.0871558, 0.996195, -1.14149e-07, -1.00749e-08, 1.16415e-07, 1, -0.0447108, 0.811048, -0.18)
+transform = Transform3D(1, -2.45727e-15, 5.68434e-14, 1.35063e-15, 1, -9.31323e-10, 5.68434e-14, 9.31323e-10, 1, 5.8366e-08, 0.783, -0.18)
 
 [node name="GoblinSword_Object" parent="GoblinTemplate_Skeleton/Skeleton3D" index="10"]
-transform = Transform3D(0.974664, -0.209262, 0.0789894, 0.158939, 0.399479, -0.902859, 0.157379, 0.892539, 0.422618, 0.214385, 0.470148, -0.167793)
+transform = Transform3D(1, 3.12692e-07, -1.49776e-08, -2.22819e-07, 1, 2.26246e-07, 1.50589e-08, -2.25695e-07, 1, 0.174082, 0.30407, 0.00300009)
 
 [node name="AnimationTree" type="AnimationTree" parent="." index="2"]
 tree_root = SubResource("AnimationNodeStateMachine_2ajkc")

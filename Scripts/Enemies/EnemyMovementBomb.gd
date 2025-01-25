@@ -5,22 +5,15 @@ extends CharacterBody3D
 @export var SightRange: float = 10
 @export var AttackRange: float = 4
 @onready var MyPlayerTracker = find_child("PlayerTrackerNode")
-@export var SPEED = 1
+@export var SPEED = 0.5
 @export var AttackDamage: int
 @export var AttackDelay: float = 2.0
-
-@onready var nav_agent = $NavigationAgent3D
 var isAttacking = true
 var PlayerSeen = false
-var PlayerIsUnobstructed
 
 func _ready() -> void:
 	PlayerSeen = false
 	isAttacking = false
-
-func _process(delta: float) -> void:
-	
-	pass
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
@@ -40,13 +33,15 @@ func _physics_process(delta: float) -> void:
 
 func MoveTowardsPlayer() -> void:
 	# Get the Player's direction and handle the movement/deceleration.
-	velocity = Vector3.ZERO
-	
-	nav_agent.set_target_position(PlayerNode.global_transform.origin)
-	var next_nav_point = nav_agent.get_next_path_position()
-	velocity = (next_nav_point - global_transform.origin).normalized() * SPEED
-	
 	look_at(PlayerNode.position, Vector3.UP)
+	var direction := Vector3( PlayerNode.position.x - position.x, 0, PlayerNode.position.z - position.z)
+	if direction:
+		velocity.x = direction.x * SPEED
+		velocity.z = direction.z * SPEED
+	else:
+		velocity.x = move_toward(velocity.x, 0, SPEED)
+		velocity.z = move_toward(velocity.z, 0, SPEED)
+
 	move_and_slide()
 
 

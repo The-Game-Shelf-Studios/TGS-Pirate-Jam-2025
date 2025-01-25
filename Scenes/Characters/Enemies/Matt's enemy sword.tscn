@@ -1,8 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://clrhwv0e78ck6"]
+[gd_scene load_steps=5 format=3 uid="uid://clpbghtkwsxei"]
 
-[ext_resource type="Script" path="res://Scripts/Enemies/EnemyMovementSword.gd" id="1_qo3ys"]
-[ext_resource type="Script" path="res://Scripts/Enemies/player_tracker_node.gd" id="2_0qjq7"]
-[ext_resource type="PackedScene" uid="uid://cml0kol8ukrxj" path="res://Scenes/Characters/sword_goblin.tscn" id="2_ru1r8"]
+[ext_resource type="Script" path="res://Scripts/Enemies/EnemyMovementSword.gd" id="1_ofx32"]
+[ext_resource type="PackedScene" uid="uid://cml0kol8ukrxj" path="res://Scenes/Characters/sword_goblin.tscn" id="2_ak1t0"]
+[ext_resource type="Script" path="res://Scripts/Enemies/player_tracker_node.gd" id="3_erutc"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_8lfb8"]
 radius = 0.187
@@ -10,15 +10,15 @@ height = 1.0
 
 [node name="EnemySword" type="CharacterBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.25, 0)
-script = ExtResource("1_qo3ys")
+script = ExtResource("1_ofx32")
 
-[node name="SwordGoblin" parent="." instance=ExtResource("2_ru1r8")]
+[node name="SwordGoblin" parent="." instance=ExtResource("2_ak1t0")]
 
 [node name="SwordEnemyCollider" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
 shape = SubResource("CapsuleShape3D_8lfb8")
 
 [node name="PlayerTrackerNode" type="Node" parent="."]
-script = ExtResource("2_0qjq7")
+script = ExtResource("3_erutc")
 
 [node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]

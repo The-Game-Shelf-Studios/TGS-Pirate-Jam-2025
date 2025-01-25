@@ -1,0 +1,12 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://b5qg8d874cmsk"]
+
+[ext_resource type="Shader" path="res://Assets/Shaders/toon_shader.gdshader" id="1_huahl"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_huahl")
+shader_parameter/color = Color(0.821583, 0.431457, 0.734787, 1)
+shader_parameter/specular = Color(0, 0, 0, 0.5)
+shader_parameter/fresnel = Color(0, 0, 0, 0.3)
+shader_parameter/uv_scale = Vector2(1, 1)
+shader_parameter/uv_offset = Vector2(0, 0)

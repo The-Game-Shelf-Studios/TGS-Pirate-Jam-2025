@@ -1,0 +1,59 @@
+[gd_scene load_steps=2 format=3 uid="uid://qjwug8c72y0u"]
+
+[ext_resource type="PackedScene" uid="uid://bqrbnfq84qs82" path="res://Assets/Goblins/CrossbowGoblin.glb" id="1_nfd3y"]
+
+[node name="CrossbowGoblin" instance=ExtResource("1_nfd3y")]
+
+[node name="AngryEyebrows_Object" parent="GoblinTemplate_Skeleton/Skeleton3D" index="0"]
+transform = Transform3D(1, -6.80962e-16, -5.70708e-11, 4.07049e-16, 1, -9.31323e-10, 5.71845e-11, 9.31323e-10, 1, 0.0700001, 0.906, -0.155)
+
+[node name="AngryMouth_Object" parent="GoblinTemplate_Skeleton/Skeleton3D" index="1"]
+transform = Transform3D(1, -6.80962e-16, -5.70708e-11, 4.07049e-16, 1, -9.31323e-10, 5.71845e-11, 9.31323e-10, 1, 5.83765e-08, 0.783, -0.18)
+
+[node name="DeathEyes_Object" parent="GoblinTemplate_Skeleton/Skeleton3D" index="2"]
+transform = Transform3D(1, -6.80962e-16, -5.70708e-11, 4.07049e-16, 1, -9.31323e-10, 5.71845e-11, 9.31323e-10, 1, 0.05, 0.86, -0.157)
+
+[node name="DeathMouth_Object" parent="GoblinTemplate_Skeleton/Skeleton3D" index="3"]
+transform = Transform3D(1, -6.80962e-16, -5.70708e-11, 4.07049e-16, 1, -9.31323e-10, 5.71845e-11, 9.31323e-10, 1, 5.83765e-08, 0.783, -0.18)
+
+[node name="Eyes_Object" parent="GoblinTemplate_Skeleton/Skeleton3D" index="4"]
+transform = Transform3D(1, -6.80962e-16, -5.70708e-11, 4.07049e-16, 1, -9.31323e-10, 5.71845e-11, 9.31323e-10, 1, 0.05, 0.86, -0.147)
+
+[node name="GoblinEars_Object" parent="GoblinTemplate_Skeleton/Skeleton3D" index="5"]
+transform = Transform3D(1, -6.80962e-16, -5.70708e-11, 4.07049e-16, 1, -9.31323e-10, 5.71845e-11, 9.31323e-10, 1, 0.17, 0.85, -0.00699991)
+
+[node name="GoblinRangedHood_Object" parent="GoblinTemplate_Skeleton/Skeleton3D" index="6"]
+transform = Transform3D(0.197119, -2.02614e-16, 7.10543e-15, 1.48632e-16, 0.197119, -1.83581e-10, 1.42109e-14, 1.83581e-10, 0.197119, 4.65661e-10, 0.67, 0.05)
+
+[node name="NeutralEyebrows_Object" parent="GoblinTemplate_Skeleton/Skeleton3D" index="7"]
+transform = Transform3D(1, -6.80962e-16, -5.70708e-11, 4.07049e-16, 1, -9.31323e-10, 5.71845e-11, 9.31323e-10, 1, -0.0699999, 0.906, -0.155)
+
+[node name="NeutralMouth_Object" parent="GoblinTemplate_Skeleton/Skeleton3D" index="8"]
+transform = Transform3D(1, -6.80962e-16, -5.70708e-11, 4.07049e-16, 1, -9.31323e-10, 5.71845e-11, 9.31323e-10, 1, 5.83765e-08, 0.783, -0.18)
+
+[node name="GoblinRangedCrossbow_Object" parent="GoblinTemplate_Skeleton/Skeleton3D" index="9"]
+transform = Transform3D(1, -7.35137e-08, -2.06754e-07, 1.3909e-08, 1, 5.67502e-08, 2.66358e-07, 2.85468e-09, 1, 0.41, 0.51, 0.0328812)
+
+[node name="Arrow_Object" parent="GoblinTemplate_Skeleton/Skeleton3D" index="10"]
+transform = Transform3D(-2.06754e-07, 1, 4.56955e-08, -6.2459e-08, -1.053e-07, 1, 1, 2.66358e-07, 1.22064e-07, 0.56, 0.51, -0.0641187)
+
+[node name="GoblinRangerQuiver" parent="GoblinTemplate_Skeleton/Skeleton3D" index="11"]
+transform = Transform3D(1, -1.02788e-15, 5.68434e-14, 7.5402e-16, 1, -9.31323e-10, 5.68434e-14, 9.31323e-10, 1, -0.1, 0.54, 0.18)
+
+[node name="Arrow1_Object" parent="GoblinTemplate_Skeleton/Skeleton3D" index="12"]
+transform = Transform3D(-5.96046e-07, 0.50114, 0.865366, -0.173648, -0.852219, 0.493527, 0.984808, -0.150269, 0.0870228, -0.145734, 0.61407, 0.195881)
+
+[node name="Arrow2_Object" parent="GoblinTemplate_Skeleton/Skeleton3D" index="13"]
+transform = Transform3D(-7.15256e-07, 0.343258, 0.939241, -0.258819, -0.907238, 0.331561, 0.965926, -0.243093, 0.0888423, -0.115734, 0.61407, 0.195881)
+
+[node name="Arrow3_Object" parent="GoblinTemplate_Skeleton/Skeleton3D" index="14"]
+transform = Transform3D(-7.15256e-07, 0.574655, 0.818396, -4.47966e-07, -0.818396, 0.574655, 1, 5.88425e-08, 8.94605e-07, -0.155734, 0.61407, 0.175881)
+
+[node name="Arrow4_Object" parent="GoblinTemplate_Skeleton/Skeleton3D" index="15"]
+transform = Transform3D(-8.34465e-07, 0.174945, 0.984578, -0.173648, -0.96962, 0.172287, 0.984808, -0.17097, 0.0303796, -0.105734, 0.63407, 0.175881)
+
+[node name="Arrow5_Object" parent="GoblinTemplate_Skeleton/Skeleton3D" index="16"]
+transform = Transform3D(-4.76837e-07, 0.343258, 0.939241, 0.173648, -0.924972, 0.338043, 0.984808, 0.163097, -0.0596054, -0.135734, 0.61407, 0.175881)
+
+[node name="Arrow6_Object" parent="GoblinTemplate_Skeleton/Skeleton3D" index="17"]
+transform = Transform3D(-5.96046e-07, 0.343258, 0.939241, -1.94646e-07, -0.939241, 0.343258, 1, 1.40264e-08, 5.36761e-07, -0.105734, 0.62407, 0.175881)

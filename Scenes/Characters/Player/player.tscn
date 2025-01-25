@@ -1,6 +1,8 @@
-[gd_scene load_steps=20 format=4 uid="uid://blgohsh2xhruv"]
+[gd_scene load_steps=22 format=4 uid="uid://blgohsh2xhruv"]
 
 [ext_resource type="Script" path="res://Scripts/Player/player.gd" id="1_2ka0k"]
+[ext_resource type="PackedScene" uid="uid://gavltsmsvff" path="res://Scenes/Utilities/hit_box.tscn" id="2_sgdj8"]
+[ext_resource type="PackedScene" uid="uid://dhshjvp00p0le" path="res://Scenes/Utilities/hurt_box.tscn" id="3_m5u40"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_0lyld"]
 
@@ -3481,7 +3483,7 @@ bones/17/parent = 16
 bones/17/rest = Transform3D(1, 6.20965e-07, 2.57212e-07, -6.20965e-07, 0.707107, 0.707107, 2.57212e-07, -0.707107, 0.707107, -1.69953e-07, 0.0707105, -9.08192e-08)
 bones/17/enabled = true
 bones/17/position = Vector3(-1.69953e-07, 0.0707105, -9.08192e-08)
-bones/17/rotation = Quaternion(-0.382683, 1.22681e-14, -3.36064e-07, 0.92388)
+bones/17/rotation = Quaternion(-0.382684, 3.07803e-15, -3.36064e-07, 0.923879)
 bones/17/scale = Vector3(1, 1, 1)
 bones/18/name = "Weapon.Orc.Bone.L"
 bones/18/parent = 3
@@ -3607,7 +3609,7 @@ bones/35/parent = 34
 bones/35/rest = Transform3D(1, -6.20965e-07, -2.57212e-07, 6.20965e-07, 0.707107, 0.707107, -2.57212e-07, -0.707107, 0.707107, -6.84657e-08, 0.0707107, -7.59183e-08)
 bones/35/enabled = true
 bones/35/position = Vector3(-6.84657e-08, 0.0707107, -7.59183e-08)
-bones/35/rotation = Quaternion(-0.382684, 1.35809e-14, 3.36064e-07, 0.923879)
+bones/35/rotation = Quaternion(-0.382684, 1.343e-14, 3.36064e-07, 0.923879)
 bones/35/scale = Vector3(1, 1, 1)
 bones/36/name = "Weapone.Orc.Bone.R"
 bones/36/parent = 21
@@ -3622,7 +3624,7 @@ mesh = SubResource("ArrayMesh_wrjbf")
 skin = SubResource("Skin_umryq")
 
 [node name="BoneAttachment3D" type="BoneAttachment3D" parent="FirstPersonCamera/PlayerArms/OrcSkeleton_Object/Skeleton3D"]
-transform = Transform3D(-5.30652e-14, 1, -8.74228e-08, 1, -1.52189e-14, -1.35501e-06, -1.35501e-06, -8.74228e-08, -1, 2, 1.03, -1.74845e-07)
+transform = Transform3D(-5.30651e-14, 1, -8.74228e-08, 1, -1.52189e-14, -1.35501e-06, -1.35501e-06, -8.74228e-08, -1, 2, 1.03, -1.74846e-07)
 bone_name = "Weapone.Orc.Bone.R"
 bone_idx = 36
 
@@ -3633,3 +3635,9 @@ libraries = {
 "": SubResource("AnimationLibrary_ncrdl")
 }
 autoplay = "OrcPoses"
+
+[node name="HitBox" parent="." instance=ExtResource("2_sgdj8")]
+
+[node name="HurtBox" parent="." instance=ExtResource("3_m5u40")]
+
+[connection signal="animation_finished" from="FirstPersonCamera/PlayerArms/AnimationPlayer" to="." method="_on_animation_player_animation_finished"]

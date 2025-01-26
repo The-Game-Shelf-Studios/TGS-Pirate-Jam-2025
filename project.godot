@@ -91,3 +91,26 @@ Throw={
 3d_physics/layer_9="Enemy"
 3d_physics/layer_10="EnemyHit"
 3d_physics/layer_11="EnemyHurt"
+
+[shader_globals]
+
+diffuse_curve={
+"type": "sampler2D",
+"value": ""
+}
+specular_smoothness={
+"type": "float",
+"value": 0.05
+}
+outline_width={
+"type": "float",
+"value": 0.0
+}
+outline_color={
+"type": "color",
+"value": Color(0, 0, 0, 1)
+}
+fresnel_smoothness={
+"type": "float",
+"value": 0.05
+}

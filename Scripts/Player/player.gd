@@ -15,6 +15,8 @@ class_name Player extends CharacterBody3D
 @export var hp : int = 100
 @export var invulerable := false ## FOR TESTING AND MAYBE CUTSCENES
 
+var current_hurt_box : HurtBox ## This will change with "Weapons" you pick up TODO: Change to weapon class
+
 var direction: Vector3 ## Input Direction
 
 static var can_control := true 

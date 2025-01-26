@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://btosflmyahh43"
-path="res://.godot/imported/Gate.glb-f5cad170137853e5ba0c4ec4d82d19f2.scn"
+uid="uid://wmyh65vd4ian"
+path="res://.godot/imported/RiderGoblin.glb-39841a3f0032e96a1abe6c4c76829759.scn"
 
 [deps]
 
-source_file="res://Assets/Blend Assests/Gate.glb"
-dest_files=["res://.godot/imported/Gate.glb-f5cad170137853e5ba0c4ec4d82d19f2.scn"]
+source_file="res://Assets/Goblins/RiderGoblin.glb"
+dest_files=["res://.godot/imported/RiderGoblin.glb-39841a3f0032e96a1abe6c4c76829759.scn"]
 
 [params]
 

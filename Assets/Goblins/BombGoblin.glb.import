@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://btosflmyahh43"
-path="res://.godot/imported/Gate.glb-f5cad170137853e5ba0c4ec4d82d19f2.scn"
+uid="uid://bqef0km2olp8s"
+path="res://.godot/imported/BombGoblin.glb-4881fab927bcd7ffed55321a7730311a.scn"
 
 [deps]
 
-source_file="res://Assets/Blend Assests/Gate.glb"
-dest_files=["res://.godot/imported/Gate.glb-f5cad170137853e5ba0c4ec4d82d19f2.scn"]
+source_file="res://Assets/Goblins/BombGoblin.glb"
+dest_files=["res://.godot/imported/BombGoblin.glb-4881fab927bcd7ffed55321a7730311a.scn"]
 
 [params]
 

@@ -3,8 +3,18 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
+<<<<<<< Updated upstream
 uid="uid://cgu72sxtyce54"
 path="res://.godot/imported/props.glb-c8b7f58013cd058a1569b9e474d718e3.scn"
+=======
+<<<<<<<< Updated upstream:Assets/Blend Assests/Gate.glb.import
+uid="uid://btosflmyahh43"
+path="res://.godot/imported/Gate.glb-f5cad170137853e5ba0c4ec4d82d19f2.scn"
+========
+uid="uid://dn6yh0nxsitd"
+path="res://.godot/imported/props.glb-c8b7f58013cd058a1569b9e474d718e3.scn"
+>>>>>>>> Stashed changes:Assets/Blend Assests/props.glb.import
+>>>>>>> Stashed changes
 
 [deps]
 

@@ -1,18 +1,29 @@
-[gd_scene load_steps=5 format=3 uid="uid://clrhwv0e78ck6"]
+[gd_scene load_steps=9 format=3 uid="uid://clrhwv0e78ck6"]
 
 [ext_resource type="Script" path="res://Scripts/Enemies/EnemyMovementSword.gd" id="1_qo3ys"]
 [ext_resource type="Script" path="res://Scripts/Enemies/player_tracker_node.gd" id="2_0qjq7"]
-[ext_resource type="PackedScene" uid="uid://bhrhk720w0arr" path="res://Scenes/Characters/matt edited sword_goblin.tscn" id="2_vbd5d"]
+[ext_resource type="PackedScene" uid="uid://gavltsmsvff" path="res://Scenes/Utilities/hit_box.tscn" id="3_cegrb"]
+[ext_resource type="PackedScene" uid="uid://dhshjvp00p0le" path="res://Scenes/Utilities/hurt_box.tscn" id="4_ikbws"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lh82a"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_mwmm8"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_8lfb8"]
 radius = 0.187
 height = 1.0
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_v0fow"]
+size = Vector3(1.1, 1.1, 1.1)
+
 [node name="EnemySword" type="CharacterBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.25, 0)
 script = ExtResource("1_qo3ys")
 
-[node name="SwordGoblin" parent="." instance=ExtResource("2_vbd5d")]
+[node name="SwordEnemyMesh" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+material_override = SubResource("StandardMaterial3D_lh82a")
+mesh = SubResource("BoxMesh_mwmm8")
 
 [node name="SwordEnemyCollider" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
@@ -21,4 +32,11 @@ shape = SubResource("CapsuleShape3D_8lfb8")
 [node name="PlayerTrackerNode" type="Node" parent="."]
 script = ExtResource("2_0qjq7")
 
-[node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
+[node name="HitBox" parent="." instance=ExtResource("3_cegrb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="HitBox"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0137329, 0)
+shape = SubResource("BoxShape3D_v0fow")
+
+[node name="HurtBox" parent="." instance=ExtResource("4_ikbws")]

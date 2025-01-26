@@ -1,9 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://p2u2ayqe0ov2"]
+[gd_scene load_steps=4 format=3 uid="uid://p2u2ayqe0ov2"]
 
 [ext_resource type="Script" path="res://Scripts/5x5_procedural_room_generator.gd" id="1_ops7q"]
-[ext_resource type="Script" path="res://Scripts/character_body_3d.gd" id="2_wjat1"]
-
-[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_fp67p"]
+[ext_resource type="PackedScene" uid="uid://blgohsh2xhruv" path="res://Scenes/Characters/Player/player.tscn" id="2_r7prc"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_ptmgh"]
 
@@ -227,21 +225,11 @@ transform = Transform3D(-4.37114e-08, -0.707107, -0.707107, 0, -0.707107, 0.7071
 [node name="DirectionalLight3D4" type="DirectionalLight3D" parent="."]
 transform = Transform3D(-4.37114e-08, -0.707107, 0.707107, 0, 0.707107, 0.707107, -1, 3.09086e-08, -3.09086e-08, 0, 0, 0)
 
-[node name="CharacterBody3D" type="CharacterBody3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
-script = ExtResource("2_wjat1")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D"]
-shape = SubResource("CapsuleShape3D_fp67p")
-
-[node name="camera_rig" type="Node3D" parent="CharacterBody3D"]
-
-[node name="Camera3D" type="Camera3D" parent="CharacterBody3D/camera_rig"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
-current = true
-
 [node name="StaticBody3D" type="StaticBody3D" parent="."]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
 transform = Transform3D(60, 0, 0, 0, 2, 0, 0, 0, 60, 0, -1, 0)
 shape = SubResource("BoxShape3D_ptmgh")
+
+[node name="Player" parent="." instance=ExtResource("2_r7prc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0529571, 0, -0.109735)

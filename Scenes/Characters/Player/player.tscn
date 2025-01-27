@@ -3639,7 +3639,7 @@ libraries = {
 }
 autoplay = "OrcPoses"
 
-[node name="HitBox" parent="." instance=ExtResource("2_sgdj8")]
+[node name="HitBox" parent="." groups=["Player"] instance=ExtResource("2_sgdj8")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="HitBox"]

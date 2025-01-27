@@ -35,40 +35,40 @@ bones/46/rotation = Quaternion(0.236907, -0.0192273, -0.00939962, 0.971297)
 bones/47/rotation = Quaternion(-0.854485, 0.0119687, 0.0119672, 0.519201)
 
 [node name="AngryEyebrows_Object" parent="GoblinTemplate_Skeleton/Skeleton3D" index="0"]
-transform = Transform3D(1, 2.6506e-08, 7.837e-10, -2.64734e-08, 0.996195, 0.0871558, 1.52954e-09, -0.0871557, 0.996195, 0.07, 0.861902, -0.161894)
+transform = Transform3D(1, 2.65061e-08, 7.82734e-10, -2.64734e-08, 0.996195, 0.0871558, 1.53045e-09, -0.0871558, 0.996195, 0.07, 0.861902, -0.161894)
 
 [node name="AngryMouth_Object" parent="GoblinTemplate_Skeleton/Skeleton3D" index="1"]
-transform = Transform3D(1, 2.6506e-08, 7.837e-10, -2.64734e-08, 0.996195, 0.0871558, 1.52954e-09, -0.0871557, 0.996195, 5.30983e-08, 0.737191, -0.176079)
+transform = Transform3D(1, 2.65061e-08, 7.82734e-10, -2.64734e-08, 0.996195, 0.0871558, 1.53045e-09, -0.0871558, 0.996195, 5.30985e-08, 0.737191, -0.176079)
 
 [node name="DeathEyes_Object" parent="GoblinTemplate_Skeleton/Skeleton3D" index="2"]
-transform = Transform3D(1, 2.6506e-08, 7.837e-10, -2.64734e-08, 0.996195, 0.0871558, 1.52954e-09, -0.0871557, 0.996195, 0.05, 0.815902, -0.159877)
+transform = Transform3D(1, 2.65061e-08, 7.82734e-10, -2.64734e-08, 0.996195, 0.0871558, 1.53045e-09, -0.0871558, 0.996195, 0.05, 0.815903, -0.159877)
 
 [node name="DeathMouth_Object" parent="GoblinTemplate_Skeleton/Skeleton3D" index="3"]
-transform = Transform3D(1, 2.6506e-08, 7.837e-10, -2.64734e-08, 0.996195, 0.0871558, 1.52954e-09, -0.0871557, 0.996195, 5.30983e-08, 0.737191, -0.176079)
+transform = Transform3D(1, 2.65061e-08, 7.82734e-10, -2.64734e-08, 0.996195, 0.0871558, 1.53045e-09, -0.0871558, 0.996195, 5.30985e-08, 0.737191, -0.176079)
 
 [node name="Eyes_Object" parent="GoblinTemplate_Skeleton/Skeleton3D" index="4"]
-transform = Transform3D(1, 2.6506e-08, 7.837e-10, -2.64734e-08, 0.996195, 0.0871558, 1.52954e-09, -0.0871557, 0.996195, 0.05, 0.816774, -0.149915)
+transform = Transform3D(1, 2.65061e-08, 7.82734e-10, -2.64734e-08, 0.996195, 0.0871558, 1.53045e-09, -0.0871558, 0.996195, 0.05, 0.816774, -0.149915)
 
 [node name="GoblinEars_Object" parent="GoblinTemplate_Skeleton/Skeleton3D" index="5"]
-transform = Transform3D(1, 2.6506e-08, 7.837e-10, -2.64734e-08, 0.996195, 0.0871558, 1.52954e-09, -0.0871557, 0.996195, 0.17, 0.819014, -0.00957651)
+transform = Transform3D(1, 2.65061e-08, 7.82734e-10, -2.64734e-08, 0.996195, 0.0871558, 1.53045e-09, -0.0871558, 0.996195, 0.17, 0.819014, -0.00957651)
 
 [node name="GoblinRangedHood_Object" parent="GoblinTemplate_Skeleton/Skeleton3D" index="6"]
-transform = Transform3D(0.197119, 5.22482e-09, 1.65741e-10, -5.21939e-09, 0.196369, 0.01718, 2.90285e-10, -0.01718, 0.196369, -7.6143e-09, 0.644667, 0.0628945)
+transform = Transform3D(0.197119, 5.22484e-09, 1.65549e-10, -5.21939e-09, 0.196369, 0.01718, 2.90463e-10, -0.01718, 0.196369, -7.61436e-09, 0.644667, 0.0628945)
 
 [node name="NeutralEyebrows_Object" parent="GoblinTemplate_Skeleton/Skeleton3D" index="7"]
-transform = Transform3D(1, 2.6506e-08, 7.837e-10, -2.64734e-08, 0.996195, 0.0871558, 1.52954e-09, -0.0871557, 0.996195, -0.07, 0.861902, -0.161894)
+transform = Transform3D(1, 2.65061e-08, 7.82734e-10, -2.64734e-08, 0.996195, 0.0871558, 1.53045e-09, -0.0871558, 0.996195, -0.07, 0.861902, -0.161894)
 
 [node name="NeutralMouth_Object" parent="GoblinTemplate_Skeleton/Skeleton3D" index="8"]
-transform = Transform3D(1, 2.6506e-08, 7.837e-10, -2.64734e-08, 0.996195, 0.0871558, 1.52954e-09, -0.0871557, 0.996195, 5.30983e-08, 0.737191, -0.176079)
+transform = Transform3D(1, 2.65061e-08, 7.82734e-10, -2.64734e-08, 0.996195, 0.0871558, 1.53045e-09, -0.0871558, 0.996195, 5.30985e-08, 0.737191, -0.176079)
 
 [node name="GoblinRangedCrossbow_Object" parent="GoblinTemplate_Skeleton/Skeleton3D" index="9"]
-transform = Transform3D(0.00493777, 0.999974, -0.00520812, -0.037124, -0.00502135, -0.999298, -0.999298, 0.00512784, 0.0370981, 0.18884, 0.463559, -0.211313)
+transform = Transform3D(0.00493929, 0.999974, -0.00520856, -0.0371243, -0.00502178, -0.999298, -0.999298, 0.00512937, 0.0370985, 0.188841, 0.463559, -0.211313)
 
 [node name="Arrow_Object" parent="GoblinTemplate_Skeleton/Skeleton3D" index="10"]
-transform = Transform3D(-0.00520824, 0.00493765, 0.999974, -0.999298, -0.037124, -0.00502148, 0.0370981, -0.999298, 0.00512773, 0.190086, 0.554922, -0.364806)
+transform = Transform3D(-0.00520868, 0.00493917, 0.999974, -0.999298, -0.0371243, -0.0050219, 0.0370985, -0.999298, 0.00512925, 0.190087, 0.554922, -0.364806)
 
 [node name="GoblinRangerQuiver" parent="GoblinTemplate_Skeleton/Skeleton3D" index="11"]
-transform = Transform3D(1, -7.46132e-09, 9.35074e-12, 7.46131e-09, 1, -9.3132e-10, -9.26548e-12, 9.31323e-10, 1, -0.1, 0.51, 0.18)
+transform = Transform3D(1, -7.46131e-09, 9.35074e-12, 7.46132e-09, 1, 9.31326e-10, -9.26548e-12, -9.31323e-10, 1, -0.1, 0.51, 0.18)
 
 [node name="Arrow1_Object" parent="GoblinTemplate_Skeleton/Skeleton3D" index="12"]
 transform = Transform3D(-5.94742e-07, 0.50114, 0.865366, -0.173648, -0.852219, 0.493527, 0.984808, -0.150269, 0.0870228, -0.145734, 0.58407, 0.195881)
@@ -77,7 +77,7 @@ transform = Transform3D(-5.94742e-07, 0.50114, 0.865366, -0.173648, -0.852219, 0
 transform = Transform3D(-7.13316e-07, 0.343258, 0.939241, -0.258819, -0.907238, 0.331561, 0.965926, -0.243093, 0.0888423, -0.115734, 0.58407, 0.195881)
 
 [node name="Arrow3_Object" parent="GoblinTemplate_Skeleton/Skeleton3D" index="14"]
-transform = Transform3D(-7.15246e-07, 0.574655, 0.818396, -4.47966e-07, -0.818396, 0.574655, 1, 5.88371e-08, 8.94597e-07, -0.155734, 0.58407, 0.175881)
+transform = Transform3D(-7.15246e-07, 0.574655, 0.818396, -4.46103e-07, -0.818396, 0.574655, 1, 6.03615e-08, 8.93527e-07, -0.155734, 0.58407, 0.175881)
 
 [node name="Arrow4_Object" parent="GoblinTemplate_Skeleton/Skeleton3D" index="15"]
 transform = Transform3D(-8.3316e-07, 0.174945, 0.984578, -0.173648, -0.96962, 0.172287, 0.984808, -0.17097, 0.0303796, -0.105734, 0.60407, 0.175881)
@@ -86,4 +86,4 @@ transform = Transform3D(-8.3316e-07, 0.174945, 0.984578, -0.173648, -0.96962, 0.
 transform = Transform3D(-4.78124e-07, 0.343258, 0.939241, 0.173648, -0.924972, 0.338043, 0.984808, 0.163097, -0.0596054, -0.135734, 0.58407, 0.175881)
 
 [node name="Arrow6_Object" parent="GoblinTemplate_Skeleton/Skeleton3D" index="17"]
-transform = Transform3D(-5.96037e-07, 0.343258, 0.939241, -1.94646e-07, -0.939241, 0.343258, 1, 1.40232e-08, 5.36753e-07, -0.105734, 0.59407, 0.175881)
+transform = Transform3D(-5.96037e-07, 0.343258, 0.939241, -1.92784e-07, -0.939241, 0.343258, 1, 1.57727e-08, 5.36113e-07, -0.105734, 0.59407, 0.175881)

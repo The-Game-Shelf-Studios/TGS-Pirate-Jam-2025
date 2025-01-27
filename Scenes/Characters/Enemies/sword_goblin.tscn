@@ -15,73 +15,56 @@
 [node name="SwordGoblin" instance=ExtResource("1_5duub")]
 
 [node name="Skeleton3D" parent="GoblinTemplate_Skeleton" index="0"]
-bones/1/position = Vector3(-3.98864e-11, 0.3, 1.74623e-10)
-bones/1/rotation = Quaternion(-0.0149808, 0.000654088, -0.0436145, 0.998936)
+bones/1/rotation = Quaternion(-0.0149951, 7.32335e-09, -1.48407e-09, 0.999888)
 bones/1/scale = Vector3(1, 1, 1)
-bones/2/rotation = Quaternion(0.014995, -7.3266e-09, 1.48402e-09, 0.999888)
+bones/2/rotation = Quaternion(0.0149951, -7.32335e-09, 1.48407e-09, 0.999888)
 bones/2/scale = Vector3(1, 1, 1)
-bones/3/rotation = Quaternion(9.31323e-10, -1.48275e-14, -1.86264e-09, 1)
 bones/4/rotation = Quaternion(1.14524e-07, 1.0136e-07, -0.857493, 0.514496)
-bones/5/rotation = Quaternion(-0.1461, 0.21364, -0.105899, 0.960103)
-bones/6/rotation = Quaternion(4.10461e-08, 2.11317e-09, -0.416785, 0.909005)
-bones/7/rotation = Quaternion(8.55657e-09, -2.03701e-10, 2.60479e-09, 1)
-bones/8/rotation = Quaternion(1.1045e-07, -6.28552e-09, -0.365804, 0.930692)
-bones/9/rotation = Quaternion(2.21634e-07, -1.88798e-08, -0.850922, 0.525292)
-bones/10/position = Vector3(0.03, 0.04, -2.47422e-09)
+bones/5/rotation = Quaternion(-1.02987e-07, 9.12522e-08, 0.242536, 0.970142)
 bones/10/scale = Vector3(1, 1, 1)
-bones/11/rotation = Quaternion(0.447214, -6.70264e-10, 2.35211e-07, 0.894427)
-bones/12/rotation = Quaternion(0.381102, 0.0622461, -0.723366, 0.572388)
+bones/12/rotation = Quaternion(0.316228, -1.6852e-14, 1.64612e-07, 0.948683)
 bones/13/rotation = Quaternion(0.857493, -0.514496, 3.23691e-07, -2.64762e-08)
 bones/13/scale = Vector3(1, 1, 1)
-bones/14/rotation = Quaternion(2.22045e-16, 1.19209e-07, -1.86265e-09, 1)
-bones/15/rotation = Quaternion(7.21645e-16, -1.19209e-07, -1.86265e-09, 1)
-bones/26/rotation = Quaternion(0.169745, 0.248215, 0.10456, 0.947968)
-bones/27/rotation = Quaternion(0.224802, 0.128263, 0.324526, 0.909778)
-bones/28/rotation = Quaternion(4.19091e-09, -1.86268e-09, 1.86265e-09, 1)
-bones/29/rotation = Quaternion(1.0257e-07, -1.40096e-08, 0.365804, 0.930692)
-bones/30/rotation = Quaternion(2.25464e-07, 5.4725e-09, 0.850922, 0.525292)
-bones/31/position = Vector3(-0.03, 0.04, 6.66673e-08)
+bones/26/rotation = Quaternion(-1.17443e-07, -3.34271e-08, -0.242536, 0.970142)
 bones/31/scale = Vector3(1, 1, 1)
 bones/32/rotation = Quaternion(0.707107, 0.000466018, -0.000465722, 0.707107)
 bones/32/scale = Vector3(1, 1, 1)
-bones/33/rotation = Quaternion(0.447214, 4.16459e-10, -2.33629e-07, 0.894427)
-bones/34/rotation = Quaternion(0.381102, -0.0622457, 0.723366, 0.572389)
-bones/35/rotation = Quaternion(0.911605, 0.0413581, -0.018539, 0.408561)
+bones/34/rotation = Quaternion(0.316228, 3.55764e-14, -1.64612e-07, 0.948683)
+bones/35/rotation = Quaternion(0.99886, 0.0453098, 0.000673542, -0.0149791)
 bones/35/scale = Vector3(1.00002, 1, 1)
-bones/36/rotation = Quaternion(0.340899, 0.0276674, 0.00909324, 0.939649)
-bones/37/rotation = Quaternion(-0.81884, -0.00874266, -0.00874179, 0.573889)
-bones/38/rotation = Quaternion(0.898945, -0.040771, -0.0197587, -0.435713)
+bones/36/rotation = Quaternion(5.48503e-08, -1.50812e-08, 0.00967587, 0.999953)
+bones/38/rotation = Quaternion(0.99886, -0.0453098, -0.000673498, -0.0149791)
 bones/38/scale = Vector3(1.00002, 1, 1)
-bones/39/rotation = Quaternion(0.130099, -0.0105587, -0.00959424, 0.991399)
-bones/40/rotation = Quaternion(-0.886471, 0.0151435, 0.0151415, 0.462289)
+bones/39/rotation = Quaternion(7.42496e-08, 7.72128e-08, -0.00967588, 0.999953)
+bones/40/rotation = Quaternion(-0.707106, -6.97754e-06, -6.03714e-06, 0.707107)
 
 [node name="GoblinSwordArmorPauldron_Object" parent="GoblinTemplate_Skeleton/Skeleton3D" index="0"]
-transform = Transform3D(0.996195, -0.0871557, 6.34013e-08, 0.0871558, 0.996195, -5.03657e-08, -5.91941e-08, 5.51416e-08, 1, -0.186479, 0.639057, 0.00299999)
+transform = Transform3D(1, -1.82248e-13, 4.63588e-08, 8.94068e-08, 1, -8.49438e-08, -4.63587e-08, 8.49438e-08, 1, -0.156219, 0.624019, 0.00300001)
 
 [node name="GoblinSwordArmorPauldron_Object" parent="GoblinTemplate_Skeleton/Skeleton3D/GoblinSwordArmorPauldron_Object" index="0"]
 surface_material_override/0 = ExtResource("2_ecu7p")
 
 [node name="AngryEyebrows_Object" parent="GoblinTemplate_Skeleton/Skeleton3D" index="1"]
-transform = Transform3D(0.996195, -0.0871558, 9.67742e-09, 0.0871558, 0.996195, 3.11372e-08, -1.27782e-08, -3.07336e-08, 1, 0.0143026, 0.939681, -0.155)
+transform = Transform3D(1, -6.80962e-16, -5.71276e-11, -2.07163e-16, 1, 9.31323e-10, 5.71561e-11, -9.31323e-10, 1, 0.0700001, 0.906, -0.155)
 
 [node name="AngryEyebrows_Object" parent="GoblinTemplate_Skeleton/Skeleton3D/AngryEyebrows_Object" index="0"]
 surface_material_override/0 = ExtResource("3_otugf")
 
 [node name="AngryMouth_Object" parent="GoblinTemplate_Skeleton/Skeleton3D" index="2"]
-transform = Transform3D(0.996195, -0.0871558, 9.67742e-09, 0.0871558, 0.996195, 3.11372e-08, -1.27782e-08, -3.07336e-08, 1, -0.0447108, 0.811048, -0.18)
+transform = Transform3D(1, -6.80962e-16, -5.71276e-11, -2.07163e-16, 1, 9.31323e-10, 5.71561e-11, -9.31323e-10, 1, 5.83765e-08, 0.783, -0.18)
 
 [node name="AngryMouth_Object" parent="GoblinTemplate_Skeleton/Skeleton3D/AngryMouth_Object" index="0"]
 surface_material_override/0 = ExtResource("4_2g4d0")
 surface_material_override/1 = ExtResource("5_y1vkp")
 
 [node name="DeathEyes_Object" parent="GoblinTemplate_Skeleton/Skeleton3D" index="3"]
-transform = Transform3D(0.996195, -0.0871558, 9.67742e-09, 0.0871558, 0.996195, 3.11372e-08, -1.27782e-08, -3.07336e-08, 1, -0.0016121, 0.892112, -0.157)
+transform = Transform3D(1, -6.80962e-16, -5.71276e-11, -2.07163e-16, 1, 9.31323e-10, 5.71561e-11, -9.31323e-10, 1, 0.05, 0.86, -0.157)
 
 [node name="DeathEyes_Object" parent="GoblinTemplate_Skeleton/Skeleton3D/DeathEyes_Object" index="0"]
 surface_material_override/0 = ExtResource("4_2g4d0")
 
 [node name="DeathMouth_Object" parent="GoblinTemplate_Skeleton/Skeleton3D" index="4"]
-transform = Transform3D(0.996195, -0.0871558, 9.67742e-09, 0.0871558, 0.996195, 3.11372e-08, -1.27782e-08, -3.07336e-08, 1, -0.0447108, 0.811048, -0.18)
+transform = Transform3D(1, -6.80962e-16, -5.71276e-11, -2.07163e-16, 1, 9.31323e-10, 5.71561e-11, -9.31323e-10, 1, 5.83765e-08, 0.783, -0.18)
 
 [node name="DeathMouth_Object" parent="GoblinTemplate_Skeleton/Skeleton3D/DeathMouth_Object" index="0"]
 surface_material_override/0 = ExtResource("4_2g4d0")
@@ -89,39 +72,39 @@ surface_material_override/1 = ExtResource("5_y1vkp")
 surface_material_override/2 = ExtResource("6_cu80c")
 
 [node name="Eyes_Object" parent="GoblinTemplate_Skeleton/Skeleton3D" index="5"]
-transform = Transform3D(0.996195, -0.0871558, 9.67742e-09, 0.0871558, 0.996195, 3.11372e-08, -1.27782e-08, -3.07336e-08, 1, -0.0016121, 0.892112, -0.147)
+transform = Transform3D(1, -6.80962e-16, -5.71276e-11, -2.07163e-16, 1, 9.31323e-10, 5.71561e-11, -9.31323e-10, 1, 0.05, 0.86, -0.147)
 
 [node name="Eyes_Object" parent="GoblinTemplate_Skeleton/Skeleton3D/Eyes_Object" index="0"]
 surface_material_override/0 = ExtResource("4_2g4d0")
 
 [node name="GoblinEars_Object" parent="GoblinTemplate_Skeleton/Skeleton3D" index="6"]
-transform = Transform3D(0.996195, -0.0871558, 9.67742e-09, 0.0871558, 0.996195, 3.11372e-08, -1.27782e-08, -3.07336e-08, 1, 0.118803, 0.892609, -0.00699993)
+transform = Transform3D(1, -6.80962e-16, -5.71276e-11, -2.07163e-16, 1, 9.31323e-10, 5.71561e-11, -9.31323e-10, 1, 0.17, 0.85, -0.0069999)
 
 [node name="GoblinEars_Object" parent="GoblinTemplate_Skeleton/Skeleton3D/GoblinEars_Object" index="0"]
 surface_material_override/0 = ExtResource("7_1xhnd")
 
 [node name="GoblinSwordHelmet_Object" parent="GoblinTemplate_Skeleton/Skeleton3D" index="7"]
-transform = Transform3D(0.996195, -0.0871558, 9.67742e-09, 0.0871558, 0.996195, 3.11372e-08, -1.27782e-08, -3.07336e-08, 1, -0.053165, 0.907679, -2.00234e-08)
+transform = Transform3D(1, -6.80962e-16, -5.71276e-11, -2.07163e-16, 1, 9.31323e-10, 5.71561e-11, -9.31323e-10, 1, -2.74945e-10, 0.88, 7.21775e-09)
 
 [node name="GoblinSwordHelmet_Object" parent="GoblinTemplate_Skeleton/Skeleton3D/GoblinSwordHelmet_Object" index="0"]
 surface_material_override/0 = ExtResource("8_ggrw2")
 surface_material_override/1 = ExtResource("9_gcagm")
 
 [node name="NeutralEyebrows_Object" parent="GoblinTemplate_Skeleton/Skeleton3D" index="8"]
-transform = Transform3D(0.996195, -0.0871558, 9.67742e-09, 0.0871558, 0.996195, 3.11372e-08, -1.27782e-08, -3.07336e-08, 1, -0.125165, 0.927479, -0.155)
+transform = Transform3D(1, -6.80962e-16, -5.71276e-11, -2.07163e-16, 1, 9.31323e-10, 5.71561e-11, -9.31323e-10, 1, -0.0699999, 0.906, -0.155)
 
 [node name="NeutralEyebrows_Object" parent="GoblinTemplate_Skeleton/Skeleton3D/NeutralEyebrows_Object" index="0"]
 surface_material_override/0 = ExtResource("3_otugf")
 
 [node name="NeutralMouth_Object" parent="GoblinTemplate_Skeleton/Skeleton3D" index="9"]
-transform = Transform3D(0.996195, -0.0871558, 9.67742e-09, 0.0871558, 0.996195, 3.11372e-08, -1.27782e-08, -3.07336e-08, 1, -0.0447108, 0.811048, -0.18)
+transform = Transform3D(1, -6.80962e-16, -5.71276e-11, -2.07163e-16, 1, 9.31323e-10, 5.71561e-11, -9.31323e-10, 1, 5.83765e-08, 0.783, -0.18)
 
 [node name="NeutralMouth_Object" parent="GoblinTemplate_Skeleton/Skeleton3D/NeutralMouth_Object" index="0"]
 surface_material_override/0 = ExtResource("4_2g4d0")
 surface_material_override/1 = ExtResource("5_y1vkp")
 
 [node name="GoblinSword_Object" parent="GoblinTemplate_Skeleton/Skeleton3D" index="10"]
-transform = Transform3D(0.974664, -0.209262, 0.0789898, 0.158939, 0.39948, -0.902859, 0.157379, 0.892539, 0.422619, 0.214385, 0.470148, -0.167793)
+transform = Transform3D(0.00131641, -0.999999, -7.43196e-07, 0.999999, 0.00131641, 4.17637e-07, -4.16737e-07, -7.43193e-07, 1, 0.42, 0.510001, 0.00300016)
 
 [node name="GoblinSword_Object" parent="GoblinTemplate_Skeleton/Skeleton3D/GoblinSword_Object" index="0"]
 surface_material_override/0 = ExtResource("10_ciuk4")

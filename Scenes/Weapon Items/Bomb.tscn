@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://ctau20wcef8ge"]
+
+[ext_resource type="Script" path="res://Scenes/Weapon Items/BombExploder.gd" id="1_aj6f4"]
+[ext_resource type="PackedScene" uid="uid://c4e5taul4inrk" path="res://Assets/Blend Assests/Bomb.glb" id="2_1k7xj"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_2sk8n"]
+radius = 0.25
+
+[node name="Bomb" type="RigidBody3D"]
+script = ExtResource("1_aj6f4")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("SphereShape3D_2sk8n")
+
+[node name="Bomb" parent="." instance=ExtResource("2_1k7xj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.42, -0.5, 0)

@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://bskjyy6t0rl42" path="res://Scenes/Environment/Navigable_room_template.tscn" id="1_6mq4p"]
 [ext_resource type="PackedScene" uid="uid://blgohsh2xhruv" path="res://Scenes/Characters/Player/player.tscn" id="2_jo4pe"]
-[ext_resource type="PackedScene" uid="uid://clrhwv0e78ck6" path="res://Scenes/Characters/Enemies/enemy_sword.tscn" id="3_8ugiy"]
+[ext_resource type="PackedScene" uid="uid://cye0yvx322c16" path="res://Scenes/Characters/Enemies/Sword Goblin.tscn" id="3_ajm7q"]
 
 [node name="EnemyBehaviorTesting" type="Node3D"]
 
@@ -15,7 +15,5 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.76131, 1.29669, 4.40534)
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0.615001, 0.788526, 0, -0.788526, 0.615001, 0.667951, 1.88422, -0.788787)
 
-[node name="EnemySword" parent="." instance=ExtResource("3_8ugiy")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.01561, 0.30879, -2.36664)
-AttackRange = 1.5
-SPEED = 2
+[node name="SwordGoblin" parent="." instance=ExtResource("3_ajm7q")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.45761, 0.0587902, 0.626041)

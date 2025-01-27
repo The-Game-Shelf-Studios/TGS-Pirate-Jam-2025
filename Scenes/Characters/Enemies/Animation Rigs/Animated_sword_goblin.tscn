@@ -1,0 +1,151 @@
+[gd_scene load_steps=20 format=3 uid="uid://b7gypuykawfrm"]
+
+[ext_resource type="PackedScene" uid="uid://cpkbffbit72ha" path="res://Assets/Goblins/SwordGoblin.glb" id="1_uhvs6"]
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_oefpe"]
+animation = &"GoblinAttack1"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_cjpa6"]
+animation = &"GoblinAttack2"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_d5mrr"]
+animation = &"GoblinDeath"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_eorpj"]
+animation = &"GoblinRun"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_vygqw"]
+animation = &"GoblinSwordIdle"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_l0y8h"]
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_wq3ve"]
+advance_mode = 2
+advance_condition = &"IsMoving"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_tiyah"]
+advance_mode = 2
+advance_condition = &"Attack1"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_a7740"]
+advance_mode = 2
+advance_condition = &"Attack2"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_oa2b5"]
+advance_mode = 2
+advance_condition = &"IsDead"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_4amuu"]
+advance_mode = 2
+advance_condition = &"IsDead"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_5tqu2"]
+advance_mode = 2
+advance_condition = &"IsDead"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_ery0e"]
+advance_mode = 2
+advance_condition = &"IsDead"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_dodqf"]
+switch_mode = 2
+advance_mode = 2
+advance_condition = &"IsMoving"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_6kl0d"]
+switch_mode = 2
+advance_mode = 2
+advance_condition = &"IsMoving"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_at804"]
+advance_mode = 2
+advance_condition = &"Idling"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_4vekp"]
+switch_mode = 2
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_w7vyr"]
+states/End/position = Vector2(270, 301)
+states/GoblinAttack1/node = SubResource("AnimationNodeAnimation_oefpe")
+states/GoblinAttack1/position = Vector2(634, 198)
+states/GoblinAttack2/node = SubResource("AnimationNodeAnimation_cjpa6")
+states/GoblinAttack2/position = Vector2(634, 125)
+states/GoblinDeath/node = SubResource("AnimationNodeAnimation_d5mrr")
+states/GoblinDeath/position = Vector2(129, 259)
+states/GoblinRun/node = SubResource("AnimationNodeAnimation_eorpj")
+states/GoblinRun/position = Vector2(380, 68)
+states/GoblinSwordIdle/node = SubResource("AnimationNodeAnimation_vygqw")
+states/GoblinSwordIdle/position = Vector2(187, 83)
+states/Start/position = Vector2(68, 83)
+transitions = ["Start", "GoblinSwordIdle", SubResource("AnimationNodeStateMachineTransition_l0y8h"), "GoblinSwordIdle", "GoblinRun", SubResource("AnimationNodeStateMachineTransition_wq3ve"), "GoblinRun", "GoblinAttack1", SubResource("AnimationNodeStateMachineTransition_tiyah"), "GoblinRun", "GoblinAttack2", SubResource("AnimationNodeStateMachineTransition_a7740"), "GoblinSwordIdle", "GoblinDeath", SubResource("AnimationNodeStateMachineTransition_oa2b5"), "GoblinAttack1", "GoblinDeath", SubResource("AnimationNodeStateMachineTransition_4amuu"), "GoblinRun", "GoblinDeath", SubResource("AnimationNodeStateMachineTransition_5tqu2"), "GoblinAttack2", "GoblinDeath", SubResource("AnimationNodeStateMachineTransition_ery0e"), "GoblinAttack1", "GoblinRun", SubResource("AnimationNodeStateMachineTransition_dodqf"), "GoblinAttack2", "GoblinRun", SubResource("AnimationNodeStateMachineTransition_6kl0d"), "GoblinRun", "GoblinSwordIdle", SubResource("AnimationNodeStateMachineTransition_at804"), "GoblinDeath", "End", SubResource("AnimationNodeStateMachineTransition_4vekp")]
+graph_offset = Vector2(-218, 60)
+
+[node name="SwordGoblin" instance=ExtResource("1_uhvs6")]
+
+[node name="Skeleton3D" parent="GoblinTemplate_Skeleton" index="0"]
+bones/1/rotation = Quaternion(-0.0149951, 7.32335e-09, -1.48407e-09, 0.999888)
+bones/1/scale = Vector3(1, 1, 1)
+bones/2/rotation = Quaternion(0.0149951, -7.32335e-09, 1.48407e-09, 0.999888)
+bones/2/scale = Vector3(1, 1, 1)
+bones/4/rotation = Quaternion(1.14524e-07, 1.0136e-07, -0.857493, 0.514496)
+bones/5/rotation = Quaternion(-1.02987e-07, 9.12522e-08, 0.242536, 0.970142)
+bones/10/scale = Vector3(1, 1, 1)
+bones/12/rotation = Quaternion(0.316228, -1.6852e-14, 1.64612e-07, 0.948683)
+bones/13/rotation = Quaternion(0.857493, -0.514496, 3.23691e-07, -2.64762e-08)
+bones/13/scale = Vector3(1, 1, 1)
+bones/26/rotation = Quaternion(-1.17443e-07, -3.34271e-08, -0.242536, 0.970142)
+bones/31/scale = Vector3(1, 1, 1)
+bones/32/rotation = Quaternion(0.707107, 0.000466018, -0.000465722, 0.707107)
+bones/32/scale = Vector3(1, 1, 1)
+bones/34/rotation = Quaternion(0.316228, 3.55764e-14, -1.64612e-07, 0.948683)
+bones/35/rotation = Quaternion(0.99886, 0.0453098, 0.000673542, -0.0149791)
+bones/35/scale = Vector3(1.00002, 1, 1)
+bones/36/rotation = Quaternion(5.48503e-08, -1.50812e-08, 0.00967587, 0.999953)
+bones/38/rotation = Quaternion(0.99886, -0.0453098, -0.000673498, -0.0149791)
+bones/38/scale = Vector3(1.00002, 1, 1)
+bones/39/rotation = Quaternion(7.42496e-08, 7.72128e-08, -0.00967588, 0.999953)
+bones/40/rotation = Quaternion(-0.707106, -6.97754e-06, -6.03714e-06, 0.707107)
+
+[node name="GoblinSwordArmorPauldron_Object" parent="GoblinTemplate_Skeleton/Skeleton3D" index="0"]
+transform = Transform3D(1, 5.96045e-08, 4.63594e-08, -1.49012e-07, 1, -8.68072e-08, -4.63592e-08, 8.68073e-08, 1, -0.156219, 0.624019, 0.003)
+
+[node name="AngryEyebrows_Object" parent="GoblinTemplate_Skeleton/Skeleton3D" index="1"]
+transform = Transform3D(1, 2.07216e-16, -5.70708e-11, 4.07049e-16, 1, -9.31323e-10, 5.72413e-11, 9.31323e-10, 1, 0.0700001, 0.906, -0.155)
+
+[node name="AngryMouth_Object" parent="GoblinTemplate_Skeleton/Skeleton3D" index="2"]
+transform = Transform3D(1, 2.07216e-16, -5.70708e-11, 4.07049e-16, 1, -9.31323e-10, 5.72413e-11, 9.31323e-10, 1, 5.83765e-08, 0.783, -0.18)
+
+[node name="DeathEyes_Object" parent="GoblinTemplate_Skeleton/Skeleton3D" index="3"]
+transform = Transform3D(1, 2.07216e-16, -5.70708e-11, 4.07049e-16, 1, -9.31323e-10, 5.72413e-11, 9.31323e-10, 1, 0.05, 0.86, -0.157)
+
+[node name="DeathMouth_Object" parent="GoblinTemplate_Skeleton/Skeleton3D" index="4"]
+transform = Transform3D(1, 2.07216e-16, -5.70708e-11, 4.07049e-16, 1, -9.31323e-10, 5.72413e-11, 9.31323e-10, 1, 5.83765e-08, 0.783, -0.18)
+
+[node name="Eyes_Object" parent="GoblinTemplate_Skeleton/Skeleton3D" index="5"]
+transform = Transform3D(1, 2.07216e-16, -5.70708e-11, 4.07049e-16, 1, -9.31323e-10, 5.72413e-11, 9.31323e-10, 1, 0.05, 0.86, -0.147)
+
+[node name="GoblinEars_Object" parent="GoblinTemplate_Skeleton/Skeleton3D" index="6"]
+transform = Transform3D(1, 2.07216e-16, -5.70708e-11, 4.07049e-16, 1, -9.31323e-10, 5.72413e-11, 9.31323e-10, 1, 0.17, 0.85, -0.0069999)
+
+[node name="GoblinSwordHelmet_Object" parent="GoblinTemplate_Skeleton/Skeleton3D" index="7"]
+transform = Transform3D(1, 2.07216e-16, -5.70708e-11, 4.07049e-16, 1, -9.31323e-10, 5.72413e-11, 9.31323e-10, 1, -2.74941e-10, 0.88, 4.65661e-10)
+
+[node name="NeutralEyebrows_Object" parent="GoblinTemplate_Skeleton/Skeleton3D" index="8"]
+transform = Transform3D(1, 2.07216e-16, -5.70708e-11, 4.07049e-16, 1, -9.31323e-10, 5.72413e-11, 9.31323e-10, 1, -0.0699999, 0.906, -0.155)
+
+[node name="NeutralMouth_Object" parent="GoblinTemplate_Skeleton/Skeleton3D" index="9"]
+transform = Transform3D(1, 2.07216e-16, -5.70708e-11, 4.07049e-16, 1, -9.31323e-10, 5.72413e-11, 9.31323e-10, 1, 5.83765e-08, 0.783, -0.18)
+
+[node name="GoblinSword_Object" parent="GoblinTemplate_Skeleton/Skeleton3D" index="10"]
+transform = Transform3D(0.00131722, -0.999999, -5.64382e-07, 0.999999, 0.00131722, 4.15251e-07, -4.14583e-07, -5.64377e-07, 0.999999, 0.42, 0.51, 0.00300015)
+
+[node name="AnimationTree" type="AnimationTree" parent="." index="2"]
+tree_root = SubResource("AnimationNodeStateMachine_w7vyr")
+anim_player = NodePath("../AnimationPlayer")
+parameters/conditions/Attack1 = false
+parameters/conditions/Attack2 = false
+parameters/conditions/Idling = false
+parameters/conditions/IsDead = false
+parameters/conditions/IsMoving = false

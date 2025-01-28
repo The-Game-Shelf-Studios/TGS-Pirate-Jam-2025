@@ -21,6 +21,12 @@ var direction: Vector3 ## Input Direction
 
 static var can_control := true 
 
+var unarmed := true
+var armed_sword := false
+var armed_spear := false
+var armed_ranged := false
+var armed_bomb := false
+
 func _ready() -> void:
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 
@@ -101,8 +107,3 @@ func _input(event: InputEvent) -> void:
 		# Handle Throw
 		if event.is_action_pressed("Throw"):
 			throw()
-
-# Reset Animation
-func _on_animation_player_animation_finished(anim_name: StringName) -> void:
-	if anim_name != "OrcPoses":
-		animation_player.play("OrcPoses", -1,1, true) ## This sets it to the final frame of the OrcPoses anim

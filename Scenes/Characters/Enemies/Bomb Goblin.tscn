@@ -3277,77 +3277,77 @@ bones/13/parent = 3
 bones/13/rest = Transform3D(1, 1.32349e-23, 2.38419e-07, -1.32349e-23, 1, 1.27799e-22, -2.38419e-07, -1.27799e-22, 1, 5.55112e-17, 0.12, -2.32831e-10)
 bones/13/enabled = true
 bones/13/position = Vector3(5.55112e-17, 0.12, -2.32831e-10)
-bones/13/rotation = Quaternion(7.10778e-12, -0.0761082, 8.12439e-11, 0.9971)
+bones/13/rotation = Quaternion(-3.60834e-17, -0.0755049, -2.11684e-18, 0.997146)
 bones/13/scale = Vector3(1, 1, 1)
 bones/14/name = "Head.Bone.C"
 bones/14/parent = 13
 bones/14/rest = Transform3D(1, -2.64697e-23, -2.38419e-07, 2.64698e-23, 1, 3.29631e-22, 2.38419e-07, -3.29631e-22, 1, 8.32667e-17, 0.2, -2.32831e-10)
 bones/14/enabled = true
 bones/14/position = Vector3(8.32667e-17, 0.2, -2.32831e-10)
-bones/14/rotation = Quaternion(4.45266e-11, -0.189917, 1.97987e-10, 0.9818)
+bones/14/rotation = Quaternion(-1.08945e-17, -0.188028, -1.00108e-17, 0.982164)
 bones/14/scale = Vector3(1, 1, 1)
 bones/15/name = "AngryEyebrows.Object"
 bones/15/parent = 14
 bones/15/rest = Transform3D(-1, -1.17765e-08, -3.8743e-07, -1.17765e-08, 1, -8.58502e-09, 3.8743e-07, -8.58501e-09, -1, -0.07, 0.086, 0.158)
 bones/15/enabled = true
 bones/15/position = Vector3(-0.07, 0.086, 0.158)
-bones/15/rotation = Quaternion(-5.88823e-09, 1, -4.29251e-09, -1.93715e-07)
+bones/15/rotation = Quaternion(-5.88825e-09, 1, -4.29251e-09, -1.93715e-07)
 bones/15/scale = Vector3(1, 1, 1)
 bones/16/name = "AngryMouth.Object"
 bones/16/parent = 14
 bones/16/rest = Transform3D(-1, -1.17765e-08, -3.8743e-07, -1.17765e-08, 1, -8.58502e-09, 3.8743e-07, -8.58501e-09, -1, -2.6077e-08, -0.0370001, 0.183)
 bones/16/enabled = true
 bones/16/position = Vector3(-2.6077e-08, -0.0370001, 0.183)
-bones/16/rotation = Quaternion(-5.88823e-09, 1, -4.29251e-09, -1.93715e-07)
+bones/16/rotation = Quaternion(-5.88825e-09, 1, -4.29251e-09, -1.93715e-07)
 bones/16/scale = Vector3(1, 1, 1)
 bones/17/name = "DeathEyes.Object"
 bones/17/parent = 14
 bones/17/rest = Transform3D(-1, -1.17765e-08, -3.8743e-07, -1.17765e-08, 1, -8.58502e-09, 3.8743e-07, -8.58501e-09, -1, -0.05, 0.0399998, 0.16)
 bones/17/enabled = true
 bones/17/position = Vector3(-0.05, 0.0399998, 0.16)
-bones/17/rotation = Quaternion(-5.88823e-09, 1, -4.29251e-09, -1.93715e-07)
+bones/17/rotation = Quaternion(-5.88825e-09, 1, -4.29251e-09, -1.93715e-07)
 bones/17/scale = Vector3(1, 1, 1)
 bones/18/name = "DeathMouth.Object"
 bones/18/parent = 14
 bones/18/rest = Transform3D(-1, -1.17765e-08, -3.8743e-07, -1.17765e-08, 1, -8.58502e-09, 3.8743e-07, -8.58501e-09, -1, -2.6077e-08, -0.0370001, 0.183)
 bones/18/enabled = true
 bones/18/position = Vector3(-2.6077e-08, -0.0370001, 0.183)
-bones/18/rotation = Quaternion(-5.88823e-09, 1, -4.29251e-09, -1.93715e-07)
+bones/18/rotation = Quaternion(-5.88825e-09, 1, -4.29251e-09, -1.93715e-07)
 bones/18/scale = Vector3(1, 1, 1)
 bones/19/name = "Eyes.Object"
 bones/19/parent = 14
 bones/19/rest = Transform3D(-1, -1.17765e-08, -3.8743e-07, -1.17765e-08, 1, -8.58502e-09, 3.8743e-07, -8.58501e-09, -1, -0.05, 0.0399998, 0.15)
 bones/19/enabled = true
 bones/19/position = Vector3(-0.05, 0.0399998, 0.15)
-bones/19/rotation = Quaternion(-5.88823e-09, 1, -4.29251e-09, -1.93715e-07)
+bones/19/rotation = Quaternion(-5.88825e-09, 1, -4.29251e-09, -1.93715e-07)
 bones/19/scale = Vector3(1, 1, 1)
 bones/20/name = "GoblinEars.Object"
 bones/20/parent = 14
 bones/20/rest = Transform3D(-1, -1.17765e-08, -3.8743e-07, -1.17765e-08, 1, -8.58502e-09, 3.8743e-07, -8.58501e-09, -1, -0.17, 0.0299999, 0.00999998)
 bones/20/enabled = true
 bones/20/position = Vector3(-0.17, 0.0299999, 0.00999998)
-bones/20/rotation = Quaternion(-5.88823e-09, 1, -4.29251e-09, -1.93715e-07)
+bones/20/rotation = Quaternion(-5.88825e-09, 1, -4.29251e-09, -1.93715e-07)
 bones/20/scale = Vector3(1, 1, 1)
 bones/21/name = "NeutralEyebrows.Object"
 bones/21/parent = 14
 bones/21/rest = Transform3D(-1, -1.17765e-08, -3.8743e-07, -1.17765e-08, 1, -8.58502e-09, 3.8743e-07, -8.58501e-09, -1, 0.07, 0.086, 0.158)
 bones/21/enabled = true
 bones/21/position = Vector3(0.07, 0.086, 0.158)
-bones/21/rotation = Quaternion(-5.88823e-09, 1, -4.29251e-09, -1.93715e-07)
+bones/21/rotation = Quaternion(-5.88825e-09, 1, -4.29251e-09, -1.93715e-07)
 bones/21/scale = Vector3(1, 1, 1)
 bones/22/name = "NeutralMouth.Object"
 bones/22/parent = 14
 bones/22/rest = Transform3D(-1, -1.17765e-08, -3.8743e-07, -1.17765e-08, 1, -8.58502e-09, 3.8743e-07, -8.58501e-09, -1, -1.86265e-08, -0.0370001, 0.183)
 bones/22/enabled = true
 bones/22/position = Vector3(-1.86265e-08, -0.0370001, 0.183)
-bones/22/rotation = Quaternion(-5.88823e-09, 1, -4.29251e-09, -1.93715e-07)
+bones/22/rotation = Quaternion(-5.88825e-09, 1, -4.29251e-09, -1.93715e-07)
 bones/22/scale = Vector3(1, 1, 1)
 bones/23/name = "Shoulder.Bone.R"
 bones/23/parent = 3
 bones/23/rest = Transform3D(-0.470588, -0.882353, 2.7511e-07, 0.882353, -0.470588, -3.96859e-07, 4.79634e-07, 5.59865e-08, 1, -9.31322e-10, 0.12, -2.32831e-10)
 bones/23/enabled = true
 bones/23/position = Vector3(-9.31322e-10, 0.12, -2.32831e-10)
-bones/23/rotation = Quaternion(2.20044e-07, -9.93807e-08, 0.857493, 0.514496)
+bones/23/rotation = Quaternion(2.20044e-07, -9.93809e-08, 0.857493, 0.514496)
 bones/23/scale = Vector3(1, 1, 1)
 bones/24/name = "UpperArm.Bone.R"
 bones/24/parent = 23
@@ -3402,8 +3402,8 @@ bones/31/name = "Control.Bone"
 bones/31/parent = 30
 bones/31/rest = Transform3D(-0.0871556, -5.14894e-08, -0.996195, 4.46622e-08, 1, -5.55935e-08, 0.996195, -4.93375e-08, -0.0871556, 0.427844, -0.283, 0.0596574)
 bones/31/enabled = true
-bones/31/position = Vector3(0, 0, 0)
-bones/31/rotation = Quaternion(0, 0, 0, 1)
+bones/31/position = Vector3(0.427844, -0.283, 0.0596574)
+bones/31/rotation = Quaternion(2.315e-09, -0.737277, 3.55806e-08, 0.67559)
 bones/31/scale = Vector3(1, 1, 1)
 bones/32/name = "Bomb.Object"
 bones/32/parent = 31
@@ -3416,8 +3416,8 @@ bones/33/name = "Fuse.Bone"
 bones/33/parent = 30
 bones/33/rest = Transform3D(-0.0871556, -5.14894e-08, -0.996195, 4.46622e-08, 1, -5.55935e-08, 0.996195, -4.93375e-08, -0.0871556, 0.427844, -0.163, 0.0596574)
 bones/33/enabled = true
-bones/33/position = Vector3(-0.0336565, 0.249828, 2.98023e-08)
-bones/33/rotation = Quaternion(-8.47831e-09, -7.82185e-08, 0.453548, 0.891232)
+bones/33/position = Vector3(0.427844, -0.163, 0.0596574)
+bones/33/rotation = Quaternion(2.315e-09, -0.737277, 3.55806e-08, 0.67559)
 bones/33/scale = Vector3(1, 1, 1)
 bones/34/name = "UpperThumb.Bone.R"
 bones/34/parent = 26
@@ -3477,7 +3477,7 @@ bones/41/rotation = Quaternion(-0.707106, -6.97622e-06, -6.03845e-06, 0.707107)
 bones/41/scale = Vector3(1, 1, 1)
 
 [node name="AngryEyebrows_Object" type="BoneAttachment3D" parent="GoblinTemplate_Skeleton/Skeleton3D"]
-transform = Transform3D(0.860514, 6.3263e-09, -0.509427, -1.13389e-08, 1, -6.73491e-09, 0.509427, 1.15718e-08, 0.860514, 0.140725, 0.906, -0.0973012)
+transform = Transform3D(0.863079, 5.82803e-09, -0.505068, -1.08357e-08, 0.999999, -6.9774e-09, 0.505068, 1.14948e-08, 0.863079, 0.140216, 0.906, -0.0980116)
 bone_name = "AngryEyebrows.Object"
 bone_idx = 15
 
@@ -3486,7 +3486,7 @@ mesh = SubResource("ArrayMesh_va42l")
 skeleton = NodePath("")
 
 [node name="AngryMouth_Object" type="BoneAttachment3D" parent="GoblinTemplate_Skeleton/Skeleton3D"]
-transform = Transform3D(0.860514, 6.3263e-09, -0.509427, -1.13389e-08, 1, -6.73491e-09, 0.509427, 1.15718e-08, 0.860514, 0.0932252, 0.783, -0.154474)
+transform = Transform3D(0.863079, 5.82803e-09, -0.505068, -1.08357e-08, 0.999999, -6.9774e-09, 0.505068, 1.14948e-08, 0.863079, 0.0924276, 0.783, -0.154943)
 bone_name = "AngryMouth.Object"
 bone_idx = 16
 
@@ -3495,7 +3495,7 @@ mesh = SubResource("ArrayMesh_7kky3")
 skeleton = NodePath("")
 
 [node name="DeathEyes_Object" type="BoneAttachment3D" parent="GoblinTemplate_Skeleton/Skeleton3D"]
-transform = Transform3D(0.860514, 6.3263e-09, -0.509427, -1.13389e-08, 1, -6.73491e-09, 0.509427, 1.15718e-08, 0.860514, 0.124534, 0.86, -0.109211)
+transform = Transform3D(0.863079, 5.82803e-09, -0.505068, -1.08357e-08, 0.999999, -6.9774e-09, 0.505068, 1.14948e-08, 0.863079, 0.123965, 0.859999, -0.109839)
 bone_name = "DeathEyes.Object"
 bone_idx = 17
 
@@ -3504,7 +3504,7 @@ mesh = SubResource("ArrayMesh_ntyen")
 skeleton = NodePath("")
 
 [node name="DeathMouth_Object" type="BoneAttachment3D" parent="GoblinTemplate_Skeleton/Skeleton3D"]
-transform = Transform3D(0.860514, 6.3263e-09, -0.509427, -1.13389e-08, 1, -6.73491e-09, 0.509427, 1.15718e-08, 0.860514, 0.0932252, 0.783, -0.154474)
+transform = Transform3D(0.863079, 5.82803e-09, -0.505068, -1.08357e-08, 0.999999, -6.9774e-09, 0.505068, 1.14948e-08, 0.863079, 0.0924276, 0.783, -0.154943)
 bone_name = "DeathMouth.Object"
 bone_idx = 18
 
@@ -3513,7 +3513,7 @@ mesh = SubResource("ArrayMesh_s3ck8")
 skeleton = NodePath("")
 
 [node name="Eyes_Object" type="BoneAttachment3D" parent="GoblinTemplate_Skeleton/Skeleton3D"]
-transform = Transform3D(0.860514, 6.3263e-09, -0.509427, -1.13389e-08, 1, -6.73491e-09, 0.509427, 1.15718e-08, 0.860514, 0.11944, 0.86, -0.100606)
+transform = Transform3D(0.863079, 5.82803e-09, -0.505068, -1.08357e-08, 0.999999, -6.9774e-09, 0.505068, 1.14948e-08, 0.863079, 0.118914, 0.859999, -0.101208)
 bone_name = "Eyes.Object"
 bone_idx = 19
 
@@ -3522,7 +3522,7 @@ mesh = SubResource("ArrayMesh_niouw")
 skeleton = NodePath("")
 
 [node name="GoblinEars_Object" type="BoneAttachment3D" parent="GoblinTemplate_Skeleton/Skeleton3D"]
-transform = Transform3D(0.860514, 6.3263e-09, -0.509427, -1.13389e-08, 1, -6.73491e-09, 0.509427, 1.15718e-08, 0.860514, 0.151382, 0.85, 0.0809976)
+transform = Transform3D(0.863079, 5.82803e-09, -0.505068, -1.08357e-08, 0.999999, -6.9774e-09, 0.505068, 1.14948e-08, 0.863079, 0.151774, 0.849999, 0.0802309)
 bone_name = "GoblinEars.Object"
 bone_idx = 20
 
@@ -3531,7 +3531,7 @@ mesh = SubResource("ArrayMesh_tyso5")
 skeleton = NodePath("")
 
 [node name="NeutralEyebrows_Object" type="BoneAttachment3D" parent="GoblinTemplate_Skeleton/Skeleton3D"]
-transform = Transform3D(0.860514, 6.3263e-09, -0.509427, -1.13389e-08, 1, -6.73491e-09, 0.509427, 1.15718e-08, 0.860514, 0.0202536, 0.906, -0.168621)
+transform = Transform3D(0.863079, 5.82803e-09, -0.505068, -1.08357e-08, 0.999999, -6.9774e-09, 0.505068, 1.14948e-08, 0.863079, 0.0193853, 0.906, -0.168721)
 bone_name = "NeutralEyebrows.Object"
 bone_idx = 21
 
@@ -3540,7 +3540,7 @@ mesh = SubResource("ArrayMesh_ta1gb")
 skeleton = NodePath("")
 
 [node name="NeutralMouth_Object" type="BoneAttachment3D" parent="GoblinTemplate_Skeleton/Skeleton3D"]
-transform = Transform3D(0.860514, 6.3263e-09, -0.509427, -1.13389e-08, 1, -6.73491e-09, 0.509427, 1.15718e-08, 0.860514, 0.0932252, 0.783, -0.154474)
+transform = Transform3D(0.863079, 5.82803e-09, -0.505068, -1.08357e-08, 0.999999, -6.9774e-09, 0.505068, 1.14948e-08, 0.863079, 0.0924276, 0.783, -0.154943)
 bone_name = "NeutralMouth.Object"
 bone_idx = 22
 
@@ -3549,7 +3549,7 @@ mesh = SubResource("ArrayMesh_ftsai")
 skeleton = NodePath("")
 
 [node name="Bomb_Object" type="BoneAttachment3D" parent="GoblinTemplate_Skeleton/Skeleton3D"]
-transform = Transform3D(-0.0871551, 3.15578e-07, 0.996195, 1.18084e-06, 1, -3.23415e-07, -0.996195, 1.12242e-06, -0.0871551, -0.022141, 0.823, 0.0914146)
+transform = Transform3D(1, 1.49587e-07, -4.61936e-07, -3.18488e-07, 0.999999, -1.15962e-06, 4.47035e-07, 1.09437e-06, 1, 8.34465e-07, 0.54, -0.34)
 bone_name = "Bomb.Object"
 bone_idx = 32
 

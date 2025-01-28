@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=4 uid="uid://blgohsh2xhruv"]
+[gd_scene load_steps=23 format=4 uid="uid://blgohsh2xhruv"]
 
 [ext_resource type="Script" path="res://Scripts/Player/player.gd" id="1_2ka0k"]
 [ext_resource type="PackedScene" uid="uid://gavltsmsvff" path="res://Scenes/Utilities/hit_box.tscn" id="2_sgdj8"]
@@ -3339,6 +3339,8 @@ _data = {
 "OrcSwing1": SubResource("Animation_hi2qs")
 }
 
+[sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_ntfsv"]
+
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_x252o"]
 radius = 0.6
 height = 2.2
@@ -3638,6 +3640,10 @@ libraries = {
 "": SubResource("AnimationLibrary_ncrdl")
 }
 autoplay = "OrcPoses"
+
+[node name="AnimationTree" type="AnimationTree" parent="FirstPersonCamera/PlayerArms"]
+tree_root = SubResource("AnimationNodeStateMachine_ntfsv")
+anim_player = NodePath("../AnimationPlayer")
 
 [node name="HitBox" parent="." groups=["Player"] instance=ExtResource("2_sgdj8")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)

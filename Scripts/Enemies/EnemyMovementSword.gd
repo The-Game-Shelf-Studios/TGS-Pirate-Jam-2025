@@ -37,7 +37,7 @@ func _process(delta: float) -> void:
 			if PlayerSeen:
 				myAnimTree.set("parameters/conditions/Idling", false)
 				MoveTowardsPlayer()
-	pass
+	
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.

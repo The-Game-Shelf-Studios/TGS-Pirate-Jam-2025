@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cvkcboq4ymkm0"
+path="res://.godot/imported/Hitting 7.mp3-1f19c42e70bdadc7f1af26d6ee502050.mp3str"
+
+[deps]
+
+source_file="res://Assets/sounds/Voice Lines/Sword Goblin/Hitting/Hitting 7.mp3"
+dest_files=["res://.godot/imported/Hitting 7.mp3-1f19c42e70bdadc7f1af26d6ee502050.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

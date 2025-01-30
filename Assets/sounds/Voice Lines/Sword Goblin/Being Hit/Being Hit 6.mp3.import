@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cyq71ox1papof"
+path="res://.godot/imported/Being Hit 6.mp3-ba0a5904c6d033ec8825fe2b02e8653e.mp3str"
+
+[deps]
+
+source_file="res://Assets/sounds/Voice Lines/Sword Goblin/Being Hit/Being Hit 6.mp3"
+dest_files=["res://.godot/imported/Being Hit 6.mp3-ba0a5904c6d033ec8825fe2b02e8653e.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

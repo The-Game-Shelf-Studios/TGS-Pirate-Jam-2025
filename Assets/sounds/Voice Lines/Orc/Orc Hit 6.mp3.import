@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://db3sw4testwgw"
+path="res://.godot/imported/Orc Hit 6.mp3-b0fe853a333f703226e5b26776a4e97e.mp3str"
+
+[deps]
+
+source_file="res://Assets/sounds/Voice Lines/Orc/Orc Hit 6.mp3"
+dest_files=["res://.godot/imported/Orc Hit 6.mp3-b0fe853a333f703226e5b26776a4e97e.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

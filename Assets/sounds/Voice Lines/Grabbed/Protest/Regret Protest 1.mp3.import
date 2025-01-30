@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://o2wqd2em83mc"
+path="res://.godot/imported/Regret Protest 1.mp3-e49c6dd18d597297bed27d642b3fed19.mp3str"
+
+[deps]
+
+source_file="res://Assets/sounds/Voice Lines/Grabbed/Protest/Regret Protest 1.mp3"
+dest_files=["res://.godot/imported/Regret Protest 1.mp3-e49c6dd18d597297bed27d642b3fed19.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

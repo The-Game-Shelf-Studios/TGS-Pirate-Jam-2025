@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c5bt0pkwj17g1"
+path="res://.godot/imported/Thrown with Doppler 2_2.mp3-0771ee71a87b8a864ed602bc426f64f3.mp3str"
+
+[deps]
+
+source_file="res://Assets/sounds/Voice Lines/Grabbed/Thrown/Thrown with Doppler 2_2.mp3"
+dest_files=["res://.godot/imported/Thrown with Doppler 2_2.mp3-0771ee71a87b8a864ed602bc426f64f3.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

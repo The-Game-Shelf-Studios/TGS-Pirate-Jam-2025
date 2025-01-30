@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bxyxvucsb1kra"
+path="res://.godot/imported/Caught Laughter 3.mp3-99a4d00064d98e2408c1929ac6de092b.mp3str"
+
+[deps]
+
+source_file="res://Assets/sounds/Voice Lines/Grabbed/Caught Laughter 3.mp3"
+dest_files=["res://.godot/imported/Caught Laughter 3.mp3-99a4d00064d98e2408c1929ac6de092b.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

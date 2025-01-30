@@ -11,9 +11,13 @@ extends CharacterBody3D
 @export var AttackDamage: int
 @export var AttackDelay: float = 2.0
 @export var CheckBehindRayLength: float = 100
+@export var Health: int = 3
+@export var Damage: int = 1
 @onready var myAnimationPlayer: AnimationPlayer = $AnimationPlayer
 @onready var myAnimTree: AnimationTree = $AnimationTree
 @onready var nav_agent = $NavigationAgent3D
+@onready var LevelHandler = $"../../LevelCompletionHandler"
+var died: bool = false
 var PlayerTargetPosition
 var EscapePoint: Vector3
 var isMoving = false
@@ -25,9 +29,9 @@ var Arrow = preload("res://Scenes/Characters/Enemies/projectiles/GobboArrow.tscn
 func _ready() -> void:
 	PlayerSeen = false
 	isAttacking = false
-	
+	LevelHandler.GobbosRemaining = LevelHandler.GobbosRemaining + 1
 	myAnimTree.set("parameters/conditions/Idling", true)
-	print("idle on")
+	#print("idle on")
 
 func _process(delta: float) -> void:
 	if PlayerNode != null:
@@ -61,6 +65,19 @@ func _physics_process(delta: float) -> void:
 	FindEscapePoint(space_state)
 		
 	
+
+func TakeDamage(damage: int) -> void:
+	Health = Health - damage
+	if Health <= 0:
+		Die()
+	pass
+
+
+func Die() -> void:
+	print("Bow Gobbo Died")
+	LevelHandler.GobbosRemaining = LevelHandler.GobbosRemaining - 1
+	print ("remaining gobbos", LevelHandler.GobbosRemaining)
+	pass
 
 func MoveTowardsPlayer() -> void:
 	# Get the Player's direction and handle the movement/deceleration.
@@ -100,11 +117,19 @@ func MoveAwayFromPlayer() -> void:
 	move_and_slide()
 	pass
 
+func GetPickedUp() -> void:
+	PlayerNode.PickedUpGobbo = 2
+	print("Bow Gobbo Picked up")
+	LevelHandler.GobbosRemaining = LevelHandler.GobbosRemaining - 1
+	print ("remaining gobbos", LevelHandler.GobbosRemaining)
+	queue_free()
+	pass
 func FindEscapePoint(space_state: PhysicsDirectSpaceState3D) -> void:
 	#raycast to a point opposite the player's direction, find a point abt 1 unit closer to you than the final position of whatever you collide with.
 	#we can do this by raycasting to the final point then adding to it a normalized vector pointing to the player and that should give us a point that is one unit closer
 	var PlayerDirection = Vector3(PlayerNode.position.x - position.x, 0, PlayerNode.position.z - position.z)
 	var query = PhysicsRayQueryParameters3D.create(Vector3(position.x, 0, position.z), -PlayerDirection.normalized() * CheckBehindRayLength)
+	query.exclude.append(self.get_rid())
 	#print(Vector3(-PlayerNode.position.x, 0, -PlayerNode.position.z).normalized() * CheckBehindRayLength)
 	EscapePoint = space_state.intersect_ray(query).position + Vector3(PlayerNode.position.x, 0, PlayerNode.position.z).normalized()
 	#print(space_state.intersect_ray(query).position)
@@ -115,31 +140,32 @@ func TriggerAttackAnimation() -> void:
 	if isMoving:
 		isMoving = false
 	isAttacking = true
-	look_at(PlayerNode.position, Vector3.UP)
+	look_at(Vector3(PlayerNode.position.x, 0.5, PlayerNode.position.z), Vector3.UP)
 	myAnimTree.set("parameters/conditions/IsMoving", false)
-	print("Move off")
+	#print("Move off")
 	myAnimTree.set("parameters/conditions/IsAttacking", true)
-	print("attack on")
+	#print("attack on")
 	FireArrow()
 
 func Arrow_Struck():
 	DealDamageToPlayer()
 
 func DealDamageToPlayer() -> void:
-	print("I Hit!")
+	#print("I Hit!")
+	PlayerNode.TakeDamageFromEnemy(Damage)
 	myAnimTree.set("parameters/conditions/IsMoving", true)
-	print("Move on")
+	#print("Move on")
 	pass
 
 
 func _on_animation_tree_animation_finished(anim_name: StringName) -> void:
 	if myAnimTree["parameters/conditions/IsAttacking"] == true:
 		myAnimTree.set("parameters/conditions/IsAttacking", false)
-		print("Attack off")
+		#print("Attack off")
 		#if MyPlayerTracker.PlayerRelativeDistance <= AttackRange:
 			#DealDamageToPlayer()
 		#if MyPlayerTracker.PlayerRelativeDistance > AttackRange:
 			#print("I Missed!")
 		myAnimTree.set("parameters/conditions/IsMoving", true)
-		print("Move on")
+		#print("Move on")
 		isAttacking = false

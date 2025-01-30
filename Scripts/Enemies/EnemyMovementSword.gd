@@ -8,9 +8,12 @@ extends CharacterBody3D
 @export var SPEED = 1
 @export var AttackDamage: int
 @export var AttackDelay: float = 2.0
+@export var Health: int = 5
+@export var Damage: int = 2
 @onready var myAnimationPlayer: AnimationPlayer = $AnimationPlayer
 @onready var myAnimTree: AnimationTree = $AnimationTree
 @onready var nav_agent = $NavigationAgent3D
+@onready var LevelHandler = $"../../LevelCompletionHandler"
 var isMoving = false
 var isAttacking = true
 var PlayerSeen = false
@@ -19,9 +22,9 @@ var PlayerIsUnobstructed
 func _ready() -> void:
 	PlayerSeen = false
 	isAttacking = false
-	
+	LevelHandler.GobbosRemaining = LevelHandler.GobbosRemaining + 1
 	myAnimTree.set("parameters/conditions/Idling", true)
-	print("idle on")
+	#print("idle on")
 
 func _process(delta: float) -> void:
 	if PlayerNode != null:
@@ -65,27 +68,46 @@ func TriggerAttackAnimation() -> void:
 		isMoving = false
 	isAttacking = true
 	myAnimTree.set("parameters/conditions/IsMoving", false)
-	print("Move off")
+	#print("Move off")
 	myAnimTree.set("parameters/conditions/Attack1", true)
-	print("attack on")
+	#print("attack on")
 
+func TakeDamage(damage: int) -> void:
+	Health = Health - damage
+	if Health <= 0:
+		Die()
+	pass
 
+func GetPickedUp() -> void:
+	PlayerNode.PickedUpGobbo = 1
+	print ("SwordGobbo Picked up")
+	LevelHandler.GobbosRemaining = LevelHandler.GobbosRemaining - 1
+	print ("remaining gobbos", LevelHandler.GobbosRemaining)
+	queue_free()
+	pass
+
+func Die() -> void:
+	print("SwordGobbo died")
+	LevelHandler.GobbosRemaining = LevelHandler.GobbosRemaining - 1
+	print ("remaining gobbos", LevelHandler.GobbosRemaining)
+	pass
 
 func DealDamageToPlayer() -> void:
 	print("I Hit!")
+	PlayerNode.TakeDamageFromEnemy(Damage)
 	myAnimTree.set("parameters/conditions/IsMoving", true)
-	print("Move on")
+	#print("Move on")
 	pass
 
 
 func _on_animation_tree_animation_finished(anim_name: StringName) -> void:
 	if myAnimTree["parameters/conditions/Attack1"] == true:
 		myAnimTree.set("parameters/conditions/Attack1", false)
-		print("Attack off")
+		#print("Attack off")
 		if MyPlayerTracker.PlayerRelativeDistance <= AttackRange:
 			DealDamageToPlayer()
 		if MyPlayerTracker.PlayerRelativeDistance > AttackRange:
-			print("I Missed!")
+			#print("I Missed!")
 			myAnimTree.set("parameters/conditions/IsMoving", true)
-			print("Move on")
+			#print("Move on")
 		isAttacking = false

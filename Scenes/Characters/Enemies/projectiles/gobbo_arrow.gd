@@ -48,6 +48,6 @@ func _on_timer_timeout() -> void:
 
 
 func _on_area_3d_area_entered(area: Area3D) -> void:
-	print("hit sum")
+	#print("hit sum")
 	CheckForPlayerCollision(area)
 	pass # Replace with function body.

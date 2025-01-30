@@ -5,7 +5,7 @@
 [resource]
 render_priority = 0
 shader = ExtResource("1_88bs0")
-shader_parameter/color = Color(0.682871, 0.463057, 0.333492, 1)
+shader_parameter/color = Color(0.532906, 0.357652, 0.183046, 1)
 shader_parameter/specular = Color(0, 0, 0, 0.5)
 shader_parameter/fresnel = Color(0, 0, 0, 0.3)
 shader_parameter/uv_scale = Vector2(1, 1)

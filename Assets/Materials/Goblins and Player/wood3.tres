@@ -5,7 +5,7 @@
 [resource]
 render_priority = 0
 shader = ExtResource("1_c2xnv")
-shader_parameter/color = Color(0.682871, 0.463057, 0.333492, 1)
+shader_parameter/color = Color(0.8234, 0.586007, 0.347856, 1)
 shader_parameter/specular = Color(0, 0, 0, 0.5)
 shader_parameter/fresnel = Color(0, 0, 0, 0.3)
 shader_parameter/uv_scale = Vector2(1, 1)

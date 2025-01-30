@@ -14,11 +14,13 @@ extends CharacterBody3D
 @onready var myAnimationPlayer: AnimationPlayer = $AnimationPlayer
 @onready var myAnimTree: AnimationTree = $AnimationTree
 @onready var nav_agent = $NavigationAgent3D
+var PlayerTargetPosition
 var EscapePoint: Vector3
 var isMoving = false
 var isAttacking = true
 var PlayerSeen = false
 var PlayerIsUnobstructed
+var Arrow = preload("res://Scenes/Characters/Enemies/projectiles/GobboArrow.tscn")
 
 func _ready() -> void:
 	PlayerSeen = false
@@ -66,7 +68,7 @@ func MoveTowardsPlayer() -> void:
 	if !isMoving:
 		isMoving = true
 	myAnimTree.set("parameters/conditions/IsMoving", true)
-	print("move on")
+	#print("move on")
 	
 	nav_agent.set_target_position(PlayerNode.global_transform.origin)
 	var next_nav_point = nav_agent.get_next_path_position()
@@ -75,6 +77,13 @@ func MoveTowardsPlayer() -> void:
 	look_at(PlayerNode.position, Vector3.UP)
 	move_and_slide()
 
+func FireArrow() -> void:
+	var arrowinst = Arrow.instantiate()
+	arrowinst.position = find_child("BowPoint").position
+	arrowinst.Target = PlayerNode.position
+	arrowinst.Father = self
+	add_child(arrowinst)
+	
 func MoveAwayFromPlayer() -> void:
 	#raycast in the opposite direction to the player, find a point abt 1 unit from whatever you collide with and walk towards it until you are either within 1 unit of that point
 	#or the player is far enough away. if you reach the within 1 unit of that point spot then turn around and attack the player anyways.
@@ -82,7 +91,7 @@ func MoveAwayFromPlayer() -> void:
 	if !isMoving:
 		isMoving = true
 	myAnimTree.set("parameters/conditions/IsMoving", true)
-	print("move on")
+	#print("move on")
 	
 	nav_agent.set_target_position(EscapePoint)
 	var next_nav_point = nav_agent.get_next_path_position()
@@ -111,8 +120,10 @@ func TriggerAttackAnimation() -> void:
 	print("Move off")
 	myAnimTree.set("parameters/conditions/IsAttacking", true)
 	print("attack on")
+	FireArrow()
 
-
+func Arrow_Struck():
+	DealDamageToPlayer()
 
 func DealDamageToPlayer() -> void:
 	print("I Hit!")

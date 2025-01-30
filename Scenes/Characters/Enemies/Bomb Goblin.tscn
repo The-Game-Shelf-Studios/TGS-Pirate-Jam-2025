@@ -3277,14 +3277,14 @@ bones/13/parent = 3
 bones/13/rest = Transform3D(1, 1.32349e-23, 2.38419e-07, -1.32349e-23, 1, 1.27799e-22, -2.38419e-07, -1.27799e-22, 1, 5.55112e-17, 0.12, -2.32831e-10)
 bones/13/enabled = true
 bones/13/position = Vector3(5.55112e-17, 0.12, -2.32831e-10)
-bones/13/rotation = Quaternion(-3.00355e-17, -0.0354797, 1.09369e-18, 0.99937)
+bones/13/rotation = Quaternion(7.1041e-12, -0.0826252, 8.12016e-11, 0.996581)
 bones/13/scale = Vector3(1, 1, 1)
 bones/14/name = "Head.Bone.C"
 bones/14/parent = 13
 bones/14/rest = Transform3D(1, -2.64697e-23, -2.38419e-07, 2.64698e-23, 1, 3.29631e-22, 2.38419e-07, -3.29631e-22, 1, 8.32667e-17, 0.2, -2.32831e-10)
 bones/14/enabled = true
 bones/14/position = Vector3(8.32667e-17, 0.2, -2.32831e-10)
-bones/14/rotation = Quaternion(3.4327e-17, -0.088382, -3.95055e-18, 0.996087)
+bones/14/rotation = Quaternion(4.43826e-11, -0.205658, 1.97347e-10, 0.978624)
 bones/14/scale = Vector3(1, 1, 1)
 bones/15/name = "AngryEyebrows.Object"
 bones/15/parent = 14
@@ -3477,7 +3477,7 @@ bones/41/rotation = Quaternion(-0.707106, -6.97622e-06, -6.03845e-06, 0.707107)
 bones/41/scale = Vector3(1, 1, 1)
 
 [node name="AngryEyebrows_Object" type="BoneAttachment3D" parent="GoblinTemplate_Skeleton/Skeleton3D"]
-transform = Transform3D(0.969413, 9.30922e-09, -0.245436, -1.13193e-08, 1, -6.77935e-09, 0.245436, 9.35016e-09, 0.969413, 0.106638, 0.906, -0.132987)
+transform = Transform3D(0.836621, 5.71269e-09, -0.547783, -1.12602e-08, 1, -6.76873e-09, 0.547783, 1.1831e-08, 0.836621, 0.145113, 0.906, -0.0908412)
 bone_name = "AngryEyebrows.Object"
 bone_idx = 15
 
@@ -3486,7 +3486,7 @@ mesh = SubResource("ArrayMesh_va42l")
 skeleton = NodePath("")
 
 [node name="AngryMouth_Object" type="BoneAttachment3D" parent="GoblinTemplate_Skeleton/Skeleton3D"]
-transform = Transform3D(0.969413, 9.30922e-09, -0.245436, -1.13193e-08, 1, -6.77935e-09, 0.245436, 9.35016e-09, 0.969413, 0.0449148, 0.783, -0.174402)
+transform = Transform3D(0.836621, 5.71269e-09, -0.547783, -1.12602e-08, 1, -6.76873e-09, 0.547783, 1.1831e-08, 0.836621, 0.100244, 0.783, -0.150101)
 bone_name = "AngryMouth.Object"
 bone_idx = 16
 
@@ -3495,7 +3495,7 @@ mesh = SubResource("ArrayMesh_7kky3")
 skeleton = NodePath("")
 
 [node name="DeathEyes_Object" type="BoneAttachment3D" parent="GoblinTemplate_Skeleton/Skeleton3D"]
-transform = Transform3D(0.969413, 9.30922e-09, -0.245436, -1.13193e-08, 1, -6.77935e-09, 0.245436, 9.35016e-09, 0.969413, 0.0877404, 0.86, -0.139834)
+transform = Transform3D(0.836621, 5.71269e-09, -0.547783, -1.12602e-08, 1, -6.76873e-09, 0.547783, 1.1831e-08, 0.836621, 0.129476, 0.86, -0.10347)
 bone_name = "DeathEyes.Object"
 bone_idx = 17
 
@@ -3504,7 +3504,7 @@ mesh = SubResource("ArrayMesh_ntyen")
 skeleton = NodePath("")
 
 [node name="DeathMouth_Object" type="BoneAttachment3D" parent="GoblinTemplate_Skeleton/Skeleton3D"]
-transform = Transform3D(0.969413, 9.30922e-09, -0.245436, -1.13193e-08, 1, -6.77935e-09, 0.245436, 9.35016e-09, 0.969413, 0.0449148, 0.783, -0.174402)
+transform = Transform3D(0.836621, 5.71269e-09, -0.547783, -1.12602e-08, 1, -6.76873e-09, 0.547783, 1.1831e-08, 0.836621, 0.100244, 0.783, -0.150101)
 bone_name = "DeathMouth.Object"
 bone_idx = 18
 
@@ -3513,7 +3513,7 @@ mesh = SubResource("ArrayMesh_s3ck8")
 skeleton = NodePath("")
 
 [node name="Eyes_Object" type="BoneAttachment3D" parent="GoblinTemplate_Skeleton/Skeleton3D"]
-transform = Transform3D(0.969413, 9.30922e-09, -0.245436, -1.13193e-08, 1, -6.77935e-09, 0.245436, 9.35016e-09, 0.969413, 0.0852861, 0.86, -0.13014)
+transform = Transform3D(0.836621, 5.71269e-09, -0.547783, -1.12602e-08, 1, -6.76873e-09, 0.547783, 1.1831e-08, 0.836621, 0.123998, 0.86, -0.0951039)
 bone_name = "Eyes.Object"
 bone_idx = 19
 
@@ -3522,7 +3522,7 @@ mesh = SubResource("ArrayMesh_niouw")
 skeleton = NodePath("")
 
 [node name="GoblinEars_Object" type="BoneAttachment3D" parent="GoblinTemplate_Skeleton/Skeleton3D"]
-transform = Transform3D(0.969413, 9.30922e-09, -0.245436, -1.13193e-08, 1, -6.77935e-09, 0.245436, 9.35016e-09, 0.969413, 0.167255, 0.85, 0.0350301)
+transform = Transform3D(0.836621, 5.71269e-09, -0.547783, -1.12602e-08, 1, -6.76873e-09, 0.547783, 1.1831e-08, 0.836621, 0.147703, 0.85, 0.0877569)
 bone_name = "GoblinEars.Object"
 bone_idx = 20
 
@@ -3531,7 +3531,7 @@ mesh = SubResource("ArrayMesh_tyso5")
 skeleton = NodePath("")
 
 [node name="NeutralEyebrows_Object" type="BoneAttachment3D" parent="GoblinTemplate_Skeleton/Skeleton3D"]
-transform = Transform3D(0.969413, 9.30922e-09, -0.245436, -1.13193e-08, 1, -6.77935e-09, 0.245436, 9.35016e-09, 0.969413, -0.02908, 0.906, -0.167348)
+transform = Transform3D(0.836621, 5.71269e-09, -0.547783, -1.12602e-08, 1, -6.76873e-09, 0.547783, 1.1831e-08, 0.836621, 0.0279863, 0.906, -0.167531)
 bone_name = "NeutralEyebrows.Object"
 bone_idx = 21
 
@@ -3540,7 +3540,7 @@ mesh = SubResource("ArrayMesh_ta1gb")
 skeleton = NodePath("")
 
 [node name="NeutralMouth_Object" type="BoneAttachment3D" parent="GoblinTemplate_Skeleton/Skeleton3D"]
-transform = Transform3D(0.969413, 9.30922e-09, -0.245436, -1.13193e-08, 1, -6.77935e-09, 0.245436, 9.35016e-09, 0.969413, 0.0449148, 0.783, -0.174402)
+transform = Transform3D(0.836621, 5.71269e-09, -0.547783, -1.12602e-08, 1, -6.76873e-09, 0.547783, 1.1831e-08, 0.836621, 0.100244, 0.783, -0.150101)
 bone_name = "NeutralMouth.Object"
 bone_idx = 22
 

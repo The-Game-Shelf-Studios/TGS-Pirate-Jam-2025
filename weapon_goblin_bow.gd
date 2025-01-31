@@ -10,6 +10,9 @@ var isConscious = true
 @onready var DeadMouth =$GoblinTemplate_Skeleton/Skeleton3D/DeathMouth_Object
 @onready var DeadBrow = $GoblinTemplate_Skeleton/Skeleton3D/NeutralEyebrows_Object
 
+@onready var mySwingAudioPlayer = $SwingAudioPlayer
+@onready var myProtestAudioPlayer =$ProtestAudioPlayer
+
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -29,9 +32,15 @@ func _process(delta: float) -> void:
 	pass
 
 func ImpactTaken() -> void:
+	myProtestAudioPlayer.stop()
+	mySwingAudioPlayer.play()
 	if isConscious:
 		SetUnconscious()
 
+
+func ProtestPickup() -> void:
+	myProtestAudioPlayer.play()
+	pass
 
 func BreakWeapon() -> void:
 	isConscious = true
@@ -42,7 +51,7 @@ func BreakWeapon() -> void:
 	DeadMouth.visible = false
 	DeadBrow.visible = false
 	myAnimationTree.set("parameters/conditions/IsDead", false)
-	
+	myAnimationTree.set("parameters/conditions/IsAlive", true)
 	
 func SetUnconscious() -> void:
 	isConscious = false
@@ -52,5 +61,7 @@ func SetUnconscious() -> void:
 	DeadEye.visible = true
 	DeadMouth.visible = true
 	DeadBrow.visible = true
+	myAnimationTree.set("parameters/conditions/IsAlive", false)
 	myAnimationTree.set("parameters/conditions/IsDead", true)
+	
 	pass

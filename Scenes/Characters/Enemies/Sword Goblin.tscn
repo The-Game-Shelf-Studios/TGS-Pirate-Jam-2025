@@ -1,4 +1,4 @@
-[gd_scene load_steps=89 format=4 uid="uid://cye0yvx322c16"]
+[gd_scene load_steps=116 format=4 uid="uid://cye0yvx322c16"]
 
 [ext_resource type="Script" path="res://Scripts/Enemies/EnemyMovementSword.gd" id="1_trwu6"]
 [ext_resource type="Script" path="res://Scripts/Enemies/player_tracker_node.gd" id="3_lnkky"]
@@ -12,6 +12,31 @@
 [ext_resource type="Material" uid="uid://7mpmfoia48c2" path="res://Assets/Materials/Goblins and Player/SwordGoblin/GoblinRed3.tres" id="10_owgv6"]
 [ext_resource type="Material" uid="uid://c7khcdqjqivo1" path="res://Assets/Materials/Goblins and Player/SwordGoblin/GoblinRed2.tres" id="11_nuiii"]
 [ext_resource type="Script" path="res://Scripts/Utilities/hit_box.gd" id="12_2wc3y"]
+[ext_resource type="AudioStream" uid="uid://d2u5j1gh3j21" path="res://Assets/sounds/Voice Lines/Sword Goblin/Being Hit/Being Hit 1.mp3" id="13_2icfr"]
+[ext_resource type="AudioStream" uid="uid://dm6gnpbl51qfu" path="res://Assets/sounds/Voice Lines/Sword Goblin/Being Hit/Being Hit 2.mp3" id="14_f21s7"]
+[ext_resource type="AudioStream" uid="uid://cedg5h3cryv27" path="res://Assets/sounds/Voice Lines/Sword Goblin/Being Hit/Being Hit 11.mp3" id="15_s7m12"]
+[ext_resource type="AudioStream" uid="uid://cxrwuoo6hm44x" path="res://Assets/sounds/Voice Lines/Sword Goblin/Being Hit/Being Hit 3.mp3" id="16_kfp1v"]
+[ext_resource type="AudioStream" uid="uid://dyqrb6o5rl3bq" path="res://Assets/sounds/Voice Lines/Sword Goblin/Being Hit/Being Hit 4.mp3" id="17_ycnuo"]
+[ext_resource type="AudioStream" uid="uid://wyg7l70sj6lm" path="res://Assets/sounds/Voice Lines/Sword Goblin/Being Hit/Being Hit 5.mp3" id="18_gxep8"]
+[ext_resource type="AudioStream" uid="uid://cyq71ox1papof" path="res://Assets/sounds/Voice Lines/Sword Goblin/Being Hit/Being Hit 6.mp3" id="19_558v1"]
+[ext_resource type="AudioStream" uid="uid://b1ljhe6vpqve6" path="res://Assets/sounds/Voice Lines/Sword Goblin/Being Hit/Being Hit 7.mp3" id="20_t03c4"]
+[ext_resource type="AudioStream" uid="uid://c4gl4xahlksiv" path="res://Assets/sounds/Voice Lines/Sword Goblin/Being Hit/Being Hit 8.mp3" id="21_j6wnj"]
+[ext_resource type="AudioStream" uid="uid://bfb8rwnb3q0im" path="res://Assets/sounds/Voice Lines/Sword Goblin/Being Hit/Being Hit 9.mp3" id="22_gs8cv"]
+[ext_resource type="AudioStream" uid="uid://ecy5vimg0a2r" path="res://Assets/sounds/Voice Lines/Sword Goblin/Being Hit/Being Hit 10.mp3" id="23_d4ftj"]
+[ext_resource type="AudioStream" uid="uid://btud4uduiby3a" path="res://Assets/sounds/Voice Lines/Sword Goblin/Hitting/Hitting 1.mp3" id="24_hjh85"]
+[ext_resource type="AudioStream" uid="uid://dg5yrw8w0nxpg" path="res://Assets/sounds/Voice Lines/Sword Goblin/Hitting/Hitting 2.mp3" id="25_3xq78"]
+[ext_resource type="AudioStream" uid="uid://ddvp15weljpea" path="res://Assets/sounds/Voice Lines/Sword Goblin/Hitting/Hitting 11.mp3" id="26_0dppc"]
+[ext_resource type="AudioStream" uid="uid://pw0uwydc7do5" path="res://Assets/sounds/Voice Lines/Sword Goblin/Hitting/Hitting 12.mp3" id="27_hegp0"]
+[ext_resource type="AudioStream" uid="uid://dngu4sltqrmat" path="res://Assets/sounds/Voice Lines/Sword Goblin/Hitting/Hitting 13.mp3" id="28_52r5j"]
+[ext_resource type="AudioStream" uid="uid://u10bfijm4e2w" path="res://Assets/sounds/Voice Lines/Sword Goblin/Hitting/Hitting 14.mp3" id="29_f3equ"]
+[ext_resource type="AudioStream" uid="uid://d0utq0cjfl38j" path="res://Assets/sounds/Voice Lines/Sword Goblin/Hitting/Hitting 3.mp3" id="30_napl5"]
+[ext_resource type="AudioStream" uid="uid://btuw4mojvmsdh" path="res://Assets/sounds/Voice Lines/Sword Goblin/Hitting/Hitting 4.mp3" id="31_8ghk5"]
+[ext_resource type="AudioStream" uid="uid://c2dxphf4juh32" path="res://Assets/sounds/Voice Lines/Sword Goblin/Hitting/Hitting 5.mp3" id="32_tb0gp"]
+[ext_resource type="AudioStream" uid="uid://bjssk35jhik6v" path="res://Assets/sounds/Voice Lines/Sword Goblin/Hitting/Hitting 6.mp3" id="33_e4eon"]
+[ext_resource type="AudioStream" uid="uid://bkf5u64cgs324" path="res://Assets/sounds/Voice Lines/Sword Goblin/Hitting/Hitting 7-2.mp3" id="34_8tc64"]
+[ext_resource type="AudioStream" uid="uid://dscjw1g62ub04" path="res://Assets/sounds/Voice Lines/Sword Goblin/Hitting/Hitting 8.mp3" id="35_f0kmx"]
+[ext_resource type="AudioStream" uid="uid://by21ratqavu3h" path="res://Assets/sounds/Voice Lines/Sword Goblin/Hitting/Hitting 9.mp3" id="36_pgjiu"]
+[ext_resource type="AudioStream" uid="uid://su1p8ax23jnt" path="res://Assets/sounds/Voice Lines/Sword Goblin/Hitting/Hitting 10.mp3" id="37_i02qs"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_h4r1p"]
 height = 1.25
@@ -728,7 +753,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="Animation" id="Animation_e134w"]
+[sub_resource type="Animation" id="Animation_n5fb3"]
 resource_name = "Goblin Poses"
 length = 0.05
 tracks/0/type = "position_3d"
@@ -942,7 +967,7 @@ tracks/29/interp = 0
 tracks/29/loop_wrap = true
 tracks/29/keys = PackedFloat32Array(0, 1, -0.707106, -6.97622e-06, -6.03845e-06, 0.707107)
 
-[sub_resource type="Animation" id="Animation_oaygk"]
+[sub_resource type="Animation" id="Animation_fqicj"]
 resource_name = "Goblin Poses_001"
 length = 0.05
 tracks/0/type = "position_3d"
@@ -1156,7 +1181,7 @@ tracks/29/interp = 0
 tracks/29/loop_wrap = true
 tracks/29/keys = PackedFloat32Array(0, 1, -0.707106, -6.97622e-06, -6.03845e-06, 0.707107)
 
-[sub_resource type="Animation" id="Animation_l2lha"]
+[sub_resource type="Animation" id="Animation_ow6bt"]
 resource_name = "GoblinAttack1"
 length = 0.833333
 tracks/0/type = "position_3d"
@@ -1370,7 +1395,7 @@ tracks/29/interp = 1
 tracks/29/loop_wrap = true
 tracks/29/keys = PackedFloat32Array(0, 1, -0.707106, -6.97622e-06, -6.03845e-06, 0.707107, 0.0333333, 1, -0.7086, 9.98412e-05, 0.000100732, 0.70561, 0.0666667, 1, -0.712483, 0.000378638, 0.000379432, 0.701689, 0.1, 1, -0.717855, 0.000766925, 0.000767569, 0.696192, 0.133333, 1, -0.723826, 0.0012021, 0.00120258, 0.689981, 0.166667, 1, -0.72953, 0.00162155, 0.00162188, 0.683945, 0.2, 1, -0.734134, 0.00196271, 0.0019629, 0.678999, 0.233333, 1, -0.736824, 0.00216315, 0.00216327, 0.676078, 0.3, 1, -0.737199, 0.00219113, 0.00219124, 0.675669, 0.333333, 1, -0.734971, 0.00196647, 0.00221747, 0.678092, 0.366667, 1, -0.71873, 0.000351519, 0.00240515, 0.695285, 0.4, 1, -0.689991, -0.00241343, 0.0027233, 0.723809, 0.433333, 1, -0.652912, -0.00582422, 0.0031102, 0.757405, 0.466667, 1, -0.612664, -0.00935102, 0.00350373, 0.79028, 0.5, 1, -0.575487, -0.0124652, 0.00384562, 0.817707, 0.533333, 1, -0.5482, -0.0146713, 0.00408457, 0.836208, 0.566667, 1, -0.537639, -0.0155082, 0.0041745, 0.843022, 0.833333, 1, -0.537639, -0.0155082, 0.0041745, 0.843022)
 
-[sub_resource type="Animation" id="Animation_shvaa"]
+[sub_resource type="Animation" id="Animation_i88ue"]
 resource_name = "GoblinAttack2"
 length = 0.833333
 tracks/0/type = "position_3d"
@@ -1584,7 +1609,7 @@ tracks/29/interp = 1
 tracks/29/loop_wrap = true
 tracks/29/keys = PackedFloat32Array(0, 1, -0.707106, -6.97622e-06, -6.03845e-06, 0.707107, 0.0333333, 1, -0.710095, -6.82235e-06, -6.02861e-06, 0.704106, 0.0666667, 1, -0.71784, -6.40845e-06, -6.0006e-06, 0.696208, 0.1, 1, -0.728485, -5.83237e-06, -5.95761e-06, 0.685062, 0.133333, 1, -0.740215, -5.18797e-06, -5.9049e-06, 0.67237, 0.166667, 1, -0.751313, -4.56323e-06, -5.85586e-06, 0.659946, 0.2, 1, -0.760184, -4.05463e-06, -5.81267e-06, 0.649708, 0.233333, 1, -0.76533, -3.75652e-06, -5.78525e-06, 0.643638, 0.266667, 1, -0.766044, -3.71551e-06, -5.78133e-06, 0.642788, 0.333333, 1, -0.766044, -3.71551e-06, -5.78133e-06, 0.642788, 0.366667, 1, -0.78035, -3.68401e-06, -5.87026e-06, 0.625343, 0.4, 1, -0.813032, -3.59556e-06, -6.08167e-06, 0.582219, 0.433333, 1, -0.849033, -3.47886e-06, -6.30081e-06, 0.528339, 0.466667, 1, -0.876368, -3.37006e-06, -6.46696e-06, 0.481642, 0.5, 1, -0.887011, -3.32364e-06, -6.53369e-06, 0.461749, 0.833333, 1, -0.887011, -3.32364e-06, -6.53369e-06, 0.461749)
 
-[sub_resource type="Animation" id="Animation_ij30a"]
+[sub_resource type="Animation" id="Animation_ih7at"]
 resource_name = "GoblinBeingSwung1"
 length = 0.666667
 tracks/0/type = "position_3d"
@@ -1798,7 +1823,7 @@ tracks/29/interp = 1
 tracks/29/loop_wrap = true
 tracks/29/keys = PackedFloat32Array(0, 1, -0.707106, -6.97469e-06, -6.0399e-06, 0.707107)
 
-[sub_resource type="Animation" id="Animation_g454k"]
+[sub_resource type="Animation" id="Animation_kcu84"]
 resource_name = "GoblinDeath"
 length = 0.433333
 tracks/0/type = "position_3d"
@@ -2012,9 +2037,10 @@ tracks/29/interp = 1
 tracks/29/loop_wrap = true
 tracks/29/keys = PackedFloat32Array(0, 1, -0.707106, -6.97622e-06, -6.03845e-06, 0.707107)
 
-[sub_resource type="Animation" id="Animation_80iq6"]
+[sub_resource type="Animation" id="Animation_ldf8s"]
 resource_name = "GoblinGrab1Alive"
 length = 0.5
+loop_mode = 1
 tracks/0/type = "position_3d"
 tracks/0/imported = true
 tracks/0/enabled = true
@@ -2226,9 +2252,10 @@ tracks/29/interp = 0
 tracks/29/loop_wrap = true
 tracks/29/keys = PackedFloat32Array(0, 1, -0.707106, -6.97429e-06, -6.0408e-06, 0.707107)
 
-[sub_resource type="Animation" id="Animation_dp34s"]
+[sub_resource type="Animation" id="Animation_u450h"]
 resource_name = "GoblinGrab1Dead"
 length = 0.5
+loop_mode = 1
 tracks/0/type = "position_3d"
 tracks/0/imported = true
 tracks/0/enabled = true
@@ -2440,9 +2467,10 @@ tracks/29/interp = 0
 tracks/29/loop_wrap = true
 tracks/29/keys = PackedFloat32Array(0, 1, -0.707106, -6.97395e-06, -6.04065e-06, 0.707107)
 
-[sub_resource type="Animation" id="Animation_pav3q"]
+[sub_resource type="Animation" id="Animation_df2vk"]
 resource_name = "GoblinGrab2Dead"
 length = 0.5
+loop_mode = 1
 tracks/0/type = "position_3d"
 tracks/0/imported = true
 tracks/0/enabled = true
@@ -2654,7 +2682,7 @@ tracks/29/interp = 0
 tracks/29/loop_wrap = true
 tracks/29/keys = PackedFloat32Array(0, 1, -0.707106, -6.97395e-06, -6.04065e-06, 0.707107)
 
-[sub_resource type="Animation" id="Animation_kyqd1"]
+[sub_resource type="Animation" id="Animation_kdigs"]
 resource_name = "GoblinRangedIdle"
 length = 12.0
 tracks/0/type = "position_3d"
@@ -2868,7 +2896,7 @@ tracks/29/interp = 0
 tracks/29/loop_wrap = true
 tracks/29/keys = PackedFloat32Array(0, 1, -0.707106, -6.97622e-06, -6.03845e-06, 0.707107)
 
-[sub_resource type="Animation" id="Animation_i720x"]
+[sub_resource type="Animation" id="Animation_72uwm"]
 resource_name = "GoblinRangedRun"
 length = 0.666667
 tracks/0/type = "position_3d"
@@ -3082,7 +3110,7 @@ tracks/29/interp = 1
 tracks/29/loop_wrap = true
 tracks/29/keys = PackedFloat32Array(0, 1, -0.88647, 0.0151435, 0.0151415, 0.462289, 0.0333333, 1, -0.884783, 0.0149678, 0.0149658, 0.465523, 0.0666667, 1, -0.880139, 0.0144894, 0.0144875, 0.474274, 0.1, 1, -0.873128, 0.0137809, 0.0137791, 0.487101, 0.133333, 1, -0.864353, 0.0129156, 0.012914, 0.502554, 0.2, 1, -0.844295, 0.0110172, 0.0110159, 0.535652, 0.233333, 1, -0.834658, 0.0101399, 0.0101387, 0.550582, 0.266667, 1, -0.826533, 0.00941576, 0.00941473, 0.562731, 0.3, 1, -0.820925, 0.00892385, 0.00892291, 0.570897, 0.366667, 1, -0.820925, 0.00892385, 0.00892291, 0.570897, 0.4, 1, -0.826533, 0.00941576, 0.00941473, 0.562731, 0.433333, 1, -0.834658, 0.0101399, 0.0101387, 0.550582, 0.466667, 1, -0.844295, 0.0110172, 0.0110159, 0.535652, 0.533333, 1, -0.864353, 0.0129156, 0.012914, 0.502554, 0.566667, 1, -0.873128, 0.0137809, 0.0137791, 0.487101, 0.6, 1, -0.880139, 0.0144894, 0.0144875, 0.474274, 0.633333, 1, -0.884783, 0.0149678, 0.0149658, 0.465523, 0.666667, 1, -0.88647, 0.0151435, 0.0151415, 0.462289)
 
-[sub_resource type="Animation" id="Animation_av0si"]
+[sub_resource type="Animation" id="Animation_iitx7"]
 resource_name = "GoblinRanggedAttack"
 length = 0.833333
 tracks/0/type = "position_3d"
@@ -3296,7 +3324,7 @@ tracks/29/interp = 0
 tracks/29/loop_wrap = true
 tracks/29/keys = PackedFloat32Array(0, 1, -0.854485, 0.0119687, 0.0119672, 0.519201)
 
-[sub_resource type="Animation" id="Animation_hjcdg"]
+[sub_resource type="Animation" id="Animation_obifs"]
 resource_name = "GoblinRun"
 length = 0.666667
 loop_mode = 1
@@ -3511,7 +3539,7 @@ tracks/29/interp = 1
 tracks/29/loop_wrap = true
 tracks/29/keys = PackedFloat32Array(0, 1, -0.88647, 0.0151435, 0.0151415, 0.462289, 0.0333333, 1, -0.884783, 0.0149678, 0.0149658, 0.465523, 0.0666667, 1, -0.880139, 0.0144894, 0.0144875, 0.474274, 0.1, 1, -0.873128, 0.0137809, 0.0137791, 0.487101, 0.133333, 1, -0.864353, 0.0129156, 0.012914, 0.502554, 0.2, 1, -0.844295, 0.0110172, 0.0110159, 0.535652, 0.233333, 1, -0.834658, 0.0101399, 0.0101387, 0.550582, 0.266667, 1, -0.826533, 0.00941576, 0.00941473, 0.562731, 0.3, 1, -0.820925, 0.00892385, 0.00892291, 0.570897, 0.366667, 1, -0.820925, 0.00892385, 0.00892291, 0.570897, 0.4, 1, -0.826533, 0.00941576, 0.00941473, 0.562731, 0.433333, 1, -0.834658, 0.0101399, 0.0101387, 0.550582, 0.466667, 1, -0.844295, 0.0110172, 0.0110159, 0.535652, 0.533333, 1, -0.864353, 0.0129156, 0.012914, 0.502554, 0.566667, 1, -0.873128, 0.0137809, 0.0137791, 0.487101, 0.6, 1, -0.880139, 0.0144894, 0.0144875, 0.474274, 0.633333, 1, -0.884783, 0.0149678, 0.0149658, 0.465523, 0.666667, 1, -0.88647, 0.0151435, 0.0151415, 0.462289)
 
-[sub_resource type="Animation" id="Animation_y2avn"]
+[sub_resource type="Animation" id="Animation_jnp7f"]
 resource_name = "GoblinSwordIdle"
 length = 10.0
 loop_mode = 1
@@ -3726,7 +3754,7 @@ tracks/29/interp = 0
 tracks/29/loop_wrap = true
 tracks/29/keys = PackedFloat32Array(0, 1, -0.707106, -6.97622e-06, -6.03845e-06, 0.707107)
 
-[sub_resource type="Animation" id="Animation_pgnc0"]
+[sub_resource type="Animation" id="Animation_r8vow"]
 resource_name = "OrcCrossbowGrab"
 length = 0.666667
 tracks/0/type = "position_3d"
@@ -3940,7 +3968,7 @@ tracks/29/interp = 0
 tracks/29/loop_wrap = true
 tracks/29/keys = PackedFloat32Array(0, 1, -0.707106, -6.97622e-06, -6.03845e-06, 0.707107)
 
-[sub_resource type="Animation" id="Animation_eui1n"]
+[sub_resource type="Animation" id="Animation_jepqg"]
 resource_name = "OrcCrossbowShoot"
 length = 0.333333
 tracks/0/type = "position_3d"
@@ -4154,7 +4182,7 @@ tracks/29/interp = 0
 tracks/29/loop_wrap = true
 tracks/29/keys = PackedFloat32Array(0, 1, -0.707106, -6.97622e-06, -6.03845e-06, 0.707107)
 
-[sub_resource type="Animation" id="Animation_mr12a"]
+[sub_resource type="Animation" id="Animation_eggr6"]
 resource_name = "OrcLeftHandPunch"
 length = 0.25
 tracks/0/type = "position_3d"
@@ -4368,7 +4396,7 @@ tracks/29/interp = 0
 tracks/29/loop_wrap = true
 tracks/29/keys = PackedFloat32Array(0, 1, -0.707106, -6.97622e-06, -6.03845e-06, 0.707107)
 
-[sub_resource type="Animation" id="Animation_2w7pc"]
+[sub_resource type="Animation" id="Animation_k0nf0"]
 resource_name = "OrcPoses"
 length = 0.0166667
 tracks/0/type = "position_3d"
@@ -4582,7 +4610,7 @@ tracks/29/interp = 0
 tracks/29/loop_wrap = true
 tracks/29/keys = PackedFloat32Array(0, 1, -0.707106, -6.97622e-06, -6.03845e-06, 0.707107)
 
-[sub_resource type="Animation" id="Animation_5fihh"]
+[sub_resource type="Animation" id="Animation_1gsnv"]
 resource_name = "OrcSwordGrab"
 length = 0.666667
 tracks/0/type = "position_3d"
@@ -4796,7 +4824,7 @@ tracks/29/interp = 0
 tracks/29/loop_wrap = true
 tracks/29/keys = PackedFloat32Array(0, 1, -0.707106, -6.97622e-06, -6.03845e-06, 0.707107)
 
-[sub_resource type="Animation" id="Animation_o40eg"]
+[sub_resource type="Animation" id="Animation_ver2v"]
 resource_name = "OrcSwordSwing"
 length = 0.5
 tracks/0/type = "position_3d"
@@ -5010,28 +5038,28 @@ tracks/29/interp = 0
 tracks/29/loop_wrap = true
 tracks/29/keys = PackedFloat32Array(0, 1, -0.707106, -6.97622e-06, -6.03845e-06, 0.707107)
 
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_atbvu"]
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ih40x"]
 _data = {
-"Goblin Poses": SubResource("Animation_e134w"),
-"Goblin Poses_001": SubResource("Animation_oaygk"),
-"GoblinAttack1": SubResource("Animation_l2lha"),
-"GoblinAttack2": SubResource("Animation_shvaa"),
-"GoblinBeingSwung1": SubResource("Animation_ij30a"),
-"GoblinDeath": SubResource("Animation_g454k"),
-"GoblinGrab1Alive": SubResource("Animation_80iq6"),
-"GoblinGrab1Dead": SubResource("Animation_dp34s"),
-"GoblinGrab2Dead": SubResource("Animation_pav3q"),
-"GoblinRangedIdle": SubResource("Animation_kyqd1"),
-"GoblinRangedRun": SubResource("Animation_i720x"),
-"GoblinRanggedAttack": SubResource("Animation_av0si"),
-"GoblinRun": SubResource("Animation_hjcdg"),
-"GoblinSwordIdle": SubResource("Animation_y2avn"),
-"OrcCrossbowGrab": SubResource("Animation_pgnc0"),
-"OrcCrossbowShoot": SubResource("Animation_eui1n"),
-"OrcLeftHandPunch": SubResource("Animation_mr12a"),
-"OrcPoses": SubResource("Animation_2w7pc"),
-"OrcSwordGrab": SubResource("Animation_5fihh"),
-"OrcSwordSwing": SubResource("Animation_o40eg")
+"Goblin Poses": SubResource("Animation_n5fb3"),
+"Goblin Poses_001": SubResource("Animation_fqicj"),
+"GoblinAttack1": SubResource("Animation_ow6bt"),
+"GoblinAttack2": SubResource("Animation_i88ue"),
+"GoblinBeingSwung1": SubResource("Animation_ih7at"),
+"GoblinDeath": SubResource("Animation_kcu84"),
+"GoblinGrab1Alive": SubResource("Animation_ldf8s"),
+"GoblinGrab1Dead": SubResource("Animation_u450h"),
+"GoblinGrab2Dead": SubResource("Animation_df2vk"),
+"GoblinRangedIdle": SubResource("Animation_kdigs"),
+"GoblinRangedRun": SubResource("Animation_72uwm"),
+"GoblinRanggedAttack": SubResource("Animation_iitx7"),
+"GoblinRun": SubResource("Animation_obifs"),
+"GoblinSwordIdle": SubResource("Animation_jnp7f"),
+"OrcCrossbowGrab": SubResource("Animation_r8vow"),
+"OrcCrossbowShoot": SubResource("Animation_jepqg"),
+"OrcLeftHandPunch": SubResource("Animation_eggr6"),
+"OrcPoses": SubResource("Animation_k0nf0"),
+"OrcSwordGrab": SubResource("Animation_1gsnv"),
+"OrcSwordSwing": SubResource("Animation_ver2v")
 }
 
 [sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_oefpe"]
@@ -5057,18 +5085,22 @@ advance_mode = 2
 advance_condition = &"Attack2"
 
 [sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_oa2b5"]
+xfade_time = 0.2
 advance_mode = 2
 advance_condition = &"IsDead"
 
 [sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_4amuu"]
+xfade_time = 0.2
 advance_mode = 2
 advance_condition = &"IsDead"
 
 [sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_5tqu2"]
+xfade_time = 0.2
 advance_mode = 2
 advance_condition = &"IsDead"
 
 [sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_ery0e"]
+xfade_time = 0.2
 advance_mode = 2
 advance_condition = &"IsDead"
 
@@ -5118,6 +5150,39 @@ transitions = ["Start", "GoblinSwordIdle", SubResource("AnimationNodeStateMachin
 graph_offset = Vector2(-25, 41)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_2qkp3"]
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_j8ser"]
+playback_mode = 1
+streams_count = 11
+stream_0/stream = ExtResource("13_2icfr")
+stream_1/stream = ExtResource("14_f21s7")
+stream_2/stream = ExtResource("16_kfp1v")
+stream_3/stream = ExtResource("17_ycnuo")
+stream_4/stream = ExtResource("18_gxep8")
+stream_5/stream = ExtResource("19_558v1")
+stream_6/stream = ExtResource("20_t03c4")
+stream_7/stream = ExtResource("21_j6wnj")
+stream_8/stream = ExtResource("22_gs8cv")
+stream_9/stream = ExtResource("23_d4ftj")
+stream_10/stream = ExtResource("15_s7m12")
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_eb0vs"]
+playback_mode = 1
+streams_count = 14
+stream_0/stream = ExtResource("24_hjh85")
+stream_1/stream = ExtResource("25_3xq78")
+stream_2/stream = ExtResource("30_napl5")
+stream_3/stream = ExtResource("31_8ghk5")
+stream_4/stream = ExtResource("32_tb0gp")
+stream_5/stream = ExtResource("33_e4eon")
+stream_6/stream = ExtResource("34_8tc64")
+stream_7/stream = ExtResource("35_f0kmx")
+stream_8/stream = ExtResource("36_pgjiu")
+stream_9/stream = ExtResource("37_i02qs")
+stream_10/stream = ExtResource("26_0dppc")
+stream_11/stream = ExtResource("27_hegp0")
+stream_12/stream = ExtResource("28_52r5j")
+stream_13/stream = ExtResource("29_f3equ")
 
 [node name="SwordGoblin" type="CharacterBody3D" groups=["Enemy"]]
 script = ExtResource("1_trwu6")
@@ -5553,7 +5618,7 @@ surface_material_override/1 = ExtResource("10_owgv6")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
-"": SubResource("AnimationLibrary_atbvu")
+"": SubResource("AnimationLibrary_ih40x")
 }
 
 [node name="AnimationTree" type="AnimationTree" parent="."]
@@ -5574,5 +5639,11 @@ script = ExtResource("12_2wc3y")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
 shape = SubResource("BoxShape3D_2qkp3")
 
-[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]
+[node name="HurtSoundMaker" type="AudioStreamPlayer3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.820198, 0)
+stream = SubResource("AudioStreamRandomizer_j8ser")
+
+[node name="AttackSoundMaker" type="AudioStreamPlayer3D" parent="."]
+stream = SubResource("AudioStreamRandomizer_eb0vs")
+
 [connection signal="animation_finished" from="AnimationTree" to="." method="_on_animation_tree_animation_finished"]

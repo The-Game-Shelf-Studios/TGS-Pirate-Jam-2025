@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=4 uid="uid://blgohsh2xhruv"]
+[gd_scene load_steps=31 format=4 uid="uid://blgohsh2xhruv"]
 
 [ext_resource type="Script" path="res://Scripts/Player/player.gd" id="1_2ka0k"]
 [ext_resource type="PackedScene" uid="uid://hyjk1q1svioe" path="res://Assets/Player/Weapons/weapon_goblin_bow.tscn" id="2_4awbr"]
@@ -3346,6 +3346,22 @@ _data = {
 radius = 2.0
 height = 4.0
 
+[sub_resource type="Theme" id="Theme_4i1hy"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yhett"]
+bg_color = Color(0.6, 0.6, 0.603922, 0.443137)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3livo"]
+bg_color = Color(0.12549, 0.811765, 0, 1)
+
+[sub_resource type="Theme" id="Theme_udmrp"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_medea"]
+bg_color = Color(0.407843, 0.415686, 0.427451, 0.52549)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8dcxs"]
+bg_color = Color(0.839216, 0.164706, 0.168627, 1)
+
 [node name="Player" type="CharacterBody3D" groups=["Player"]]
 collision_layer = 3
 collision_mask = 3
@@ -3630,7 +3646,7 @@ mesh = SubResource("ArrayMesh_wrjbf")
 skin = SubResource("Skin_umryq")
 
 [node name="BoneAttachment3D" type="BoneAttachment3D" parent="FirstPersonCamera/PlayerArms/OrcSkeleton_Object/Skeleton3D"]
-transform = Transform3D(0.654273, -0.653558, -0.380513, 0.756252, 0.567492, 0.325631, 0.00311924, -0.500815, 0.865549, 0.544247, 1.09677, -0.694935)
+transform = Transform3D(0.654273, -0.653558, -0.380513, 0.756252, 0.567492, 0.325631, 0.00311922, -0.500815, 0.865549, 0.544247, 1.09677, -0.694935)
 bone_name = "Weapone.Orc.Bone.R"
 bone_idx = 36
 
@@ -3665,4 +3681,54 @@ damage = 0
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2.29438)
 shape = SubResource("CapsuleShape3D_x252o")
 
+[node name="HealthBar" type="ProgressBar" parent="."]
+offset_left = 360.0
+offset_top = 549.0
+offset_right = 818.0
+offset_bottom = 576.0
+theme = SubResource("Theme_4i1hy")
+theme_override_styles/background = SubResource("StyleBoxFlat_yhett")
+theme_override_styles/fill = SubResource("StyleBoxFlat_3livo")
+max_value = 50.0
+step = 1.0
+show_percentage = false
+
+[node name="DurabilityBar" type="ProgressBar" parent="."]
+offset_left = 1087.0
+offset_top = 116.0
+offset_right = 1112.0
+offset_bottom = 439.0
+theme = SubResource("Theme_udmrp")
+theme_override_styles/background = SubResource("StyleBoxFlat_medea")
+theme_override_styles/fill = SubResource("StyleBoxFlat_8dcxs")
+max_value = 4.0
+fill_mode = 3
+show_percentage = false
+
+[node name="AudioListener3D" type="AudioListener3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.63653, 0)
+current = true
+
+[node name="WinnerLabel" type="Label" parent="."]
+offset_left = 451.0
+offset_top = 56.0
+offset_right = 714.0
+offset_bottom = 165.0
+text = "A Winner is you!!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LoserLabel" type="Label" parent="."]
+offset_left = 451.0
+offset_top = 56.0
+offset_right = 714.0
+offset_bottom = 165.0
+text = "You've been defeated!!!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ReturnToMainMenuTimer" type="Timer" parent="."]
+wait_time = 5.0
+
 [connection signal="animation_finished" from="FirstPersonCamera/PlayerArms/AnimationPlayer" to="." method="_on_animation_player_animation_finished"]
+[connection signal="timeout" from="ReturnToMainMenuTimer" to="." method="_on_return_to_main_menu_timer_timeout"]

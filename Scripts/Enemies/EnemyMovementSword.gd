@@ -8,16 +8,19 @@ extends CharacterBody3D
 @export var SPEED = 1
 @export var AttackDamage: int
 @export var AttackDelay: float = 2.0
-@export var Health: int = 5
+@export var Health: int = 4
 @export var Damage: int = 2
 @onready var myAnimationPlayer: AnimationPlayer = $AnimationPlayer
 @onready var myAnimTree: AnimationTree = $AnimationTree
 @onready var nav_agent = $NavigationAgent3D
 @onready var LevelHandler = $"../../LevelCompletionHandler"
+@onready var myHurtSoundMaker = $HurtSoundMaker
+@onready var myAttackSoundMaker = $AttackSoundMaker
 var isMoving = false
 var isAttacking = true
 var PlayerSeen = false
 var PlayerIsUnobstructed
+var died: bool = false
 
 func _ready() -> void:
 	PlayerSeen = false
@@ -27,19 +30,21 @@ func _ready() -> void:
 	#print("idle on")
 
 func _process(delta: float) -> void:
-	if PlayerNode != null:
-		if MyPlayerTracker.PlayerRelativeDistance <= SightRange && MyPlayerTracker.PlayerRelativeDistance >= AttackRange:
-			PlayerSeen = true
-			myAnimTree.set("parameters/conditions/Idling", false)
-			if !isAttacking:
-				MoveTowardsPlayer()
-		if MyPlayerTracker.PlayerRelativeDistance <= SightRange && MyPlayerTracker.PlayerRelativeDistance <= AttackRange:
-			if !isAttacking:
-				TriggerAttackAnimation()
-		if MyPlayerTracker.PlayerRelativeDistance >= SightRange && MyPlayerTracker.PlayerRelativeDistance >= AttackRange:
-			if PlayerSeen:
+	if !died:
+	
+		if PlayerNode != null:
+			if MyPlayerTracker.PlayerRelativeDistance <= SightRange && MyPlayerTracker.PlayerRelativeDistance >= AttackRange:
+				PlayerSeen = true
 				myAnimTree.set("parameters/conditions/Idling", false)
-				MoveTowardsPlayer()
+				if !isAttacking:
+					MoveTowardsPlayer()
+			if MyPlayerTracker.PlayerRelativeDistance <= SightRange && MyPlayerTracker.PlayerRelativeDistance <= AttackRange:
+				if !isAttacking:
+					TriggerAttackAnimation()
+			if MyPlayerTracker.PlayerRelativeDistance >= SightRange && MyPlayerTracker.PlayerRelativeDistance >= AttackRange:
+				if PlayerSeen:
+					myAnimTree.set("parameters/conditions/Idling", false)
+					MoveTowardsPlayer()
 	
 
 func _physics_process(delta: float) -> void:
@@ -68,12 +73,14 @@ func TriggerAttackAnimation() -> void:
 		isMoving = false
 	isAttacking = true
 	myAnimTree.set("parameters/conditions/IsMoving", false)
+	myAttackSoundMaker.play()
 	#print("Move off")
 	myAnimTree.set("parameters/conditions/Attack1", true)
 	#print("attack on")
 
 func TakeDamage(damage: int) -> void:
 	Health = Health - damage
+	myHurtSoundMaker.play()
 	if Health <= 0:
 		Die()
 	pass
@@ -90,6 +97,7 @@ func Die() -> void:
 	print("SwordGobbo died")
 	LevelHandler.GobbosRemaining = LevelHandler.GobbosRemaining - 1
 	print ("remaining gobbos", LevelHandler.GobbosRemaining)
+	myAnimTree.set("parameters/conditions/IsDead", true)
 	pass
 
 func DealDamageToPlayer() -> void:
@@ -111,3 +119,5 @@ func _on_animation_tree_animation_finished(anim_name: StringName) -> void:
 			myAnimTree.set("parameters/conditions/IsMoving", true)
 			#print("Move on")
 		isAttacking = false
+	if myAnimTree["parameters/conditions/IsDead"] == true:
+		queue_free()

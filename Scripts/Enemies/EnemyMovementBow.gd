@@ -17,6 +17,7 @@ extends CharacterBody3D
 @onready var myAnimTree: AnimationTree = $AnimationTree
 @onready var nav_agent = $NavigationAgent3D
 @onready var LevelHandler = $"../../LevelCompletionHandler"
+@onready var myHurtSoundMaker = $HurtSoundMaker
 var died: bool = false
 var PlayerTargetPosition
 var EscapePoint: Vector3
@@ -34,27 +35,28 @@ func _ready() -> void:
 	#print("idle on")
 
 func _process(delta: float) -> void:
-	if PlayerNode != null:
-		if MyPlayerTracker.PlayerRelativeDistance <= SightRange && MyPlayerTracker.PlayerRelativeDistance >= AttackRange:
-			PlayerSeen = true
-			myAnimTree.set("parameters/conditions/Idling", false)
-			if !isAttacking:
-				MoveTowardsPlayer()
-		if MyPlayerTracker.PlayerRelativeDistance <= AttackRange:
-			PlayerSeen = true
-			if MyPlayerTracker.PlayerRelativeDistance >= EscapeRange:
+	if !died:
+		if PlayerNode != null:
+			if MyPlayerTracker.PlayerRelativeDistance <= SightRange && MyPlayerTracker.PlayerRelativeDistance >= AttackRange:
+				PlayerSeen = true
+				myAnimTree.set("parameters/conditions/Idling", false)
 				if !isAttacking:
-					TriggerAttackAnimation()
-			if MyPlayerTracker.PlayerRelativeDistance < EscapeRange:
-				if position.distance_to(EscapePoint) < 2:
+					MoveTowardsPlayer()
+			if MyPlayerTracker.PlayerRelativeDistance <= AttackRange:
+				PlayerSeen = true
+				if MyPlayerTracker.PlayerRelativeDistance >= EscapeRange:
 					if !isAttacking:
 						TriggerAttackAnimation()
-				if position.distance_to(EscapePoint) >= 2:
-					MoveAwayFromPlayer()
-		if MyPlayerTracker.PlayerRelativeDistance >= SightRange:
-			if PlayerSeen:
-				myAnimTree.set("parameters/conditions/Idling", false)
-				MoveTowardsPlayer()
+				if MyPlayerTracker.PlayerRelativeDistance < EscapeRange:
+					if position.distance_to(EscapePoint) < 2:
+						if !isAttacking:
+							TriggerAttackAnimation()
+					if position.distance_to(EscapePoint) >= 2:
+						MoveAwayFromPlayer()
+			if MyPlayerTracker.PlayerRelativeDistance >= SightRange:
+				if PlayerSeen:
+					myAnimTree.set("parameters/conditions/Idling", false)
+					MoveTowardsPlayer()
 	pass
 
 func _physics_process(delta: float) -> void:
@@ -64,10 +66,15 @@ func _physics_process(delta: float) -> void:
 	var space_state = get_world_3d().direct_space_state
 	FindEscapePoint(space_state)
 		
+
+func PlayHurtSound() -> void:
+	myHurtSoundMaker.play()
+	pass
 	
 
 func TakeDamage(damage: int) -> void:
 	Health = Health - damage
+	PlayHurtSound()
 	if Health <= 0:
 		Die()
 	pass
@@ -77,6 +84,7 @@ func Die() -> void:
 	print("Bow Gobbo Died")
 	LevelHandler.GobbosRemaining = LevelHandler.GobbosRemaining - 1
 	print ("remaining gobbos", LevelHandler.GobbosRemaining)
+	myAnimTree.set("parameters/conditions/IsDead", true)
 	pass
 
 func MoveTowardsPlayer() -> void:
@@ -169,3 +177,5 @@ func _on_animation_tree_animation_finished(anim_name: StringName) -> void:
 		myAnimTree.set("parameters/conditions/IsMoving", true)
 		#print("Move on")
 		isAttacking = false
+	if myAnimTree["parameters/conditions/IsDead"] == true:
+		queue_free()

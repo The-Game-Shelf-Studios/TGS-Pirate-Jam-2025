@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cg2dngbjoocg8"
+path="res://.godot/imported/TGS Pirate Jam (Goblin War Horn) v1.0.mp3-652936e43089d0a4f763ef7a25b79b4a.mp3str"
+
+[deps]
+
+source_file="res://Assets/sounds/music/TGS Pirate Jam (Goblin War Horn) v1.0.mp3"
+dest_files=["res://.godot/imported/TGS Pirate Jam (Goblin War Horn) v1.0.mp3-652936e43089d0a4f763ef7a25b79b4a.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://d2dg25ssdrkem"]
+[gd_scene load_steps=22 format=3 uid="uid://d2dg25ssdrkem"]
 
 [ext_resource type="ArrayMesh" uid="uid://pibhv3var1n4" path="res://Assets/Props/room_walls.res" id="1_u0k3u"]
 [ext_resource type="Material" uid="uid://djksytslw30o" path="res://Assets/Materials/Goblins and Player/floor.tres" id="2_5fwfx"]
@@ -12,6 +12,7 @@
 [ext_resource type="PackedScene" uid="uid://cye0yvx322c16" path="res://Scenes/Characters/Enemies/Sword Goblin.tscn" id="10_4ak08"]
 [ext_resource type="PackedScene" uid="uid://do0sxkj2ld6ge" path="res://Scenes/Characters/Enemies/Bow Goblin.tscn" id="11_gq501"]
 [ext_resource type="Script" path="res://Scenes/Environment/level_completion_handler.gd" id="12_qi41m"]
+[ext_resource type="AudioStream" uid="uid://bttkxuywua7hn" path="res://Assets/sounds/music/TGS Pirate Jam (Main Theme) v1.2 Idea 2_LOOP.mp3" id="13_2x367"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_v5dfh"]
 sky_top_color = Color(0.0717354, 0.141093, 0.241892, 1)
@@ -37,6 +38,10 @@ polygons = [PackedInt32Array(2, 1, 3), PackedInt32Array(3, 1, 0), PackedInt32Arr
 [sub_resource type="PlaneMesh" id="PlaneMesh_ewfxb"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_vhro1"]
+
+[sub_resource type="AudioStreamPlaylist" id="AudioStreamPlaylist_i1qcg"]
+stream_count = 1
+stream_0 = ExtResource("13_2x367")
 
 [node name="root" type="Node3D"]
 
@@ -740,7 +745,7 @@ transform = Transform3D(-2, 0, 1.50996e-06, 0, 8, 0, -3.01992e-07, 0, -10, 0, 4,
 shape = SubResource("BoxShape3D_2n46r")
 
 [node name="Player" parent="." instance=ExtResource("9_axdiw")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.538, 0, -13.8913)
+transform = Transform3D(-0.998379, 0, 0.0569192, 0, 1, 0, -0.0569192, 0, -0.998379, -12.538, 0, -18.1128)
 
 [node name="LevelCompletionHandler" type="Node3D" parent="."]
 script = ExtResource("12_qi41m")
@@ -754,6 +759,44 @@ autostart = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.66969, -6.85453e-07, -6.18984)
 
 [node name="BowGoblin" parent="Enemies" instance=ExtResource("11_gq501")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.4467, 0, -7.24768)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.4467, 0, 12.0566)
+
+[node name="SwordGoblin2" parent="Enemies" instance=ExtResource("10_4ak08")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.3868, 0, 12.7593)
+
+[node name="SwordGoblin3" parent="Enemies" instance=ExtResource("10_4ak08")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.5946, 0, -17.7289)
+
+[node name="SwordGoblin4" parent="Enemies" instance=ExtResource("10_4ak08")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.2503, 0, 9.15755)
+
+[node name="BowGoblin2" parent="Enemies" instance=ExtResource("11_gq501")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.9361, 0, 11.1417)
+
+[node name="BowGoblin3" parent="Enemies" instance=ExtResource("11_gq501")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.4105, 0, 9.10697)
+
+[node name="BowGoblin4" parent="Enemies" instance=ExtResource("11_gq501")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.0239, 0, -14.1446)
+
+[node name="SwordGoblin5" parent="Enemies" instance=ExtResource("10_4ak08")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.566, 0, 15.1888)
+
+[node name="BowGoblin5" parent="Enemies" instance=ExtResource("11_gq501")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.2827, 0, -17.1366)
+
+[node name="BowGoblin6" parent="Enemies" instance=ExtResource("11_gq501")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.33278, 0, 16.2651)
+
+[node name="SwordGoblin6" parent="Enemies" instance=ExtResource("10_4ak08")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.99764, 0, 6.97192)
+
+[node name="BowGoblin7" parent="Enemies" instance=ExtResource("11_gq501")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.9439, 0, -8.34362)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = SubResource("AudioStreamPlaylist_i1qcg")
+volume_db = -2.5
+autoplay = true
 
 [connection signal="timeout" from="LevelCompletionHandler/Timer" to="LevelCompletionHandler" method="_on_timer_timeout"]

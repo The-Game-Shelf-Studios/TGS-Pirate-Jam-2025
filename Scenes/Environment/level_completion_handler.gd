@@ -22,6 +22,7 @@ func _process(delta: float) -> void:
 
 
 func PlayerVictory() -> void:
+	get_tree().get_first_node_in_group("Player").WinGame()
 	print("Game Won!")
 
 func PlayerDefeat() -> void:

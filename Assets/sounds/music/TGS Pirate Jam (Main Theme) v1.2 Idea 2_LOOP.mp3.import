@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bttkxuywua7hn"
+path="res://.godot/imported/TGS Pirate Jam (Main Theme) v1.2 Idea 2_LOOP.mp3-b94fe47a557352d168c306f5c2f2f99a.mp3str"
+
+[deps]
+
+source_file="res://Assets/sounds/music/TGS Pirate Jam (Main Theme) v1.2 Idea 2_LOOP.mp3"
+dest_files=["res://.godot/imported/TGS Pirate Jam (Main Theme) v1.2 Idea 2_LOOP.mp3-b94fe47a557352d168c306f5c2f2f99a.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

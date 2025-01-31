@@ -36,7 +36,7 @@ var direction: Vector3 ## Input Direction
 static var can_control := true 
 
 func _ready() -> void:
-	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
+	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	current_hurt_box.damage = MeleeDamage
 	WeaponGoblinBow.visible = false
 	WeaponGoblinSword.visible = false

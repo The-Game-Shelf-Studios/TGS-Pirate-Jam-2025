@@ -3,9 +3,4 @@
 [ext_resource type="Script" path="res://Scripts/Utilities/hurt_box.gd" id="1_t72xn"]
 
 [node name="HurtBox" type="Area3D"]
-collision_layer = 0
-collision_mask = 544
-monitorable = false
 script = ExtResource("1_t72xn")
-
-[connection signal="area_entered" from="." to="." method="area_hit"]

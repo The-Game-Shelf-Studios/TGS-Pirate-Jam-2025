@@ -37,7 +37,7 @@ var direction: Vector3 ## Input Direction
 static var can_control := true 
 
 func _ready() -> void:
-	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 	current_hurt_box.damage = MeleeDamage
 	WeaponGoblinBow.visible = false
 	WeaponGoblinSword.visible = false
@@ -50,6 +50,7 @@ func _process(delta: float) -> void:
 		Die()
 	pass
 
+func _physics_process(delta: float) -> void:
 	# Add the gravity.
 	if not is_on_floor():
 		velocity += get_gravity() * delta

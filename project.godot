@@ -92,6 +92,11 @@ Throw={
 3d_physics/layer_10="EnemyHit"
 3d_physics/layer_11="EnemyHurt"
 
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+
 [shader_globals]
 
 diffuse_curve={

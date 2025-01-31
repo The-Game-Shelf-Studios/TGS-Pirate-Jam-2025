@@ -27,6 +27,7 @@ var HeldWeapon
 var isDead : bool = false
 var PickedUpGobbo: int = 0
 var GameWon = false
+var LostGame = false
 @export var isHoldingWeapon: bool = false
 
 @onready var current_hurt_box : HurtBox = $HurtBox ## This will change with "Weapons" you pick up TODO: Change to weapon class
@@ -171,7 +172,10 @@ func update_animation(new_anim: String) -> void:
 func Die() -> void:
 	can_control = false
 	LoserLabel.visible = true
-	ReturnToMainMenuTimer.start()
+	if !LostGame:
+		ReturnToMainMenuTimer.start()
+		LostGame = true
+	
 	print("Player Died")
 
 func TakeDamageFromEnemy(damage: int):
@@ -203,8 +207,11 @@ func _input(event: InputEvent) -> void:
 			throw()
 
 func WinGame() -> void:
-	WinnerLabel.visible = true
-	ReturnToMainMenuTimer.start()
+	if !GameWon:
+		WinnerLabel.visible = true
+		ReturnToMainMenuTimer.start()
+		GameWon = true
+	
 	pass
 
 # Reset Animation

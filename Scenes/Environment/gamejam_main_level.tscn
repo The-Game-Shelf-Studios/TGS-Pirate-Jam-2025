@@ -21,12 +21,12 @@ sky_curve = 1e-05
 sky_energy_multiplier = 1.5
 ground_horizon_color = Color(0.591922, 0.613794, 0.647865, 1)
 
-[sub_resource type="Sky" id="Sky_1hi51"]
+[sub_resource type="Sky" id="Sky_rouk6"]
 sky_material = SubResource("ProceduralSkyMaterial_v5dfh")
 
 [sub_resource type="Environment" id="Environment_escub"]
 background_mode = 2
-sky = SubResource("Sky_1hi51")
+sky = SubResource("Sky_rouk6")
 tonemap_mode = 2
 
 [sub_resource type="NavigationMesh" id="NavigationMesh_sn4g4"]

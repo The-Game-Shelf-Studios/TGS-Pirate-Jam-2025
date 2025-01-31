@@ -1,10 +1,12 @@
-[gd_scene load_steps=31 format=4 uid="uid://blgohsh2xhruv"]
+[gd_scene load_steps=33 format=4 uid="uid://blgohsh2xhruv"]
 
 [ext_resource type="Script" path="res://Scripts/Player/player.gd" id="1_2ka0k"]
 [ext_resource type="PackedScene" uid="uid://hyjk1q1svioe" path="res://Assets/Player/Weapons/weapon_goblin_bow.tscn" id="2_4awbr"]
+[ext_resource type="Material" uid="uid://clb1njmb81oo0" path="res://Assets/Materials/Goblins and Player/OrcGreen.tres" id="2_r6pkd"]
 [ext_resource type="PackedScene" uid="uid://gavltsmsvff" path="res://Scenes/Utilities/hit_box.tscn" id="2_sgdj8"]
 [ext_resource type="Script" path="res://Scripts/Utilities/hurt_box.gd" id="3_dui0v"]
 [ext_resource type="PackedScene" uid="uid://cxh1ntyno0vdd" path="res://Assets/Player/Weapons/weapon_goblin_sword.tscn" id="3_lrpyr"]
+[ext_resource type="Material" uid="uid://c7ireh7m53ghd" path="res://Assets/Materials/Goblins and Player/GoblinGold.tres" id="3_thaq7"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_0lyld"]
 
@@ -3644,6 +3646,8 @@ bones/36/scale = Vector3(1, 1, 1)
 [node name="OrcArms_Object" type="MeshInstance3D" parent="FirstPersonCamera/PlayerArms/OrcSkeleton_Object/Skeleton3D"]
 mesh = SubResource("ArrayMesh_wrjbf")
 skin = SubResource("Skin_umryq")
+surface_material_override/0 = ExtResource("2_r6pkd")
+surface_material_override/1 = ExtResource("3_thaq7")
 
 [node name="BoneAttachment3D" type="BoneAttachment3D" parent="FirstPersonCamera/PlayerArms/OrcSkeleton_Object/Skeleton3D"]
 transform = Transform3D(0.654273, -0.653558, -0.380513, 0.756252, 0.567492, 0.325631, 0.00311922, -0.500815, 0.865549, 0.544247, 1.09677, -0.694935)

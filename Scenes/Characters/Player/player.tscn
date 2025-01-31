@@ -3682,10 +3682,17 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2.29438)
 shape = SubResource("CapsuleShape3D_x252o")
 
 [node name="HealthBar" type="ProgressBar" parent="."]
-offset_left = 360.0
-offset_top = 549.0
-offset_right = 818.0
-offset_bottom = 576.0
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -229.0
+offset_top = -123.0
+offset_right = 229.0
+offset_bottom = -96.0
+grow_horizontal = 2
+grow_vertical = 0
 theme = SubResource("Theme_4i1hy")
 theme_override_styles/background = SubResource("StyleBoxFlat_yhett")
 theme_override_styles/fill = SubResource("StyleBoxFlat_3livo")
@@ -3694,10 +3701,17 @@ step = 1.0
 show_percentage = false
 
 [node name="DurabilityBar" type="ProgressBar" parent="."]
-offset_left = 1087.0
-offset_top = 116.0
-offset_right = 1112.0
-offset_bottom = 439.0
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -122.0
+offset_top = -169.0
+offset_right = -97.0
+offset_bottom = 154.0
+grow_horizontal = 0
+grow_vertical = 2
 theme = SubResource("Theme_udmrp")
 theme_override_styles/background = SubResource("StyleBoxFlat_medea")
 theme_override_styles/fill = SubResource("StyleBoxFlat_8dcxs")
@@ -3710,19 +3724,27 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.63653, 0)
 current = true
 
 [node name="WinnerLabel" type="Label" parent="."]
-offset_left = 451.0
-offset_top = 56.0
-offset_right = 714.0
-offset_bottom = 165.0
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -131.0
+offset_top = 59.0
+offset_right = 132.0
+offset_bottom = 168.0
+grow_horizontal = 2
 text = "A Winner is you!!"
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="LoserLabel" type="Label" parent="."]
-offset_left = 451.0
-offset_top = 56.0
-offset_right = 714.0
-offset_bottom = 165.0
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -131.0
+offset_top = 58.0
+offset_right = 132.0
+offset_bottom = 167.0
+grow_horizontal = 2
 text = "You've been defeated!!!"
 horizontal_alignment = 1
 vertical_alignment = 1

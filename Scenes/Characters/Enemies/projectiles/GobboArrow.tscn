@@ -1,0 +1,120 @@
+[gd_scene load_steps=8 format=4 uid="uid://eo0xtv3kdgme"]
+
+[ext_resource type="Script" path="res://Scenes/Characters/Enemies/projectiles/gobbo_arrow.gd" id="1_wtp4g"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_23wsa"]
+resource_name = "GoblinEyebrow"
+cull_mode = 2
+albedo_color = Color(0.415685, 0.172549, 0, 1)
+roughness = 0.5
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pskj0"]
+resource_name = "GoblinWhite"
+cull_mode = 2
+albedo_color = Color(0.949017, 0.94902, 0.94902, 1)
+roughness = 0.5
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3p74v"]
+resource_name = "GoblinGray3"
+cull_mode = 2
+albedo_color = Color(0.670586, 0.670588, 0.670588, 1)
+roughness = 0.5
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_uwshs"]
+_surfaces = [{
+"aabb": AABB(-0.00692822, -0.112, -0.0146603, 0.0153923, 0.212, 0.0226603),
+"format": 34359742465,
+"index_count": 69,
+"index_data": PackedByteArray("DAADAAEADAANAAMADQAFAAMADQAOAAUADgAHAAUADgAPAAcADwAJAAcADwAQAAkAEAALAAkAEAARAAsAEQABAAsAEQAMAAEACgACAAAAAgAGAAQABgAKAAgAAgAKAAYACgAMABEACgAAAAwABgAQAA8ABgAIABAAAgAOAA0AAgAEAA4AAAACABIA"),
+"name": "GoblinEyebrow",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 19,
+"vertex_data": PackedByteArray("AAAAAM3MzL1vEgO8AAAAAM3MzD1vEgO8/AXjO83MzL1vEoO7/AXjO83MzD1vEoO7/AXjO83MzL1vEoM7/AXjO83MzD1vEoM7AAAAAM3MzL1vEgM8AAAAAM3MzD1vEgM8/AXju83MzL1vEoM7/AXju83MzD1vEoM7/AXju83MzL1vEoO7/AXju83MzD1vEoO76IaWsutRuL1/EgO81gXjO+tRuL2OEoO71gXjO+tRuL1QEoM76IaWsutRuL1fEgM8Igbju+tRuL1QEoM7Igbju+tRuL2OEoO7Aq0KPENg5b2SMXC8")
+}, {
+"aabb": AABB(-0.0169282, -0.112, -0.0146603, 0.0253923, 0.022, 0.0293205),
+"format": 34359742465,
+"index_count": 51,
+"index_data": PackedByteArray("CgAMAA0ACgAEAAwACwAKAA0ABQANAAwABQALAA0ABAAFAAwACAAOAA8ACAACAA4ACQAIAA8AAwAPAA4AAwAJAA8AAgADAA4ABgAQABEABgAAABAABwAGABEAAQARABAAAQAHABEA"),
+"name": "GoblinWhite",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 18,
+"vertex_data": PackedByteArray("AAAAAM3MzL1vEgO8/AXjO83MzL1vEoO7/AXjO83MzL1vEoM7AAAAAM3MzL1vEgM8/AXju83MzL1vEoM7/AXju83MzL1vEoO76IaWsutRuL1/EgO81gXjO+tRuL2OEoO71gXjO+tRuL1QEoM76IaWsutRuL1fEgM8Igbju+tRuL1QEoM7Igbju+tRuL2OEoO7Bq2KvENg5b2SWQaxEK2KvGHl0L0yy4yyAa0KPD9g5b2PMXA876wKPF3l0L1+MXA8Aq0KPENg5b2SMXC876wKPGHl0L2iMXC8")
+}, {
+"aabb": AABB(-0.010732, 0.1, -0.0123923, 0.021464, 0.03, 0.0247845),
+"format": 34359742465,
+"index_count": 54,
+"index_data": PackedByteArray("BAAJAAMABAAKAAkACwAMAAoAAgAGAAEAAgAIAAYABQAKAAQABQALAAoAAQAHAAAAAQAGAAcAAwAIAAIAAwAJAAgAAAALAAUAAAAHAAsACQAMAAgABgAMAAcABwAMAAsACgAMAAkACAAMAAYA"),
+"name": "GoblinGray3",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 13,
+"vertex_data": PackedByteArray("AAAAAM3MzD1vEgO8/AXjO83MzD1vEoO7/AXjO83MzD1vEoM7AAAAAM3MzD1vEgM8/AXju83MzD1vEoM7/AXju83MzD1vEoO7WtUvPK1H4T0ACcu7To2MMq1H4T3uCEu8WtUvPK1H4T26CMs7To2MMq1H4T3LCEs8N9UvvK1H4T26CMs7N9UvvK1H4T0ACcu7AADwMbgeBT6rqiov")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_vrmrl"]
+resource_name = "CrossbowGoblin_Arrow3_Mesh"
+_surfaces = [{
+"aabb": AABB(-0.00692822, -0.112, -0.0146603, 0.0153923, 0.212, 0.0226603),
+"attribute_data": PackedByteArray("AABAP1yPAj8AAIA/AAAAPwAAwLMAAAA/AACAPwAAAAAAAMCzAAAAAFVVVT8AAAA/ZzV1P65HIT9VVVU/AAAAAKqqKj8AAAA/ZzV1P1K4Xj+qqio/AAAAAP7//z4AAAA/AABAP6RwfT/+//8+AAAAAKiqqj4AAAA/mcoKP1K4Xj+oqqo+AAAAAKWqKj4AAAA/mcoKP65HIT+lqio+AAAAAAAAgD8AAIA+AADAswAAgD5VVVU/AACAPqqqKj8AAIA+/v//PgAAgD6oqqo+AACAPqWqKj4AAIA+VVVVPwAAAD8="),
+"format": 34359742487,
+"index_count": 69,
+"index_data": PackedByteArray("FAAHAAMAFAAWAAcAFgAKAAcAFgAXAAoAFwANAAoAFwAYAA0AGAAQAA0AGAAZABAAGQATABAAGQAaABMAGgAEABMAGgAVAAQAEgAGAAAABgAMAAkADAASAA8ABgASAAwAEQAVABoAEQACABUACwAZABgACwAOABkABQAXABYABQAIABcAAQAFABsA"),
+"material": SubResource("StandardMaterial3D_23wsa"),
+"name": "GoblinEyebrow",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 28,
+"vertex_data": PackedByteArray("AAAAAM3MzL1vEgO8AAAAAM3MzL1vEgO8AAAAAM3MzL1vEgO8AAAAAM3MzD1vEgO8AAAAAM3MzD1vEgO8/AXjO83MzL1vEoO7/AXjO83MzL1vEoO7/AXjO83MzD1vEoO7/AXjO83MzL1vEoM7/AXjO83MzL1vEoM7/AXjO83MzD1vEoM7AAAAAM3MzL1vEgM8AAAAAM3MzL1vEgM8AAAAAM3MzD1vEgM8/AXju83MzL1vEoM7/AXju83MzL1vEoM7/AXju83MzD1vEoM7/AXju83MzL1vEoO7/AXju83MzL1vEoO7/AXju83MzD1vEoO76IaWsutRuL1/EgO86IaWsutRuL1/EgO81gXjO+tRuL2OEoO71gXjO+tRuL1QEoM76IaWsutRuL1fEgM8Igbju+tRuL1QEoM7Igbju+tRuL2OEoO7Aq0KPENg5b2SMXC8di77K/zbjmB2Lvsr////v3Yu+yuIQ+zGcegAAMQNb8hx6AAA3xAcuQK6j07///8/ArqPTv7KfBrb7aVFAACR6I7OAjo3EHv2js4COve0fyWkxdxt/v9slwNUiVF2vBG5A1SJUeK+AFL/f3Fo////vyh0xUuU1KHHKHTFS3/q1ERaOtxt2a7/vzo01wtqK1y4OjTXC1T2v0ojEqVFJVH/vzcP1/LYFwq6Nw/X8qAVScOz8tyulgCbkiHRSo1o/2Lt2HI2j1/wp7+nPniMardFwHkMpr6USLm/frPZEv///78=")
+}, {
+"aabb": AABB(-0.0169282, -0.112, -0.0146603, 0.0253923, 0.022, 0.0293205),
+"attribute_data": PackedByteArray("AACAPwAAAD9VVVU/AAAAP6qqKj8AAAA//v//PgAAAD+oqqo+AAAAP6WqKj4AAAA/AACAPwAAgD5VVVU/AACAPqqqKj8AAIA+/v//PgAAgD6oqqo+AACAPqWqKj4AAIA+paoqPgAAAD+oqqo+AAAAP6WqKj4AAIA+qKqqPgAAgD7+//8+AAAAP6qqKj8AAAA//v//PgAAgD6qqio/AACAPlVVVT8AAAA/AACAPwAAAD9VVVU/AACAPgAAgD8AAIA+"),
+"format": 34359742487,
+"index_count": 51,
+"index_data": PackedByteArray("CgANAA8ACgAEAA0ACwAKAA8ABQAOAAwABQALAA4ABAAFAAwACAARABMACAACABEACQAIABMAAwASABAAAwAJABIAAgADABAABgAVABcABgAAABUABwAGABcAAQAWABQAAQAHABYA"),
+"material": SubResource("StandardMaterial3D_pskj0"),
+"name": "GoblinWhite",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("AAAAAM3MzL1vEgO8/AXjO83MzL1vEoO7/AXjO83MzL1vEoM7AAAAAM3MzL1vEgM8/AXju83MzL1vEoM7/AXju83MzL1vEoO76IaWsutRuL1/EgO81gXjO+tRuL2OEoO71gXjO+tRuL1QEoM76IaWsutRuL1fEgM8Igbju+tRuL1QEoM7Igbju+tRuL2OEoO7Bq2KvENg5b2SWQaxBq2KvENg5b2SWQaxEK2KvGHl0L0yy4yyEK2KvGHl0L0yy4yyAa0KPD9g5b2PMXA8Aa0KPD9g5b2PMXA876wKPF3l0L1+MXA876wKPF3l0L1+MXA8Aq0KPENg5b2SMXC8Aq0KPENg5b2SMXC876wKPGHl0L2iMXC876wKPGHl0L2iMXC8di77K////78Cuo9O////P47OAjr///+/A1SJUf///z8odMVL////Pzo01wv///+/Nw/X8v///7+z8tyu////vyHRSo3///8/2HI2j////z+nPniM////P3kMpr7///+/v1VAKv///7+/VUAq////v3UQdZD///+/dRB1kP///7/Ykn4z////P9iSfjP///8/R6p6jP///z9HqnqM////P36z2RL///+/frPZEv///7+E87fV////v4Tzt9X///+/")
+}, {
+"aabb": AABB(-0.010732, 0.1, -0.0123923, 0.021464, 0.03, 0.0247845),
+"attribute_data": PackedByteArray("AACAPwAAAAAAAMCzAAAAAFVVVT8AAAAAqqoqPwAAAAD+//8+AAAAAKiqqj4AAAAApaoqPgAAAABVVVU/AAAAAAAAgD8AAAAAAADAswAAAACqqio/AAAAAP7//z4AAAAAqKqqPgAAAAClqio+AAAAAKWqKj4AAAAAqKqqPgAAAAD+//8+AAAAAKqqKj8AAAAAVVVVPwAAAAAAAMCzAAAAAA=="),
+"format": 34359742487,
+"index_count": 54,
+"index_data": PackedByteArray("BQALAAQABQAMAAsADQAOAAwAAwAHAAIAAwAKAAcABgAMAAUABgANAAwAAgAIAAAAAgAHAAgABAAKAAMABAALAAoAAQANAAYAAQAJAA0ACwAQAAoABwASAAgACQATAA0ADAAPAAsACgARAAcA"),
+"material": SubResource("StandardMaterial3D_3p74v"),
+"name": "GoblinGray3",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 20,
+"vertex_data": PackedByteArray("AAAAAM3MzD1vEgO8AAAAAM3MzD1vEgO8/AXjO83MzD1vEoO7/AXjO83MzD1vEoM7AAAAAM3MzD1vEgM8/AXju83MzD1vEoM7/AXju83MzD1vEoO7WtUvPK1H4T0ACcu7To2MMq1H4T3uCEu8To2MMq1H4T3uCEu8WtUvPK1H4T26CMs7To2MMq1H4T3LCEs8N9UvvK1H4T26CMs7N9UvvK1H4T0ACcu7AADwMbgeBT6rqiovAADwMbgeBT6rqiovAADwMbgeBT6rqiovAADwMbgeBT6rqiovAADwMbgeBT6rqiovAADwMbgeBT6rqiovcegAAP///79x6AAA////v9vtpUX///+/pMXcbf///z//f3Fo////P1o63G3///8/IxKlRf///79y+l2y////v4j4//////+/iPj//////7+hzYyF////P/9/dof///8/XTKMhf///z+MBV2y////v/9///////+//3///////7//f///////v/9///////+//3///////7//f///////vw==")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_uwshs")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_6dap6"]
+size = Vector3(0.2, 0.2, 0.2)
+
+[node name="GobboArrow" type="StaticBody3D"]
+script = ExtResource("1_wtp4g")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.2
+autostart = true
+
+[node name="Arrow3_Object2" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1, 8.74228e-08, 0, 3.82137e-15, 4.37114e-08, -1, -8.74228e-08, -1, -4.37114e-08, 0, 0, 0)
+mesh = SubResource("ArrayMesh_vrmrl")
+skeleton = NodePath("")
+
+[node name="Area3D" type="Area3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+shape = SubResource("BoxShape3D_6dap6")
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="area_entered" from="Area3D" to="." method="_on_area_3d_area_entered"]

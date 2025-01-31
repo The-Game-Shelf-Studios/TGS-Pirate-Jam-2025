@@ -1,0 +1,69 @@
+extends Node3D
+
+var isConscious = true
+@onready var myAnimationPlayer = $AnimationPlayer
+@onready var myAnimationTree = $AnimationTree
+@onready var AngerMouth = $GoblinTemplate_Skeleton/Skeleton3D/AngryMouth_Object
+@onready var AngerEye = $GoblinTemplate_Skeleton/Skeleton3D/Eyes_Object
+@onready var AngerBrow = $GoblinTemplate_Skeleton/Skeleton3D/AngryEyebrows_Object
+@onready var DeadEye = $GoblinTemplate_Skeleton/Skeleton3D/DeathEyes_Object
+@onready var DeadMouth =$GoblinTemplate_Skeleton/Skeleton3D/DeathMouth_Object
+@onready var DeadBrow =$GoblinTemplate_Skeleton/Skeleton3D/NeutralEyebrows_Object
+
+@onready var mySwingAudioPlayer = $SwingAudioPlayer
+@onready var myProtestAudioPlayer = $ProtestAudioPlayer
+
+
+func _ready() -> void:
+	AngerMouth.visible = true
+	AngerEye.visible = true
+	AngerBrow.visible = true
+	DeadEye.visible = false
+	DeadMouth.visible = false
+	DeadBrow.visible = false
+	
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	
+	
+	pass
+
+func ImpactTaken() -> void:
+	myProtestAudioPlayer.stop()
+	mySwingAudioPlayer.play()
+	if isConscious:
+		SetUnconscious()
+
+func ProtestPickup() -> void:
+	myProtestAudioPlayer.play()
+	pass
+
+func BreakWeapon() -> void:
+	isConscious = true
+	AngerMouth.visible = true
+	AngerEye.visible = true
+	AngerBrow.visible = true
+	DeadEye.visible = false
+	DeadMouth.visible = false
+	DeadBrow.visible = false
+	myAnimationTree.set("parameters/conditions/IsDead", false)
+	myAnimationTree.set("parameters/conditions/IsAlive", true)
+
+func SetUnconscious() -> void:
+	isConscious = false
+	AngerMouth.visible = false
+	AngerEye.visible = false
+	AngerBrow.visible = false
+	DeadEye.visible = true
+	DeadMouth.visible = true
+	DeadBrow.visible = true
+	myAnimationTree.set("parameters/conditions/IsDead", true)
+	myAnimationTree.set("parameters/conditions/IsAlive", false)
+	pass
+
+func StartSwingAnimation() -> void:
+	
+	pass

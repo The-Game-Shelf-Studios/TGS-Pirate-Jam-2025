@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b1aastl2hv7aw"
+path="res://.godot/imported/Lighting Fuse 3.mp3-1ea143fa97ba0c0933b4f4c71b7baf1e.mp3str"
+
+[deps]
+
+source_file="res://Assets/sounds/Voice Lines/Bomb Goblin/Lighting Fuse 3.mp3"
+dest_files=["res://.godot/imported/Lighting Fuse 3.mp3-1ea143fa97ba0c0933b4f4c71b7baf1e.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

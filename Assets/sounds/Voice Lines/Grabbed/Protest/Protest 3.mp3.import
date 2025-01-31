@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://db5kmvqwubl3j"
+path="res://.godot/imported/Protest 3.mp3-68d1df1cab843f27de33f78d038a0958.mp3str"
+
+[deps]
+
+source_file="res://Assets/sounds/Voice Lines/Grabbed/Protest/Protest 3.mp3"
+dest_files=["res://.godot/imported/Protest 3.mp3-68d1df1cab843f27de33f78d038a0958.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

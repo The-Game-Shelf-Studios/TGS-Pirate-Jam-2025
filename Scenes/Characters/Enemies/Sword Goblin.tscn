@@ -1,7 +1,42 @@
-[gd_scene load_steps=78 format=4 uid="uid://cye0yvx322c16"]
+[gd_scene load_steps=116 format=4 uid="uid://cye0yvx322c16"]
 
 [ext_resource type="Script" path="res://Scripts/Enemies/EnemyMovementSword.gd" id="1_trwu6"]
 [ext_resource type="Script" path="res://Scripts/Enemies/player_tracker_node.gd" id="3_lnkky"]
+[ext_resource type="Material" uid="uid://c7ireh7m53ghd" path="res://Assets/Materials/Goblins and Player/GoblinGold.tres" id="3_lrhbi"]
+[ext_resource type="Material" uid="uid://bmpvbvrscwc0f" path="res://Assets/Materials/Goblins and Player/GoblinBrown.tres" id="4_tnwnp"]
+[ext_resource type="Material" uid="uid://cpcu7luqhw23j" path="res://Assets/Materials/Goblins and Player/GoblinBlack.tres" id="5_gbdls"]
+[ext_resource type="Material" uid="uid://b602kr7ch46gu" path="res://Assets/Materials/Goblins and Player/GoblinWhite.tres" id="6_mpc3b"]
+[ext_resource type="Material" uid="uid://b5qg8d874cmsk" path="res://Assets/Materials/Goblins and Player/GoblinPink.tres" id="7_npg2m"]
+[ext_resource type="Material" uid="uid://diqvw0u6i0nu8" path="res://Assets/Materials/Goblins and Player/SwordGoblin/GoblinRed1.tres" id="8_ceg6q"]
+[ext_resource type="Material" uid="uid://l1n0s24gwru1" path="res://Assets/Materials/Goblins and Player/GoblinGray1.tres" id="9_3oxjc"]
+[ext_resource type="Material" uid="uid://7mpmfoia48c2" path="res://Assets/Materials/Goblins and Player/SwordGoblin/GoblinRed3.tres" id="10_owgv6"]
+[ext_resource type="Material" uid="uid://c7khcdqjqivo1" path="res://Assets/Materials/Goblins and Player/SwordGoblin/GoblinRed2.tres" id="11_nuiii"]
+[ext_resource type="Script" path="res://Scripts/Utilities/hit_box.gd" id="12_2wc3y"]
+[ext_resource type="AudioStream" uid="uid://d2u5j1gh3j21" path="res://Assets/sounds/Voice Lines/Sword Goblin/Being Hit/Being Hit 1.mp3" id="13_2icfr"]
+[ext_resource type="AudioStream" uid="uid://dm6gnpbl51qfu" path="res://Assets/sounds/Voice Lines/Sword Goblin/Being Hit/Being Hit 2.mp3" id="14_f21s7"]
+[ext_resource type="AudioStream" uid="uid://cedg5h3cryv27" path="res://Assets/sounds/Voice Lines/Sword Goblin/Being Hit/Being Hit 11.mp3" id="15_s7m12"]
+[ext_resource type="AudioStream" uid="uid://cxrwuoo6hm44x" path="res://Assets/sounds/Voice Lines/Sword Goblin/Being Hit/Being Hit 3.mp3" id="16_kfp1v"]
+[ext_resource type="AudioStream" uid="uid://dyqrb6o5rl3bq" path="res://Assets/sounds/Voice Lines/Sword Goblin/Being Hit/Being Hit 4.mp3" id="17_ycnuo"]
+[ext_resource type="AudioStream" uid="uid://wyg7l70sj6lm" path="res://Assets/sounds/Voice Lines/Sword Goblin/Being Hit/Being Hit 5.mp3" id="18_gxep8"]
+[ext_resource type="AudioStream" uid="uid://cyq71ox1papof" path="res://Assets/sounds/Voice Lines/Sword Goblin/Being Hit/Being Hit 6.mp3" id="19_558v1"]
+[ext_resource type="AudioStream" uid="uid://b1ljhe6vpqve6" path="res://Assets/sounds/Voice Lines/Sword Goblin/Being Hit/Being Hit 7.mp3" id="20_t03c4"]
+[ext_resource type="AudioStream" uid="uid://c4gl4xahlksiv" path="res://Assets/sounds/Voice Lines/Sword Goblin/Being Hit/Being Hit 8.mp3" id="21_j6wnj"]
+[ext_resource type="AudioStream" uid="uid://bfb8rwnb3q0im" path="res://Assets/sounds/Voice Lines/Sword Goblin/Being Hit/Being Hit 9.mp3" id="22_gs8cv"]
+[ext_resource type="AudioStream" uid="uid://ecy5vimg0a2r" path="res://Assets/sounds/Voice Lines/Sword Goblin/Being Hit/Being Hit 10.mp3" id="23_d4ftj"]
+[ext_resource type="AudioStream" uid="uid://btud4uduiby3a" path="res://Assets/sounds/Voice Lines/Sword Goblin/Hitting/Hitting 1.mp3" id="24_hjh85"]
+[ext_resource type="AudioStream" uid="uid://dg5yrw8w0nxpg" path="res://Assets/sounds/Voice Lines/Sword Goblin/Hitting/Hitting 2.mp3" id="25_3xq78"]
+[ext_resource type="AudioStream" uid="uid://ddvp15weljpea" path="res://Assets/sounds/Voice Lines/Sword Goblin/Hitting/Hitting 11.mp3" id="26_0dppc"]
+[ext_resource type="AudioStream" uid="uid://pw0uwydc7do5" path="res://Assets/sounds/Voice Lines/Sword Goblin/Hitting/Hitting 12.mp3" id="27_hegp0"]
+[ext_resource type="AudioStream" uid="uid://dngu4sltqrmat" path="res://Assets/sounds/Voice Lines/Sword Goblin/Hitting/Hitting 13.mp3" id="28_52r5j"]
+[ext_resource type="AudioStream" uid="uid://u10bfijm4e2w" path="res://Assets/sounds/Voice Lines/Sword Goblin/Hitting/Hitting 14.mp3" id="29_f3equ"]
+[ext_resource type="AudioStream" uid="uid://d0utq0cjfl38j" path="res://Assets/sounds/Voice Lines/Sword Goblin/Hitting/Hitting 3.mp3" id="30_napl5"]
+[ext_resource type="AudioStream" uid="uid://btuw4mojvmsdh" path="res://Assets/sounds/Voice Lines/Sword Goblin/Hitting/Hitting 4.mp3" id="31_8ghk5"]
+[ext_resource type="AudioStream" uid="uid://c2dxphf4juh32" path="res://Assets/sounds/Voice Lines/Sword Goblin/Hitting/Hitting 5.mp3" id="32_tb0gp"]
+[ext_resource type="AudioStream" uid="uid://bjssk35jhik6v" path="res://Assets/sounds/Voice Lines/Sword Goblin/Hitting/Hitting 6.mp3" id="33_e4eon"]
+[ext_resource type="AudioStream" uid="uid://bkf5u64cgs324" path="res://Assets/sounds/Voice Lines/Sword Goblin/Hitting/Hitting 7-2.mp3" id="34_8tc64"]
+[ext_resource type="AudioStream" uid="uid://dscjw1g62ub04" path="res://Assets/sounds/Voice Lines/Sword Goblin/Hitting/Hitting 8.mp3" id="35_f0kmx"]
+[ext_resource type="AudioStream" uid="uid://by21ratqavu3h" path="res://Assets/sounds/Voice Lines/Sword Goblin/Hitting/Hitting 9.mp3" id="36_pgjiu"]
+[ext_resource type="AudioStream" uid="uid://su1p8ax23jnt" path="res://Assets/sounds/Voice Lines/Sword Goblin/Hitting/Hitting 10.mp3" id="37_i02qs"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_h4r1p"]
 height = 1.25
@@ -718,7 +753,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="Animation" id="Animation_e134w"]
+[sub_resource type="Animation" id="Animation_n5fb3"]
 resource_name = "Goblin Poses"
 length = 0.05
 tracks/0/type = "position_3d"
@@ -932,7 +967,7 @@ tracks/29/interp = 0
 tracks/29/loop_wrap = true
 tracks/29/keys = PackedFloat32Array(0, 1, -0.707106, -6.97622e-06, -6.03845e-06, 0.707107)
 
-[sub_resource type="Animation" id="Animation_oaygk"]
+[sub_resource type="Animation" id="Animation_fqicj"]
 resource_name = "Goblin Poses_001"
 length = 0.05
 tracks/0/type = "position_3d"
@@ -1146,7 +1181,7 @@ tracks/29/interp = 0
 tracks/29/loop_wrap = true
 tracks/29/keys = PackedFloat32Array(0, 1, -0.707106, -6.97622e-06, -6.03845e-06, 0.707107)
 
-[sub_resource type="Animation" id="Animation_l2lha"]
+[sub_resource type="Animation" id="Animation_ow6bt"]
 resource_name = "GoblinAttack1"
 length = 0.833333
 tracks/0/type = "position_3d"
@@ -1360,7 +1395,7 @@ tracks/29/interp = 1
 tracks/29/loop_wrap = true
 tracks/29/keys = PackedFloat32Array(0, 1, -0.707106, -6.97622e-06, -6.03845e-06, 0.707107, 0.0333333, 1, -0.7086, 9.98412e-05, 0.000100732, 0.70561, 0.0666667, 1, -0.712483, 0.000378638, 0.000379432, 0.701689, 0.1, 1, -0.717855, 0.000766925, 0.000767569, 0.696192, 0.133333, 1, -0.723826, 0.0012021, 0.00120258, 0.689981, 0.166667, 1, -0.72953, 0.00162155, 0.00162188, 0.683945, 0.2, 1, -0.734134, 0.00196271, 0.0019629, 0.678999, 0.233333, 1, -0.736824, 0.00216315, 0.00216327, 0.676078, 0.3, 1, -0.737199, 0.00219113, 0.00219124, 0.675669, 0.333333, 1, -0.734971, 0.00196647, 0.00221747, 0.678092, 0.366667, 1, -0.71873, 0.000351519, 0.00240515, 0.695285, 0.4, 1, -0.689991, -0.00241343, 0.0027233, 0.723809, 0.433333, 1, -0.652912, -0.00582422, 0.0031102, 0.757405, 0.466667, 1, -0.612664, -0.00935102, 0.00350373, 0.79028, 0.5, 1, -0.575487, -0.0124652, 0.00384562, 0.817707, 0.533333, 1, -0.5482, -0.0146713, 0.00408457, 0.836208, 0.566667, 1, -0.537639, -0.0155082, 0.0041745, 0.843022, 0.833333, 1, -0.537639, -0.0155082, 0.0041745, 0.843022)
 
-[sub_resource type="Animation" id="Animation_shvaa"]
+[sub_resource type="Animation" id="Animation_i88ue"]
 resource_name = "GoblinAttack2"
 length = 0.833333
 tracks/0/type = "position_3d"
@@ -1574,7 +1609,7 @@ tracks/29/interp = 1
 tracks/29/loop_wrap = true
 tracks/29/keys = PackedFloat32Array(0, 1, -0.707106, -6.97622e-06, -6.03845e-06, 0.707107, 0.0333333, 1, -0.710095, -6.82235e-06, -6.02861e-06, 0.704106, 0.0666667, 1, -0.71784, -6.40845e-06, -6.0006e-06, 0.696208, 0.1, 1, -0.728485, -5.83237e-06, -5.95761e-06, 0.685062, 0.133333, 1, -0.740215, -5.18797e-06, -5.9049e-06, 0.67237, 0.166667, 1, -0.751313, -4.56323e-06, -5.85586e-06, 0.659946, 0.2, 1, -0.760184, -4.05463e-06, -5.81267e-06, 0.649708, 0.233333, 1, -0.76533, -3.75652e-06, -5.78525e-06, 0.643638, 0.266667, 1, -0.766044, -3.71551e-06, -5.78133e-06, 0.642788, 0.333333, 1, -0.766044, -3.71551e-06, -5.78133e-06, 0.642788, 0.366667, 1, -0.78035, -3.68401e-06, -5.87026e-06, 0.625343, 0.4, 1, -0.813032, -3.59556e-06, -6.08167e-06, 0.582219, 0.433333, 1, -0.849033, -3.47886e-06, -6.30081e-06, 0.528339, 0.466667, 1, -0.876368, -3.37006e-06, -6.46696e-06, 0.481642, 0.5, 1, -0.887011, -3.32364e-06, -6.53369e-06, 0.461749, 0.833333, 1, -0.887011, -3.32364e-06, -6.53369e-06, 0.461749)
 
-[sub_resource type="Animation" id="Animation_ij30a"]
+[sub_resource type="Animation" id="Animation_ih7at"]
 resource_name = "GoblinBeingSwung1"
 length = 0.666667
 tracks/0/type = "position_3d"
@@ -1788,7 +1823,7 @@ tracks/29/interp = 1
 tracks/29/loop_wrap = true
 tracks/29/keys = PackedFloat32Array(0, 1, -0.707106, -6.97469e-06, -6.0399e-06, 0.707107)
 
-[sub_resource type="Animation" id="Animation_g454k"]
+[sub_resource type="Animation" id="Animation_kcu84"]
 resource_name = "GoblinDeath"
 length = 0.433333
 tracks/0/type = "position_3d"
@@ -2002,9 +2037,10 @@ tracks/29/interp = 1
 tracks/29/loop_wrap = true
 tracks/29/keys = PackedFloat32Array(0, 1, -0.707106, -6.97622e-06, -6.03845e-06, 0.707107)
 
-[sub_resource type="Animation" id="Animation_80iq6"]
+[sub_resource type="Animation" id="Animation_ldf8s"]
 resource_name = "GoblinGrab1Alive"
 length = 0.5
+loop_mode = 1
 tracks/0/type = "position_3d"
 tracks/0/imported = true
 tracks/0/enabled = true
@@ -2216,9 +2252,10 @@ tracks/29/interp = 0
 tracks/29/loop_wrap = true
 tracks/29/keys = PackedFloat32Array(0, 1, -0.707106, -6.97429e-06, -6.0408e-06, 0.707107)
 
-[sub_resource type="Animation" id="Animation_dp34s"]
+[sub_resource type="Animation" id="Animation_u450h"]
 resource_name = "GoblinGrab1Dead"
 length = 0.5
+loop_mode = 1
 tracks/0/type = "position_3d"
 tracks/0/imported = true
 tracks/0/enabled = true
@@ -2430,9 +2467,10 @@ tracks/29/interp = 0
 tracks/29/loop_wrap = true
 tracks/29/keys = PackedFloat32Array(0, 1, -0.707106, -6.97395e-06, -6.04065e-06, 0.707107)
 
-[sub_resource type="Animation" id="Animation_pav3q"]
+[sub_resource type="Animation" id="Animation_df2vk"]
 resource_name = "GoblinGrab2Dead"
 length = 0.5
+loop_mode = 1
 tracks/0/type = "position_3d"
 tracks/0/imported = true
 tracks/0/enabled = true
@@ -2644,7 +2682,7 @@ tracks/29/interp = 0
 tracks/29/loop_wrap = true
 tracks/29/keys = PackedFloat32Array(0, 1, -0.707106, -6.97395e-06, -6.04065e-06, 0.707107)
 
-[sub_resource type="Animation" id="Animation_kyqd1"]
+[sub_resource type="Animation" id="Animation_kdigs"]
 resource_name = "GoblinRangedIdle"
 length = 12.0
 tracks/0/type = "position_3d"
@@ -2858,7 +2896,7 @@ tracks/29/interp = 0
 tracks/29/loop_wrap = true
 tracks/29/keys = PackedFloat32Array(0, 1, -0.707106, -6.97622e-06, -6.03845e-06, 0.707107)
 
-[sub_resource type="Animation" id="Animation_i720x"]
+[sub_resource type="Animation" id="Animation_72uwm"]
 resource_name = "GoblinRangedRun"
 length = 0.666667
 tracks/0/type = "position_3d"
@@ -3072,7 +3110,7 @@ tracks/29/interp = 1
 tracks/29/loop_wrap = true
 tracks/29/keys = PackedFloat32Array(0, 1, -0.88647, 0.0151435, 0.0151415, 0.462289, 0.0333333, 1, -0.884783, 0.0149678, 0.0149658, 0.465523, 0.0666667, 1, -0.880139, 0.0144894, 0.0144875, 0.474274, 0.1, 1, -0.873128, 0.0137809, 0.0137791, 0.487101, 0.133333, 1, -0.864353, 0.0129156, 0.012914, 0.502554, 0.2, 1, -0.844295, 0.0110172, 0.0110159, 0.535652, 0.233333, 1, -0.834658, 0.0101399, 0.0101387, 0.550582, 0.266667, 1, -0.826533, 0.00941576, 0.00941473, 0.562731, 0.3, 1, -0.820925, 0.00892385, 0.00892291, 0.570897, 0.366667, 1, -0.820925, 0.00892385, 0.00892291, 0.570897, 0.4, 1, -0.826533, 0.00941576, 0.00941473, 0.562731, 0.433333, 1, -0.834658, 0.0101399, 0.0101387, 0.550582, 0.466667, 1, -0.844295, 0.0110172, 0.0110159, 0.535652, 0.533333, 1, -0.864353, 0.0129156, 0.012914, 0.502554, 0.566667, 1, -0.873128, 0.0137809, 0.0137791, 0.487101, 0.6, 1, -0.880139, 0.0144894, 0.0144875, 0.474274, 0.633333, 1, -0.884783, 0.0149678, 0.0149658, 0.465523, 0.666667, 1, -0.88647, 0.0151435, 0.0151415, 0.462289)
 
-[sub_resource type="Animation" id="Animation_av0si"]
+[sub_resource type="Animation" id="Animation_iitx7"]
 resource_name = "GoblinRanggedAttack"
 length = 0.833333
 tracks/0/type = "position_3d"
@@ -3286,7 +3324,7 @@ tracks/29/interp = 0
 tracks/29/loop_wrap = true
 tracks/29/keys = PackedFloat32Array(0, 1, -0.854485, 0.0119687, 0.0119672, 0.519201)
 
-[sub_resource type="Animation" id="Animation_hjcdg"]
+[sub_resource type="Animation" id="Animation_obifs"]
 resource_name = "GoblinRun"
 length = 0.666667
 loop_mode = 1
@@ -3501,7 +3539,7 @@ tracks/29/interp = 1
 tracks/29/loop_wrap = true
 tracks/29/keys = PackedFloat32Array(0, 1, -0.88647, 0.0151435, 0.0151415, 0.462289, 0.0333333, 1, -0.884783, 0.0149678, 0.0149658, 0.465523, 0.0666667, 1, -0.880139, 0.0144894, 0.0144875, 0.474274, 0.1, 1, -0.873128, 0.0137809, 0.0137791, 0.487101, 0.133333, 1, -0.864353, 0.0129156, 0.012914, 0.502554, 0.2, 1, -0.844295, 0.0110172, 0.0110159, 0.535652, 0.233333, 1, -0.834658, 0.0101399, 0.0101387, 0.550582, 0.266667, 1, -0.826533, 0.00941576, 0.00941473, 0.562731, 0.3, 1, -0.820925, 0.00892385, 0.00892291, 0.570897, 0.366667, 1, -0.820925, 0.00892385, 0.00892291, 0.570897, 0.4, 1, -0.826533, 0.00941576, 0.00941473, 0.562731, 0.433333, 1, -0.834658, 0.0101399, 0.0101387, 0.550582, 0.466667, 1, -0.844295, 0.0110172, 0.0110159, 0.535652, 0.533333, 1, -0.864353, 0.0129156, 0.012914, 0.502554, 0.566667, 1, -0.873128, 0.0137809, 0.0137791, 0.487101, 0.6, 1, -0.880139, 0.0144894, 0.0144875, 0.474274, 0.633333, 1, -0.884783, 0.0149678, 0.0149658, 0.465523, 0.666667, 1, -0.88647, 0.0151435, 0.0151415, 0.462289)
 
-[sub_resource type="Animation" id="Animation_y2avn"]
+[sub_resource type="Animation" id="Animation_jnp7f"]
 resource_name = "GoblinSwordIdle"
 length = 10.0
 loop_mode = 1
@@ -3716,7 +3754,7 @@ tracks/29/interp = 0
 tracks/29/loop_wrap = true
 tracks/29/keys = PackedFloat32Array(0, 1, -0.707106, -6.97622e-06, -6.03845e-06, 0.707107)
 
-[sub_resource type="Animation" id="Animation_pgnc0"]
+[sub_resource type="Animation" id="Animation_r8vow"]
 resource_name = "OrcCrossbowGrab"
 length = 0.666667
 tracks/0/type = "position_3d"
@@ -3930,7 +3968,7 @@ tracks/29/interp = 0
 tracks/29/loop_wrap = true
 tracks/29/keys = PackedFloat32Array(0, 1, -0.707106, -6.97622e-06, -6.03845e-06, 0.707107)
 
-[sub_resource type="Animation" id="Animation_eui1n"]
+[sub_resource type="Animation" id="Animation_jepqg"]
 resource_name = "OrcCrossbowShoot"
 length = 0.333333
 tracks/0/type = "position_3d"
@@ -4144,7 +4182,7 @@ tracks/29/interp = 0
 tracks/29/loop_wrap = true
 tracks/29/keys = PackedFloat32Array(0, 1, -0.707106, -6.97622e-06, -6.03845e-06, 0.707107)
 
-[sub_resource type="Animation" id="Animation_mr12a"]
+[sub_resource type="Animation" id="Animation_eggr6"]
 resource_name = "OrcLeftHandPunch"
 length = 0.25
 tracks/0/type = "position_3d"
@@ -4358,7 +4396,7 @@ tracks/29/interp = 0
 tracks/29/loop_wrap = true
 tracks/29/keys = PackedFloat32Array(0, 1, -0.707106, -6.97622e-06, -6.03845e-06, 0.707107)
 
-[sub_resource type="Animation" id="Animation_2w7pc"]
+[sub_resource type="Animation" id="Animation_k0nf0"]
 resource_name = "OrcPoses"
 length = 0.0166667
 tracks/0/type = "position_3d"
@@ -4572,7 +4610,7 @@ tracks/29/interp = 0
 tracks/29/loop_wrap = true
 tracks/29/keys = PackedFloat32Array(0, 1, -0.707106, -6.97622e-06, -6.03845e-06, 0.707107)
 
-[sub_resource type="Animation" id="Animation_5fihh"]
+[sub_resource type="Animation" id="Animation_1gsnv"]
 resource_name = "OrcSwordGrab"
 length = 0.666667
 tracks/0/type = "position_3d"
@@ -4786,7 +4824,7 @@ tracks/29/interp = 0
 tracks/29/loop_wrap = true
 tracks/29/keys = PackedFloat32Array(0, 1, -0.707106, -6.97622e-06, -6.03845e-06, 0.707107)
 
-[sub_resource type="Animation" id="Animation_o40eg"]
+[sub_resource type="Animation" id="Animation_ver2v"]
 resource_name = "OrcSwordSwing"
 length = 0.5
 tracks/0/type = "position_3d"
@@ -5000,28 +5038,28 @@ tracks/29/interp = 0
 tracks/29/loop_wrap = true
 tracks/29/keys = PackedFloat32Array(0, 1, -0.707106, -6.97622e-06, -6.03845e-06, 0.707107)
 
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_atbvu"]
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ih40x"]
 _data = {
-"Goblin Poses": SubResource("Animation_e134w"),
-"Goblin Poses_001": SubResource("Animation_oaygk"),
-"GoblinAttack1": SubResource("Animation_l2lha"),
-"GoblinAttack2": SubResource("Animation_shvaa"),
-"GoblinBeingSwung1": SubResource("Animation_ij30a"),
-"GoblinDeath": SubResource("Animation_g454k"),
-"GoblinGrab1Alive": SubResource("Animation_80iq6"),
-"GoblinGrab1Dead": SubResource("Animation_dp34s"),
-"GoblinGrab2Dead": SubResource("Animation_pav3q"),
-"GoblinRangedIdle": SubResource("Animation_kyqd1"),
-"GoblinRangedRun": SubResource("Animation_i720x"),
-"GoblinRanggedAttack": SubResource("Animation_av0si"),
-"GoblinRun": SubResource("Animation_hjcdg"),
-"GoblinSwordIdle": SubResource("Animation_y2avn"),
-"OrcCrossbowGrab": SubResource("Animation_pgnc0"),
-"OrcCrossbowShoot": SubResource("Animation_eui1n"),
-"OrcLeftHandPunch": SubResource("Animation_mr12a"),
-"OrcPoses": SubResource("Animation_2w7pc"),
-"OrcSwordGrab": SubResource("Animation_5fihh"),
-"OrcSwordSwing": SubResource("Animation_o40eg")
+"Goblin Poses": SubResource("Animation_n5fb3"),
+"Goblin Poses_001": SubResource("Animation_fqicj"),
+"GoblinAttack1": SubResource("Animation_ow6bt"),
+"GoblinAttack2": SubResource("Animation_i88ue"),
+"GoblinBeingSwung1": SubResource("Animation_ih7at"),
+"GoblinDeath": SubResource("Animation_kcu84"),
+"GoblinGrab1Alive": SubResource("Animation_ldf8s"),
+"GoblinGrab1Dead": SubResource("Animation_u450h"),
+"GoblinGrab2Dead": SubResource("Animation_df2vk"),
+"GoblinRangedIdle": SubResource("Animation_kdigs"),
+"GoblinRangedRun": SubResource("Animation_72uwm"),
+"GoblinRanggedAttack": SubResource("Animation_iitx7"),
+"GoblinRun": SubResource("Animation_obifs"),
+"GoblinSwordIdle": SubResource("Animation_jnp7f"),
+"OrcCrossbowGrab": SubResource("Animation_r8vow"),
+"OrcCrossbowShoot": SubResource("Animation_jepqg"),
+"OrcLeftHandPunch": SubResource("Animation_eggr6"),
+"OrcPoses": SubResource("Animation_k0nf0"),
+"OrcSwordGrab": SubResource("Animation_1gsnv"),
+"OrcSwordSwing": SubResource("Animation_ver2v")
 }
 
 [sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_oefpe"]
@@ -5047,18 +5085,22 @@ advance_mode = 2
 advance_condition = &"Attack2"
 
 [sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_oa2b5"]
+xfade_time = 0.2
 advance_mode = 2
 advance_condition = &"IsDead"
 
 [sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_4amuu"]
+xfade_time = 0.2
 advance_mode = 2
 advance_condition = &"IsDead"
 
 [sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_5tqu2"]
+xfade_time = 0.2
 advance_mode = 2
 advance_condition = &"IsDead"
 
 [sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_ery0e"]
+xfade_time = 0.2
 advance_mode = 2
 advance_condition = &"IsDead"
 
@@ -5107,7 +5149,42 @@ states/Start/position = Vector2(68, 83)
 transitions = ["Start", "GoblinSwordIdle", SubResource("AnimationNodeStateMachineTransition_l0y8h"), "GoblinRun", "GoblinAttack2", SubResource("AnimationNodeStateMachineTransition_a7740"), "GoblinSwordIdle", "GoblinDeath", SubResource("AnimationNodeStateMachineTransition_oa2b5"), "GoblinAttack1", "GoblinDeath", SubResource("AnimationNodeStateMachineTransition_4amuu"), "GoblinRun", "GoblinDeath", SubResource("AnimationNodeStateMachineTransition_5tqu2"), "GoblinAttack2", "GoblinDeath", SubResource("AnimationNodeStateMachineTransition_ery0e"), "GoblinAttack2", "GoblinRun", SubResource("AnimationNodeStateMachineTransition_6kl0d"), "GoblinDeath", "End", SubResource("AnimationNodeStateMachineTransition_4vekp"), "GoblinAttack1", "GoblinRun", SubResource("AnimationNodeStateMachineTransition_muq8r"), "GoblinRun", "GoblinAttack1", SubResource("AnimationNodeStateMachineTransition_bwjl7"), "GoblinSwordIdle", "GoblinRun", SubResource("AnimationNodeStateMachineTransition_qb037"), "GoblinRun", "GoblinSwordIdle", SubResource("AnimationNodeStateMachineTransition_f6nqu")]
 graph_offset = Vector2(-25, 41)
 
-[node name="SwordGoblin" type="CharacterBody3D"]
+[sub_resource type="BoxShape3D" id="BoxShape3D_2qkp3"]
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_j8ser"]
+playback_mode = 1
+streams_count = 11
+stream_0/stream = ExtResource("13_2icfr")
+stream_1/stream = ExtResource("14_f21s7")
+stream_2/stream = ExtResource("16_kfp1v")
+stream_3/stream = ExtResource("17_ycnuo")
+stream_4/stream = ExtResource("18_gxep8")
+stream_5/stream = ExtResource("19_558v1")
+stream_6/stream = ExtResource("20_t03c4")
+stream_7/stream = ExtResource("21_j6wnj")
+stream_8/stream = ExtResource("22_gs8cv")
+stream_9/stream = ExtResource("23_d4ftj")
+stream_10/stream = ExtResource("15_s7m12")
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_eb0vs"]
+playback_mode = 1
+streams_count = 14
+stream_0/stream = ExtResource("24_hjh85")
+stream_1/stream = ExtResource("25_3xq78")
+stream_2/stream = ExtResource("30_napl5")
+stream_3/stream = ExtResource("31_8ghk5")
+stream_4/stream = ExtResource("32_tb0gp")
+stream_5/stream = ExtResource("33_e4eon")
+stream_6/stream = ExtResource("34_8tc64")
+stream_7/stream = ExtResource("35_f0kmx")
+stream_8/stream = ExtResource("36_pgjiu")
+stream_9/stream = ExtResource("37_i02qs")
+stream_10/stream = ExtResource("26_0dppc")
+stream_11/stream = ExtResource("27_hegp0")
+stream_12/stream = ExtResource("28_52r5j")
+stream_13/stream = ExtResource("29_f3equ")
+
+[node name="SwordGoblin" type="CharacterBody3D" groups=["Enemy"]]
 script = ExtResource("1_trwu6")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
@@ -5131,22 +5208,22 @@ bones/1/name = "LowerSpine.Bone.C"
 bones/1/parent = 0
 bones/1/rest = Transform3D(1, 2.74817e-09, 1.46896e-08, -3.18743e-09, 0.99955, 0.0299867, -1.46005e-08, -0.0299867, 0.99955, 0, 0.27, 0)
 bones/1/enabled = true
-bones/1/position = Vector3(-8.1902e-17, 0.27, 8.93674e-10)
-bones/1/rotation = Quaternion(-0.0149951, 7.32335e-09, -1.48407e-09, 0.999888)
+bones/1/position = Vector3(0, 0.27, 0)
+bones/1/rotation = Quaternion(-0.014995, 7.32333e-09, -1.48407e-09, 0.999888)
 bones/1/scale = Vector3(1, 1, 1)
 bones/2/name = "MiddleSpine.Bone.C"
 bones/2/parent = 1
 bones/2/rest = Transform3D(1, -3.18743e-09, -1.46005e-08, 2.74817e-09, 0.99955, -0.0299867, 1.46896e-08, 0.0299867, 0.99955, -2.498e-16, 0.100045, -4.65662e-10)
 bones/2/enabled = true
 bones/2/position = Vector3(-2.498e-16, 0.100045, -4.65662e-10)
-bones/2/rotation = Quaternion(0.0149951, -3.6063e-06, 0.000239985, 0.999888)
+bones/2/rotation = Quaternion(0.014995, -7.32337e-09, 1.48407e-09, 0.999888)
 bones/2/scale = Vector3(1, 1, 1)
 bones/3/name = "UpperSpine.Bone.C"
 bones/3/parent = 2
 bones/3/rest = Transform3D(1, -1.62838e-16, -1.42109e-14, 1.62838e-16, 1, -1.86265e-09, 1.42109e-14, 1.86265e-09, 1, -1.3693e-16, 0.13, -2.32831e-10)
 bones/3/enabled = true
 bones/3/position = Vector3(-1.3693e-16, 0.13, -2.32831e-10)
-bones/3/rotation = Quaternion(9.31323e-10, -7.10543e-15, 8.14188e-17, 1)
+bones/3/rotation = Quaternion(9.31325e-10, -7.10545e-15, 8.1419e-17, 1)
 bones/3/scale = Vector3(1, 1, 1)
 bones/4/name = "Shoulder.Bone.L"
 bones/4/parent = 3
@@ -5160,41 +5237,41 @@ bones/5/parent = 4
 bones/5/rest = Transform3D(0.882353, -0.470588, 1.27099e-07, 0.470588, 0.882353, 2.44088e-07, -2.27011e-07, -1.5556e-07, 1, 1.45679e-09, 0.17, -3.94493e-10)
 bones/5/enabled = true
 bones/5/position = Vector3(1.45679e-09, 0.17, -3.94493e-10)
-bones/5/rotation = Quaternion(-4.52021e-09, 5.90001e-08, -0.28057, 0.959834)
+bones/5/rotation = Quaternion(-1.02987e-07, 9.12521e-08, 0.242536, 0.970143)
 bones/5/scale = Vector3(1, 1, 1)
 bones/6/name = "LowerArm.Bone.L"
 bones/6/parent = 5
 bones/6/rest = Transform3D(1, 4.69713e-14, 5.19862e-14, -4.69713e-14, 1, -3.48758e-14, -5.19862e-14, 3.48758e-14, 1, -5.8043e-08, 0.11, -2.27892e-10)
 bones/6/enabled = true
 bones/6/position = Vector3(-5.8043e-08, 0.11, -2.27892e-10)
-bones/6/rotation = Quaternion(6.70902e-08, -1.16376e-10, -0.252606, 0.967569)
+bones/6/rotation = Quaternion(1.74379e-14, 2.59931e-14, -2.34857e-14, 1)
 bones/6/scale = Vector3(1, 1, 1)
 bones/7/name = "UpperHand.Bone.L"
 bones/7/parent = 6
 bones/7/rest = Transform3D(1, 1.04737e-15, 5.19862e-14, -1.04737e-15, 1, -9.17192e-14, -5.19862e-14, 9.17192e-14, 1, -5.8043e-08, 0.1, -2.27892e-10)
 bones/7/enabled = true
 bones/7/position = Vector3(-5.8043e-08, 0.1, -2.27892e-10)
-bones/7/rotation = Quaternion(1.46901e-14, 2.65968e-14, -2.48297e-16, 1)
+bones/7/rotation = Quaternion(4.58596e-14, 2.59931e-14, -5.23685e-16, 1)
 bones/7/scale = Vector3(1, 1, 1)
 bones/8/name = "MiddleHand.Bone.L"
 bones/8/parent = 7
 bones/8/rest = Transform3D(1, 1.04747e-15, 5.19862e-14, -1.04747e-15, 1, 2.2092e-13, -5.19862e-14, -2.2092e-13, 1, -5.8043e-08, 0.0400001, -2.27914e-10)
 bones/8/enabled = true
 bones/8/position = Vector3(-5.8043e-08, 0.0400001, -2.27914e-10)
-bones/8/rotation = Quaternion(-1.41629e-13, 2.65968e-14, -2.48293e-16, 1)
+bones/8/rotation = Quaternion(-1.1046e-13, 2.59931e-14, -5.23735e-16, 1)
 bones/8/scale = Vector3(1, 1, 1)
 bones/9/name = "LowerHand.Bone.L"
 bones/9/parent = 8
 bones/9/rest = Transform3D(1, 1.04729e-15, 5.19862e-14, -1.04729e-15, 1, -1.76984e-13, -5.19862e-14, 1.76984e-13, 1, -5.8043e-08, 0.0400001, -2.27814e-10)
 bones/9/enabled = true
 bones/9/position = Vector3(-5.8043e-08, 0.0400001, -2.27814e-10)
-bones/9/rotation = Quaternion(5.73226e-14, 2.65968e-14, -2.48258e-16, 1)
+bones/9/rotation = Quaternion(8.8492e-14, 2.59931e-14, -5.23645e-16, 1)
 bones/9/scale = Vector3(1, 1, 1)
 bones/10/name = "Weapon.Bone.L"
 bones/10/parent = 7
 bones/10/rest = Transform3D(1, -5.21541e-07, 5.20549e-07, 5.20548e-07, -3.57628e-07, -1, 5.21541e-07, 1, -3.57628e-07, 0.0299999, 0.0600001, 1.53327e-08)
 bones/10/enabled = true
-bones/10/position = Vector3(0.03, 0.04, 1.05689e-08)
+bones/10/position = Vector3(0.0299999, 0.0600001, 1.53327e-08)
 bones/10/rotation = Quaternion(0.707107, -3.50776e-10, 3.68434e-07, 0.707107)
 bones/10/scale = Vector3(1, 1, 1)
 bones/11/name = "UpperThumb.Bone.L"
@@ -5202,14 +5279,14 @@ bones/11/parent = 7
 bones/11/rest = Transform3D(1, -4.16439e-07, 2.08219e-07, 4.16439e-07, 0.6, -0.8, 2.08219e-07, 0.8, 0.6, -5.8043e-08, 4.25335e-08, -2.27914e-10)
 bones/11/enabled = true
 bones/11/position = Vector3(-5.8043e-08, 4.25335e-08, -2.27914e-10)
-bones/11/rotation = Quaternion(0.447214, 1.90128e-11, 2.32823e-07, 0.894427)
+bones/11/rotation = Quaternion(0.447214, 2.22435e-13, 2.32796e-07, 0.894427)
 bones/11/scale = Vector3(1, 1, 1)
 bones/12/name = "LowerThumb.Bone.L"
 bones/12/parent = 11
 bones/12/rest = Transform3D(1, -3.12329e-07, 1.0411e-07, 3.12329e-07, 0.8, -0.600001, 1.0411e-07, 0.6, 0.8, -2.7959e-08, 0.05, -1.98862e-08)
 bones/12/enabled = true
 bones/12/position = Vector3(-2.7959e-08, 0.05, -1.98862e-08)
-bones/12/rotation = Quaternion(0.316228, 1.99625e-11, 1.64644e-07, 0.948683)
+bones/12/rotation = Quaternion(0.316228, -1.59158e-13, 1.64612e-07, 0.948683)
 bones/12/scale = Vector3(1, 1, 1)
 bones/13/name = "GoblinSwordArmorPauldron.Object"
 bones/13/parent = 4
@@ -5223,14 +5300,14 @@ bones/14/parent = 3
 bones/14/rest = Transform3D(1, 1.32349e-23, 2.38419e-07, -1.32349e-23, 1, 1.27799e-22, -2.38419e-07, -1.27799e-22, 1, 5.55112e-17, 0.12, -2.32831e-10)
 bones/14/enabled = true
 bones/14/position = Vector3(5.55112e-17, 0.12, -2.32831e-10)
-bones/14/rotation = Quaternion(-1.27799e-22, 1.19209e-07, 8.01189e-30, 1)
+bones/14/rotation = Quaternion(-6.38995e-23, 1.1921e-07, -6.61744e-24, 1)
 bones/14/scale = Vector3(1, 1, 1)
 bones/15/name = "Head.Bone.C"
 bones/15/parent = 14
 bones/15/rest = Transform3D(1, -2.64697e-23, -2.38419e-07, 2.64698e-23, 1, 3.29631e-22, 2.38419e-07, -3.29631e-22, 1, 8.32667e-17, 0.2, -2.32831e-10)
 bones/15/enabled = true
 bones/15/position = Vector3(8.32667e-17, 0.2, -2.32831e-10)
-bones/15/rotation = Quaternion(2.89547e-11, -0.00901574, 1.6421e-10, 0.999959)
+bones/15/rotation = Quaternion(-1.64815e-22, -1.1921e-07, 1.32349e-23, 1)
 bones/15/scale = Vector3(1, 1, 1)
 bones/16/name = "AngryEyebrows.Object"
 bones/16/parent = 15
@@ -5307,41 +5384,41 @@ bones/26/parent = 25
 bones/26/rest = Transform3D(0.882353, 0.470588, -7.88992e-09, -0.470588, 0.882353, 2.44087e-07, 1.21826e-07, -2.11658e-07, 1, -8.9409e-10, 0.17, -1.83636e-10)
 bones/26/enabled = true
 bones/26/position = Vector3(-8.9409e-10, 0.17, -1.83636e-10)
-bones/26/rotation = Quaternion(1.22031e-08, -1.78953e-09, 0.28057, 0.959834)
+bones/26/rotation = Quaternion(-1.17443e-07, -3.3427e-08, -0.242536, 0.970143)
 bones/26/scale = Vector3(1, 1, 1)
 bones/27/name = "LowerArm.Bone.R"
 bones/27/parent = 26
 bones/27/rest = Transform3D(1, -8.64461e-14, -6.17006e-14, 8.64461e-14, 1, 5.03893e-14, 6.17006e-14, -5.03893e-14, 1, 5.8043e-08, 0.11, -2.27857e-10)
 bones/27/enabled = true
 bones/27/position = Vector3(5.8043e-08, 0.11, -2.27857e-10)
-bones/27/rotation = Quaternion(6.70902e-08, 1.16393e-10, 0.252606, 0.967569)
+bones/27/rotation = Quaternion(-2.51946e-14, -3.08503e-14, 4.32231e-14, 1)
 bones/27/scale = Vector3(1, 1, 1)
 bones/28/name = "UpperHand.Bone.R"
 bones/28/parent = 27
 bones/28/rest = Transform3D(1, -1.61716e-15, -6.17006e-14, 1.61716e-15, 1, 7.8811e-14, 6.17006e-14, -7.8811e-14, 1, 5.8043e-08, 0.1, -2.2785e-10)
 bones/28/enabled = true
 bones/28/position = Vector3(5.8043e-08, 0.1, -2.2785e-10)
-bones/28/rotation = Quaternion(-2.56422e-14, -1.11716e-15, -2.9103e-11, 1)
+bones/28/rotation = Quaternion(-3.94055e-14, -3.08503e-14, 8.0858e-16, 1)
 bones/28/scale = Vector3(1, 1, 1)
 bones/29/name = "MiddleHand.Bone.R"
 bones/29/parent = 28
 bones/29/rest = Transform3D(1, -1.61707e-15, -6.17006e-14, 1.61707e-15, 1, -2.33828e-13, 6.17006e-14, 2.33828e-13, 1, 5.8043e-08, 0.0400001, -2.27828e-10)
 bones/29/enabled = true
 bones/29/position = Vector3(5.8043e-08, 0.0400001, -2.27828e-10)
-bones/29/rotation = Quaternion(9.73221e-08, 1.3387e-10, 0.365804, 0.930692)
+bones/29/rotation = Quaternion(1.16914e-13, -3.08503e-14, 8.08535e-16, 1)
 bones/29/scale = Vector3(1, 1, 1)
 bones/30/name = "LowerHand.Bone.R"
 bones/30/parent = 29
 bones/30/rest = Transform3D(1, -1.61724e-15, -6.17006e-14, 1.61724e-15, 1, 1.64076e-13, 6.17006e-14, -1.64076e-13, 1, 5.8043e-08, 0.0400001, -2.27928e-10)
 bones/30/enabled = true
 bones/30/position = Vector3(5.8043e-08, 0.0400001, -2.27928e-10)
-bones/30/rotation = Quaternion(2.25842e-07, -2.74816e-10, 0.850922, 0.525292)
+bones/30/rotation = Quaternion(-8.2038e-14, -3.08503e-14, 8.0862e-16, 1)
 bones/30/scale = Vector3(1, 1, 1)
 bones/31/name = "Weapon.Bone.R"
 bones/31/parent = 28
 bones/31/rest = Transform3D(1, 5.21541e-07, -5.20548e-07, -5.20548e-07, 3.57628e-07, -1, -5.2154e-07, 1, 3.57628e-07, -0.0299999, 0.0600001, 1.53327e-08)
 bones/31/enabled = true
-bones/31/position = Vector3(-0.03, 0.04, 2.01441e-08)
+bones/31/position = Vector3(-0.0299999, 0.0600001, 1.53327e-08)
 bones/31/rotation = Quaternion(0.707107, 3.50776e-10, -3.68434e-07, 0.707107)
 bones/31/scale = Vector3(1, 1, 1)
 bones/32/name = "GoblinSword.Object"
@@ -5356,168 +5433,192 @@ bones/33/parent = 28
 bones/33/rest = Transform3D(1, 4.16439e-07, -2.0822e-07, -4.16439e-07, 0.6, -0.8, -2.08219e-07, 0.8, 0.6, 5.8043e-08, 4.44894e-08, -2.27828e-10)
 bones/33/enabled = true
 bones/33/position = Vector3(5.8043e-08, 4.44894e-08, -2.27828e-10)
-bones/33/rotation = Quaternion(0.447214, -5.15345e-11, -2.32823e-07, 0.894427)
+bones/33/rotation = Quaternion(0.447214, -2.22435e-13, -2.32796e-07, 0.894427)
 bones/33/scale = Vector3(1, 1, 1)
 bones/34/name = "LowerThumb.Bone.R"
 bones/34/parent = 33
 bones/34/rest = Transform3D(1, 3.12329e-07, -1.04109e-07, -3.12329e-07, 0.8, -0.6, -1.0411e-07, 0.6, 0.8, 2.79589e-08, 0.05, 1.5504e-08)
 bones/34/enabled = true
 bones/34/position = Vector3(2.79589e-08, 0.05, 1.5504e-08)
-bones/34/rotation = Quaternion(0.381102, -0.0622457, 0.723366, 0.572389)
+bones/34/rotation = Quaternion(0.316228, 1.5354e-13, -1.64612e-07, 0.948683)
 bones/34/scale = Vector3(1, 1, 1)
 bones/35/name = "UpperLeg.Bone.L"
 bones/35/parent = 1
 bones/35/rest = Transform3D(0.995912, 0.0905365, -1.18494e-05, 0.0904979, -0.995445, 0.0299851, 0.002703, -0.029863, -0.999552, 0.09, 0.0193912, 0.0205907)
 bones/35/enabled = true
 bones/35/position = Vector3(0.09, 0.0193912, 0.0205907)
-bones/35/rotation = Quaternion(0.998861, 0.0453098, 0.000673542, -0.0149791)
+bones/35/rotation = Quaternion(0.99886, 0.0453098, 0.000673542, -0.0149791)
 bones/35/scale = Vector3(1.00002, 1, 1)
 bones/36/name = "LowerLeg.Bone.L"
 bones/36/parent = 35
 bones/36/rest = Transform3D(0.999813, -0.0193508, -2.90996e-08, 0.0193508, 0.999813, -1.09987e-07, 3.12225e-08, 1.09404e-07, 1, -6.56229e-10, 0.110454, 4.9738e-13)
 bones/36/enabled = true
 bones/36/position = Vector3(-6.56229e-10, 0.110454, 4.9738e-13)
-bones/36/rotation = Quaternion(5.48503e-08, -1.50813e-08, 0.00967587, 0.999953)
+bones/36/rotation = Quaternion(5.48505e-08, -1.50812e-08, 0.00967585, 0.999953)
 bones/36/scale = Vector3(1, 1, 1)
 bones/37/name = "Foot.Bone.L"
 bones/37/parent = 36
 bones/37/rest = Transform3D(1, -1.80404e-05, 1.31876e-06, -1.31875e-06, 9.53674e-07, 1, -1.80404e-05, -1, 9.53674e-07, -3.05556e-09, 0.140357, 4.47804e-10)
 bones/37/enabled = true
 bones/37/position = Vector3(-3.05556e-09, 0.140357, 4.47804e-10)
-bones/37/rotation = Quaternion(-0.707106, 6.84318e-06, 5.91331e-06, 0.707107)
+bones/37/rotation = Quaternion(-0.707106, 6.8445e-06, 5.91199e-06, 0.707107)
 bones/37/scale = Vector3(1, 1, 1)
 bones/38/name = "UpperLeg.Bone.R"
 bones/38/parent = 1
 bones/38/rest = Transform3D(0.995912, -0.0905365, 1.19373e-05, -0.0904979, -0.995445, 0.0299851, -0.00270291, -0.029863, -0.999552, -0.09, 0.0193912, 0.0205907)
 bones/38/enabled = true
 bones/38/position = Vector3(-0.09, 0.0193912, 0.0205907)
-bones/38/rotation = Quaternion(0.99886, -0.0453098, -0.000673498, -0.0149791)
+bones/38/rotation = Quaternion(0.99886, -0.0453098, -0.000673497, -0.0149791)
 bones/38/scale = Vector3(1.00002, 1, 1)
 bones/39/name = "LowerLeg.Bone.R"
 bones/39/parent = 38
 bones/39/rest = Transform3D(0.999813, 0.0193508, 1.52982e-07, -0.0193508, 0.999813, -1.49986e-07, -1.55855e-07, 1.46998e-07, 1, 6.50061e-10, 0.110454, -1.75987e-10)
 bones/39/enabled = true
 bones/39/position = Vector3(6.50061e-10, 0.110454, -1.75987e-10)
-bones/39/rotation = Quaternion(7.42496e-08, 7.7213e-08, -0.00967587, 0.999953)
+bones/39/rotation = Quaternion(7.42496e-08, 7.72127e-08, -0.00967585, 0.999953)
 bones/39/scale = Vector3(1, 1, 1)
 bones/40/name = "Foot.Bone.R"
 bones/40/parent = 39
 bones/40/rest = Transform3D(1, 1.84055e-05, -1.32994e-06, 1.32992e-06, 9.53674e-07, 1, 1.84055e-05, -1, 9.53674e-07, 8.11926e-09, 0.140357, -5.4139e-09)
 bones/40/enabled = true
 bones/40/position = Vector3(8.11926e-09, 0.140357, -5.4139e-09)
-bones/40/rotation = Quaternion(-0.707106, -6.97622e-06, -6.03845e-06, 0.707107)
+bones/40/rotation = Quaternion(-0.707106, -6.97753e-06, -6.03713e-06, 0.707107)
 bones/40/scale = Vector3(1, 1, 1)
 
 [node name="GoblinSwordArmorPauldron_Object" type="BoneAttachment3D" parent="GoblinTemplate_Skeleton/Skeleton3D"]
-transform = Transform3D(1, 0.000480026, 4.6322e-08, -0.000479937, 1, -1.52208e-07, -4.63956e-08, 1.51999e-07, 1, -0.156097, 0.624094, 0.00300003)
+transform = Transform3D(1, -1.82247e-13, 4.63592e-08, 8.94068e-08, 1, -8.49439e-08, -4.63589e-08, 8.49439e-08, 1, -0.156219, 0.624019, 0.003)
 bone_name = "GoblinSwordArmorPauldron.Object"
 bone_idx = 13
 
 [node name="GoblinSwordArmorPauldron_Object" type="MeshInstance3D" parent="GoblinTemplate_Skeleton/Skeleton3D/GoblinSwordArmorPauldron_Object"]
 mesh = SubResource("ArrayMesh_gba68")
 skeleton = NodePath("")
+surface_material_override/0 = ExtResource("3_lrhbi")
 
 [node name="AngryEyebrows_Object" type="BoneAttachment3D" parent="GoblinTemplate_Skeleton/Skeleton3D"]
-transform = Transform3D(0.999837, 0.000480022, -0.0180305, -0.000479945, 1, 8.58879e-06, 0.0180305, 6.60688e-08, 0.999837, 0.0730948, 0.905965, -0.153712)
+transform = Transform3D(1, -2.45732e-15, -5.61045e-11, 3.09575e-15, 1, 9.31328e-10, 5.61613e-11, -9.31328e-10, 1, 0.0700001, 0.906, -0.155)
+visible = false
 bone_name = "AngryEyebrows.Object"
 bone_idx = 16
 
 [node name="AngryEyebrows_Object" type="MeshInstance3D" parent="GoblinTemplate_Skeleton/Skeleton3D/AngryEyebrows_Object"]
 mesh = SubResource("ArrayMesh_k0kfu")
 skeleton = NodePath("")
+surface_material_override/0 = ExtResource("4_tnwnp")
 
 [node name="AngryMouth_Object" type="BoneAttachment3D" parent="GoblinTemplate_Skeleton/Skeleton3D"]
-transform = Transform3D(0.999837, 0.000480022, -0.0180305, -0.000479945, 1, 8.58879e-06, 0.0180305, 6.60688e-08, 0.999837, 0.00349789, 0.782998, -0.17997)
+transform = Transform3D(1, -2.45732e-15, -5.61045e-11, 3.09575e-15, 1, 9.31328e-10, 5.61613e-11, -9.31328e-10, 1, 5.83765e-08, 0.783, -0.18)
+visible = false
 bone_name = "AngryMouth.Object"
 bone_idx = 17
 
 [node name="AngryMouth_Object" type="MeshInstance3D" parent="GoblinTemplate_Skeleton/Skeleton3D/AngryMouth_Object"]
 mesh = SubResource("ArrayMesh_sadf8")
 skeleton = NodePath("")
+surface_material_override/0 = ExtResource("5_gbdls")
+surface_material_override/1 = ExtResource("6_mpc3b")
 
 [node name="DeathEyes_Object" type="BoneAttachment3D" parent="GoblinTemplate_Skeleton/Skeleton3D"]
-transform = Transform3D(0.999837, 0.000480022, -0.0180305, -0.000479945, 1, 8.58879e-06, 0.0180305, 6.60688e-08, 0.999837, 0.053112, 0.859974, -0.156072)
+transform = Transform3D(1, -2.45732e-15, -5.61045e-11, 3.09575e-15, 1, 9.31328e-10, 5.61613e-11, -9.31328e-10, 1, 0.0500001, 0.86, -0.157)
+visible = false
 bone_name = "DeathEyes.Object"
 bone_idx = 18
 
 [node name="DeathEyes_Object" type="MeshInstance3D" parent="GoblinTemplate_Skeleton/Skeleton3D/DeathEyes_Object"]
 mesh = SubResource("ArrayMesh_3qlnh")
 skeleton = NodePath("")
+surface_material_override/0 = ExtResource("5_gbdls")
 
 [node name="DeathMouth_Object" type="BoneAttachment3D" parent="GoblinTemplate_Skeleton/Skeleton3D"]
-transform = Transform3D(0.999837, 0.000480022, -0.0180305, -0.000479945, 1, 8.58879e-06, 0.0180305, 6.60688e-08, 0.999837, 0.00349789, 0.782998, -0.17997)
+transform = Transform3D(1, -2.45732e-15, -5.61045e-11, 3.09575e-15, 1, 9.31328e-10, 5.61613e-11, -9.31328e-10, 1, 5.83765e-08, 0.783, -0.18)
+visible = false
 bone_name = "DeathMouth.Object"
 bone_idx = 19
 
 [node name="DeathMouth_Object" type="MeshInstance3D" parent="GoblinTemplate_Skeleton/Skeleton3D/DeathMouth_Object"]
 mesh = SubResource("ArrayMesh_vs8ut")
 skeleton = NodePath("")
+surface_material_override/0 = ExtResource("5_gbdls")
+surface_material_override/1 = ExtResource("6_mpc3b")
+surface_material_override/2 = ExtResource("7_npg2m")
 
 [node name="Eyes_Object" type="BoneAttachment3D" parent="GoblinTemplate_Skeleton/Skeleton3D"]
-transform = Transform3D(0.999837, 0.000480022, -0.0180305, -0.000479945, 1, 8.58879e-06, 0.0180305, 6.60688e-08, 0.999837, 0.0529317, 0.859974, -0.146074)
+transform = Transform3D(1, -2.45732e-15, -5.61045e-11, 3.09575e-15, 1, 9.31328e-10, 5.61613e-11, -9.31328e-10, 1, 0.0500001, 0.86, -0.147)
 bone_name = "Eyes.Object"
 bone_idx = 20
 
 [node name="Eyes_Object" type="MeshInstance3D" parent="GoblinTemplate_Skeleton/Skeleton3D/Eyes_Object"]
 mesh = SubResource("ArrayMesh_jmtoh")
 skeleton = NodePath("")
+surface_material_override/0 = ExtResource("5_gbdls")
 
 [node name="GoblinEars_Object" type="BoneAttachment3D" parent="GoblinTemplate_Skeleton/Skeleton3D"]
-transform = Transform3D(0.999837, 0.000480022, -0.0180305, -0.000479945, 1, 8.58879e-06, 0.0180305, 6.60688e-08, 0.999837, 0.170383, 0.849918, -0.00393306)
+transform = Transform3D(1, -2.45732e-15, -5.61045e-11, 3.09575e-15, 1, 9.31328e-10, 5.61613e-11, -9.31328e-10, 1, 0.17, 0.85, -0.00699991)
 bone_name = "GoblinEars.Object"
 bone_idx = 21
 
 [node name="GoblinEars_Object" type="MeshInstance3D" parent="GoblinTemplate_Skeleton/Skeleton3D/GoblinEars_Object"]
 mesh = SubResource("ArrayMesh_45dk0")
 skeleton = NodePath("")
+surface_material_override/0 = ExtResource("8_ceg6q")
 
 [node name="GoblinSwordHelmet_Object" type="BoneAttachment3D" parent="GoblinTemplate_Skeleton/Skeleton3D"]
-transform = Transform3D(0.999837, 0.000480022, -0.0180305, -0.000479945, 1, 8.58879e-06, 0.0180305, 6.60688e-08, 0.999837, 0.000298903, 0.88, 5.32484e-07)
+transform = Transform3D(1, -2.45732e-15, -5.61045e-11, 3.09575e-15, 1, 9.31328e-10, 5.61613e-11, -9.31328e-10, 1, -2.74943e-10, 0.88, 1.16415e-09)
 bone_name = "GoblinSwordHelmet.Object"
 bone_idx = 22
 
 [node name="GoblinSwordHelmet_Object" type="MeshInstance3D" parent="GoblinTemplate_Skeleton/Skeleton3D/GoblinSwordHelmet_Object"]
 mesh = SubResource("ArrayMesh_gmdcq")
 skeleton = NodePath("")
+surface_material_override/0 = ExtResource("9_3oxjc")
+surface_material_override/1 = ExtResource("10_owgv6")
 
 [node name="NeutralEyebrows_Object" type="BoneAttachment3D" parent="GoblinTemplate_Skeleton/Skeleton3D"]
-transform = Transform3D(0.999837, 0.000480022, -0.0180305, -0.000479945, 1, 8.58879e-06, 0.0180305, 6.60688e-08, 0.999837, -0.0668824, 0.906032, -0.156236)
+transform = Transform3D(1, -2.45732e-15, -5.61045e-11, 3.09575e-15, 1, 9.31328e-10, 5.61613e-11, -9.31328e-10, 1, -0.0699999, 0.906, -0.155)
 bone_name = "NeutralEyebrows.Object"
 bone_idx = 23
 
 [node name="NeutralEyebrows_Object" type="MeshInstance3D" parent="GoblinTemplate_Skeleton/Skeleton3D/NeutralEyebrows_Object"]
 mesh = SubResource("ArrayMesh_l8675")
 skeleton = NodePath("")
+surface_material_override/0 = ExtResource("4_tnwnp")
 
 [node name="NeutralMouth_Object" type="BoneAttachment3D" parent="GoblinTemplate_Skeleton/Skeleton3D"]
-transform = Transform3D(0.999837, 0.000480022, -0.0180305, -0.000479945, 1, 8.58879e-06, 0.0180305, 6.60688e-08, 0.999837, 0.00349789, 0.782998, -0.17997)
+transform = Transform3D(1, -2.45732e-15, -5.61045e-11, 3.09575e-15, 1, 9.31328e-10, 5.61613e-11, -9.31328e-10, 1, 5.83765e-08, 0.783, -0.18)
 bone_name = "NeutralMouth.Object"
 bone_idx = 24
 
 [node name="NeutralMouth_Object" type="MeshInstance3D" parent="GoblinTemplate_Skeleton/Skeleton3D/NeutralMouth_Object"]
 mesh = SubResource("ArrayMesh_rncme")
 skeleton = NodePath("")
+surface_material_override/0 = ExtResource("5_gbdls")
 
 [node name="GoblinSword_Object" type="BoneAttachment3D" parent="GoblinTemplate_Skeleton/Skeleton3D"]
-transform = Transform3D(1, 0.000479415, -1.63348e-07, -0.000479355, 1, 2.46678e-07, 1.63387e-07, -2.46234e-07, 1, 0.174051, 0.303986, 0.00300013)
+transform = Transform3D(0.00131701, -0.999999, -3.85567e-07, 0.999999, 0.00131701, 4.17638e-07, -4.17208e-07, -3.85565e-07, 1, 0.42, 0.510001, 0.00300015)
 bone_name = "GoblinSword.Object"
 bone_idx = 32
 
 [node name="GoblinSword_Object" type="MeshInstance3D" parent="GoblinTemplate_Skeleton/Skeleton3D/GoblinSword_Object"]
 mesh = SubResource("ArrayMesh_sf0ky")
 skeleton = NodePath("")
+surface_material_override/0 = ExtResource("9_3oxjc")
+surface_material_override/1 = ExtResource("3_lrhbi")
+surface_material_override/2 = ExtResource("4_tnwnp")
 
 [node name="GobinSwordArmor_Object" type="MeshInstance3D" parent="GoblinTemplate_Skeleton/Skeleton3D"]
 mesh = SubResource("ArrayMesh_ssag6")
 skin = SubResource("Skin_erma8")
+surface_material_override/0 = ExtResource("9_3oxjc")
 
 [node name="GoblinTemplate_Object" type="MeshInstance3D" parent="GoblinTemplate_Skeleton/Skeleton3D"]
 mesh = SubResource("ArrayMesh_oqnin")
 skin = SubResource("Skin_erma8")
+surface_material_override/0 = ExtResource("11_nuiii")
+surface_material_override/1 = ExtResource("10_owgv6")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
-"": SubResource("AnimationLibrary_atbvu")
+"": SubResource("AnimationLibrary_ih40x")
 }
 
 [node name="AnimationTree" type="AnimationTree" parent="."]
@@ -5531,5 +5632,18 @@ parameters/conditions/IsMoving = false
 
 [node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
 
-[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]
+[node name="Area3D" type="Area3D" parent="." groups=["Enemy"]]
+script = ExtResource("12_2wc3y")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+shape = SubResource("BoxShape3D_2qkp3")
+
+[node name="HurtSoundMaker" type="AudioStreamPlayer3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.820198, 0)
+stream = SubResource("AudioStreamRandomizer_j8ser")
+
+[node name="AttackSoundMaker" type="AudioStreamPlayer3D" parent="."]
+stream = SubResource("AudioStreamRandomizer_eb0vs")
+
 [connection signal="animation_finished" from="AnimationTree" to="." method="_on_animation_tree_animation_finished"]

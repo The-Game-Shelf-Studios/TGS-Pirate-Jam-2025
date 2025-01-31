@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://byg3beuvyvatw"
+path="res://.godot/imported/Struggling Caught Laughter 1.mp3-2f167704a77386dc93836b5508d5e5ce.mp3str"
+
+[deps]
+
+source_file="res://Assets/sounds/Voice Lines/Grabbed/Struggling Caught Laughter 1.mp3"
+dest_files=["res://.godot/imported/Struggling Caught Laughter 1.mp3-2f167704a77386dc93836b5508d5e5ce.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

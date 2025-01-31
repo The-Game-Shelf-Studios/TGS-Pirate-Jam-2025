@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cuku5b5bctvjx"
+path="res://.godot/imported/stabmp3.mp3-dcd6b31e8523b4cca92ede9f6205af79.mp3str"
+
+[deps]
+
+source_file="res://Assets/sounds/Voice Lines/Extra/stabmp3.mp3"
+dest_files=["res://.godot/imported/stabmp3.mp3-dcd6b31e8523b4cca92ede9f6205af79.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bft0gldp85piu"
+path="res://.godot/imported/Thrown 4_01.mp3-c662d112c81f1f433e4c86c7301ca9b5.mp3str"
+
+[deps]
+
+source_file="res://Assets/sounds/Voice Lines/Grabbed/Thrown/Thrown 4_01.mp3"
+dest_files=["res://.godot/imported/Thrown 4_01.mp3-c662d112c81f1f433e4c86c7301ca9b5.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

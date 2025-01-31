@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b4v01x67gliei"
+path="res://.godot/imported/Bomb Goblin Laugh 4mp3.mp3-c89ef2a859c17bbeb9732de38c0263ce.mp3str"
+
+[deps]
+
+source_file="res://Assets/sounds/Voice Lines/Bomb Goblin/Bomb Goblin Laugh 4mp3.mp3"
+dest_files=["res://.godot/imported/Bomb Goblin Laugh 4mp3.mp3-c89ef2a859c17bbeb9732de38c0263ce.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

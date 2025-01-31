@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c13s5rhc5qoqm"
+path="res://.godot/imported/Ooh 1.mp3-f138ce394df9464917a20879f0dc8205.mp3str"
+
+[deps]
+
+source_file="res://Assets/sounds/Voice Lines/Grabbed/Ooh 1.mp3"
+dest_files=["res://.godot/imported/Ooh 1.mp3-f138ce394df9464917a20879f0dc8205.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

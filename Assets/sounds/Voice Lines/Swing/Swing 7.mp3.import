@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://d0fmagop7iiw3"
+path="res://.godot/imported/Swing 7.mp3-ca37158974b5531964543bce1d08acd3.mp3str"
+
+[deps]
+
+source_file="res://Assets/sounds/Voice Lines/Swing/Swing 7.mp3"
+dest_files=["res://.godot/imported/Swing 7.mp3-ca37158974b5531964543bce1d08acd3.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

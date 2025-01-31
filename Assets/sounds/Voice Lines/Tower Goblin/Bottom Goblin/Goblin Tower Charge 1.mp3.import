@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dsw1jxa4hoh5e"
+path="res://.godot/imported/Goblin Tower Charge 1.mp3-89c016b61efce3a8f160abf60b39d35a.mp3str"
+
+[deps]
+
+source_file="res://Assets/sounds/Voice Lines/Tower Goblin/Bottom Goblin/Goblin Tower Charge 1.mp3"
+dest_files=["res://.godot/imported/Goblin Tower Charge 1.mp3-89c016b61efce3a8f160abf60b39d35a.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

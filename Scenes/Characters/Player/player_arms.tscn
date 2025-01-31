@@ -42,7 +42,7 @@ bones/36/position = Vector3(-0.1, -1.04361e-13, 1.1166e-07)
 bones/36/rotation = Quaternion(-3.4901e-20, -1.19209e-07, -8.47035e-22, 1)
 
 [node name="BoneAttachment3D" type="BoneAttachment3D" parent="OrcSkeleton_Object/Skeleton3D" index="1"]
-transform = Transform3D(-5.30652e-14, 1, -8.74228e-08, 1, -1.52189e-14, -1.35501e-06, -1.35501e-06, -8.74228e-08, -1, 2, 1.03, -1.74845e-07)
+transform = Transform3D(-5.30651e-14, 1, -8.74228e-08, 1, -1.52189e-14, -1.35501e-06, -1.35501e-06, -8.74228e-08, -1, 2, 1.03, -1.74846e-07)
 bone_name = "Weapone.Orc.Bone.R"
 bone_idx = 36
 

@@ -1,30 +1,30 @@
 [gd_scene load_steps=103 format=4 uid="uid://hyjk1q1svioe"]
 
-[ext_resource type="Script" path="res://weapon_goblin_bow.gd" id="1_kcdje"]
-[ext_resource type="AudioStream" uid="uid://bk7hv21shss1v" path="res://Assets/sounds/Voice Lines/Swing/Swing 1.mp3" id="2_gy43o"]
-[ext_resource type="AudioStream" uid="uid://6taop3o3k0l6" path="res://Assets/sounds/Voice Lines/Swing/Swing 2.mp3" id="3_rcu2t"]
-[ext_resource type="AudioStream" uid="uid://cten7kvrjrxm1" path="res://Assets/sounds/Voice Lines/Swing/Swing 3.mp3" id="4_rvnxf"]
-[ext_resource type="AudioStream" uid="uid://m64pj3xpggo1" path="res://Assets/sounds/Voice Lines/Swing/Swing 4.mp3" id="5_2kobl"]
-[ext_resource type="AudioStream" uid="uid://bivx6ek3l4srv" path="res://Assets/sounds/Voice Lines/Swing/Swing 5.mp3" id="6_gfk4b"]
-[ext_resource type="AudioStream" uid="uid://bds7377387gph" path="res://Assets/sounds/Voice Lines/Swing/Swing 6.mp3" id="7_ydrkx"]
-[ext_resource type="AudioStream" uid="uid://d0fmagop7iiw3" path="res://Assets/sounds/Voice Lines/Swing/Swing 7.mp3" id="8_p2p5y"]
-[ext_resource type="AudioStream" uid="uid://bl607ymhu3gbh" path="res://Assets/sounds/Voice Lines/Swing/Swing 8.mp3" id="9_ubnx3"]
-[ext_resource type="AudioStream" uid="uid://cftxreg27sok5" path="res://Assets/sounds/Voice Lines/Swing/Swing 9.mp3" id="10_vygsq"]
-[ext_resource type="AudioStream" uid="uid://brh6ousdou65x" path="res://Assets/sounds/Voice Lines/Grabbed/Protest/Confused Protest 1.mp3" id="11_3ioo3"]
-[ext_resource type="AudioStream" uid="uid://dljlqqk2fnd1n" path="res://Assets/sounds/Voice Lines/Grabbed/Protest/Confused Protest 2.mp3" id="12_ky0mj"]
-[ext_resource type="AudioStream" uid="uid://cp25wx206ou0" path="res://Assets/sounds/Voice Lines/Grabbed/Caught Laughter 1.mp3" id="13_s6wyv"]
-[ext_resource type="AudioStream" uid="uid://b0p5ffdqew238" path="res://Assets/sounds/Voice Lines/Grabbed/Caught Laughter 2.mp3" id="14_kjy30"]
-[ext_resource type="AudioStream" uid="uid://bxyxvucsb1kra" path="res://Assets/sounds/Voice Lines/Grabbed/Caught Laughter 3.mp3" id="15_rgdvn"]
-[ext_resource type="AudioStream" uid="uid://byg3beuvyvatw" path="res://Assets/sounds/Voice Lines/Grabbed/Struggling Caught Laughter 1.mp3" id="16_oetvq"]
-[ext_resource type="AudioStream" uid="uid://ylikxhwvqevj" path="res://Assets/sounds/Voice Lines/Grabbed/Ooh 3.mp3" id="17_kae15"]
-[ext_resource type="AudioStream" uid="uid://d1ysddsrowi7f" path="res://Assets/sounds/Voice Lines/Grabbed/Protest/Panic Protest 1.mp3" id="18_akjd5"]
-[ext_resource type="AudioStream" uid="uid://dmddnbxk3djkp" path="res://Assets/sounds/Voice Lines/Grabbed/Protest/Protest 1.mp3" id="19_kdbx3"]
-[ext_resource type="AudioStream" uid="uid://dthhavtta5tu5" path="res://Assets/sounds/Voice Lines/Grabbed/Protest/Protest 2.mp3" id="20_8p35c"]
-[ext_resource type="AudioStream" uid="uid://db5kmvqwubl3j" path="res://Assets/sounds/Voice Lines/Grabbed/Protest/Protest 3.mp3" id="21_nr6d1"]
-[ext_resource type="AudioStream" uid="uid://o2wqd2em83mc" path="res://Assets/sounds/Voice Lines/Grabbed/Protest/Regret Protest 1.mp3" id="22_fnv3u"]
-[ext_resource type="AudioStream" uid="uid://blc48xf54r4rd" path="res://Assets/sounds/Voice Lines/Grabbed/Protest/Regret Protest 2.mp3" id="23_npp6s"]
-[ext_resource type="AudioStream" uid="uid://bpxjaq3vni1qk" path="res://Assets/sounds/Voice Lines/Grabbed/Protest/Struggle Protest 1.mp3" id="24_78esn"]
-[ext_resource type="AudioStream" uid="uid://bkajiwpospyie" path="res://Assets/sounds/Voice Lines/Grabbed/Protest/Struggle Protest 2.mp3" id="25_vd3wu"]
+[ext_resource type="Script" path="res://weapon_goblin_bow.gd" id="1_phhju"]
+[ext_resource type="AudioStream" uid="uid://bk7hv21shss1v" path="res://Assets/sounds/Voice Lines/Swing/Swing 1.mp3" id="2_orft8"]
+[ext_resource type="AudioStream" uid="uid://6taop3o3k0l6" path="res://Assets/sounds/Voice Lines/Swing/Swing 2.mp3" id="3_u32wm"]
+[ext_resource type="AudioStream" uid="uid://cten7kvrjrxm1" path="res://Assets/sounds/Voice Lines/Swing/Swing 3.mp3" id="4_c417k"]
+[ext_resource type="AudioStream" uid="uid://m64pj3xpggo1" path="res://Assets/sounds/Voice Lines/Swing/Swing 4.mp3" id="5_6m4tr"]
+[ext_resource type="AudioStream" uid="uid://bivx6ek3l4srv" path="res://Assets/sounds/Voice Lines/Swing/Swing 5.mp3" id="6_kkgqc"]
+[ext_resource type="AudioStream" uid="uid://bds7377387gph" path="res://Assets/sounds/Voice Lines/Swing/Swing 6.mp3" id="7_4g2dp"]
+[ext_resource type="AudioStream" uid="uid://d0fmagop7iiw3" path="res://Assets/sounds/Voice Lines/Swing/Swing 7.mp3" id="8_6rgw8"]
+[ext_resource type="AudioStream" uid="uid://bl607ymhu3gbh" path="res://Assets/sounds/Voice Lines/Swing/Swing 8.mp3" id="9_g42nt"]
+[ext_resource type="AudioStream" uid="uid://cftxreg27sok5" path="res://Assets/sounds/Voice Lines/Swing/Swing 9.mp3" id="10_xsg6l"]
+[ext_resource type="AudioStream" uid="uid://brh6ousdou65x" path="res://Assets/sounds/Voice Lines/Grabbed/Protest/Confused Protest 1.mp3" id="11_66y6i"]
+[ext_resource type="AudioStream" uid="uid://dljlqqk2fnd1n" path="res://Assets/sounds/Voice Lines/Grabbed/Protest/Confused Protest 2.mp3" id="12_f0fjp"]
+[ext_resource type="AudioStream" uid="uid://cp25wx206ou0" path="res://Assets/sounds/Voice Lines/Grabbed/Caught Laughter 1.mp3" id="13_nwbrp"]
+[ext_resource type="AudioStream" uid="uid://b0p5ffdqew238" path="res://Assets/sounds/Voice Lines/Grabbed/Caught Laughter 2.mp3" id="14_vrgqi"]
+[ext_resource type="AudioStream" uid="uid://bxyxvucsb1kra" path="res://Assets/sounds/Voice Lines/Grabbed/Caught Laughter 3.mp3" id="15_nvart"]
+[ext_resource type="AudioStream" uid="uid://byg3beuvyvatw" path="res://Assets/sounds/Voice Lines/Grabbed/Struggling Caught Laughter 1.mp3" id="16_cwtiw"]
+[ext_resource type="AudioStream" uid="uid://ylikxhwvqevj" path="res://Assets/sounds/Voice Lines/Grabbed/Ooh 3.mp3" id="17_ulrn8"]
+[ext_resource type="AudioStream" uid="uid://d1ysddsrowi7f" path="res://Assets/sounds/Voice Lines/Grabbed/Protest/Panic Protest 1.mp3" id="18_jlavq"]
+[ext_resource type="AudioStream" uid="uid://dmddnbxk3djkp" path="res://Assets/sounds/Voice Lines/Grabbed/Protest/Protest 1.mp3" id="19_xd8bv"]
+[ext_resource type="AudioStream" uid="uid://dthhavtta5tu5" path="res://Assets/sounds/Voice Lines/Grabbed/Protest/Protest 2.mp3" id="20_e55kj"]
+[ext_resource type="AudioStream" uid="uid://db5kmvqwubl3j" path="res://Assets/sounds/Voice Lines/Grabbed/Protest/Protest 3.mp3" id="21_24nqs"]
+[ext_resource type="AudioStream" uid="uid://o2wqd2em83mc" path="res://Assets/sounds/Voice Lines/Grabbed/Protest/Regret Protest 1.mp3" id="22_4o1g0"]
+[ext_resource type="AudioStream" uid="uid://blc48xf54r4rd" path="res://Assets/sounds/Voice Lines/Grabbed/Protest/Regret Protest 2.mp3" id="23_w1h2g"]
+[ext_resource type="AudioStream" uid="uid://bpxjaq3vni1qk" path="res://Assets/sounds/Voice Lines/Grabbed/Protest/Struggle Protest 1.mp3" id="24_c5a84"]
+[ext_resource type="AudioStream" uid="uid://bkajiwpospyie" path="res://Assets/sounds/Voice Lines/Grabbed/Protest/Struggle Protest 2.mp3" id="25_25kjc"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_23wsa"]
 resource_name = "GoblinEyebrow"
@@ -5591,37 +5591,37 @@ _data = {
 
 [sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_ucfft"]
 streams_count = 9
-stream_0/stream = ExtResource("2_gy43o")
-stream_1/stream = ExtResource("3_rcu2t")
-stream_2/stream = ExtResource("4_rvnxf")
-stream_3/stream = ExtResource("5_2kobl")
-stream_4/stream = ExtResource("6_gfk4b")
-stream_5/stream = ExtResource("7_ydrkx")
-stream_6/stream = ExtResource("8_p2p5y")
-stream_7/stream = ExtResource("9_ubnx3")
-stream_8/stream = ExtResource("10_vygsq")
+stream_0/stream = ExtResource("2_orft8")
+stream_1/stream = ExtResource("3_u32wm")
+stream_2/stream = ExtResource("4_c417k")
+stream_3/stream = ExtResource("5_6m4tr")
+stream_4/stream = ExtResource("6_kkgqc")
+stream_5/stream = ExtResource("7_4g2dp")
+stream_6/stream = ExtResource("8_6rgw8")
+stream_7/stream = ExtResource("9_g42nt")
+stream_8/stream = ExtResource("10_xsg6l")
 
 [sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_5gr7w"]
 streams_count = 15
-stream_0/stream = ExtResource("11_3ioo3")
-stream_1/stream = ExtResource("12_ky0mj")
-stream_2/stream = ExtResource("18_akjd5")
-stream_3/stream = ExtResource("19_kdbx3")
-stream_4/stream = ExtResource("20_8p35c")
-stream_5/stream = ExtResource("21_nr6d1")
-stream_6/stream = ExtResource("22_fnv3u")
-stream_7/stream = ExtResource("23_npp6s")
-stream_8/stream = ExtResource("24_78esn")
-stream_9/stream = ExtResource("25_vd3wu")
-stream_10/stream = ExtResource("13_s6wyv")
-stream_11/stream = ExtResource("14_kjy30")
-stream_12/stream = ExtResource("15_rgdvn")
-stream_13/stream = ExtResource("16_oetvq")
-stream_14/stream = ExtResource("17_kae15")
+stream_0/stream = ExtResource("11_66y6i")
+stream_1/stream = ExtResource("12_f0fjp")
+stream_2/stream = ExtResource("18_jlavq")
+stream_3/stream = ExtResource("19_xd8bv")
+stream_4/stream = ExtResource("20_e55kj")
+stream_5/stream = ExtResource("21_24nqs")
+stream_6/stream = ExtResource("22_4o1g0")
+stream_7/stream = ExtResource("23_w1h2g")
+stream_8/stream = ExtResource("24_c5a84")
+stream_9/stream = ExtResource("25_25kjc")
+stream_10/stream = ExtResource("13_nwbrp")
+stream_11/stream = ExtResource("14_vrgqi")
+stream_12/stream = ExtResource("15_nvart")
+stream_13/stream = ExtResource("16_cwtiw")
+stream_14/stream = ExtResource("17_ulrn8")
 
 [node name="WeaponGoblinBow" type="Node3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.489609, 0)
-script = ExtResource("1_kcdje")
+script = ExtResource("1_phhju")
 
 [node name="GoblinTemplate_Skeleton" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.54345, 0)
@@ -5639,14 +5639,14 @@ bones/1/parent = 0
 bones/1/rest = Transform3D(1, 2.74817e-09, 1.46896e-08, -3.18743e-09, 0.99955, 0.0299867, -1.46005e-08, -0.0299867, 0.99955, 0, 0.27, 0)
 bones/1/enabled = true
 bones/1/position = Vector3(-8.1902e-17, 0.27, 8.93674e-10)
-bones/1/rotation = Quaternion(-0.0149919, -0.000304339, -0.0202941, 0.999682)
+bones/1/rotation = Quaternion(-0.01499, -0.000388502, -0.0259063, 0.999552)
 bones/1/scale = Vector3(1, 1, 1)
 bones/2/name = "MiddleSpine.Bone.C"
 bones/2/parent = 1
 bones/2/rest = Transform3D(1, -3.18743e-09, -1.46005e-08, 2.74817e-09, 0.99955, -0.0299867, 1.46896e-08, 0.0299867, 0.99955, -2.498e-16, 0.100045, -4.65662e-10)
 bones/2/enabled = true
 bones/2/position = Vector3(-2.498e-16, 0.100045, -4.65662e-10)
-bones/2/rotation = Quaternion(0.0149919, -0.000304354, 0.0202941, 0.999682)
+bones/2/rotation = Quaternion(0.01499, -0.000388517, 0.0259063, 0.999552)
 bones/2/scale = Vector3(1, 1, 1)
 bones/3/name = "UpperSpine.Bone.C"
 bones/3/parent = 2
@@ -5926,14 +5926,14 @@ bones/42/parent = 1
 bones/42/rest = Transform3D(0.995912, 0.0905365, -1.18494e-05, 0.0904979, -0.995445, 0.0299851, 0.002703, -0.029863, -0.999552, 0.09, 0.0193912, 0.0205907)
 bones/42/enabled = true
 bones/42/position = Vector3(0.09, 0.0193912, 0.0205907)
-bones/42/rotation = Quaternion(0.996745, 0.0451041, 0.00437285, 0.0666781)
+bones/42/rotation = Quaternion(0.994999, 0.0449949, 0.00538332, 0.0890166)
 bones/42/scale = Vector3(1.00002, 1, 1)
 bones/43/name = "LowerLeg.Bone.L"
 bones/43/parent = 42
 bones/43/rest = Transform3D(0.999813, -0.0193508, -2.90996e-08, 0.0193508, 0.999813, -1.09987e-07, 3.12225e-08, 1.09404e-07, 1, -6.56229e-10, 0.110454, 4.9738e-13)
 bones/43/enabled = true
 bones/43/position = Vector3(-6.56229e-10, 0.110454, 4.9738e-13)
-bones/43/rotation = Quaternion(-0.0816964, -0.000790438, 0.009643, 0.99661)
+bones/43/rotation = Quaternion(-0.104028, -0.00100656, 0.00962271, 0.994527)
 bones/43/scale = Vector3(1, 1, 1)
 bones/44/name = "Foot.Bone.L"
 bones/44/parent = 43
@@ -5947,14 +5947,14 @@ bones/45/parent = 1
 bones/45/rest = Transform3D(0.995912, -0.0905365, 1.19373e-05, -0.0904979, -0.995445, 0.0299851, -0.00270291, -0.029863, -0.999552, -0.09, 0.0193912, 0.0205907)
 bones/45/enabled = true
 bones/45/position = Vector3(-0.09, 0.0193912, 0.0205907)
-bones/45/rotation = Quaternion(0.994298, -0.0452126, 0.00303061, -0.0965361)
+bones/45/rotation = Quaternion(0.991882, -0.0451331, 0.00404386, -0.118812)
 bones/45/scale = Vector3(1.00002, 1, 1)
 bones/46/name = "LowerLeg.Bone.R"
 bones/46/parent = 45
 bones/46/rest = Transform3D(0.999813, 0.0193508, 1.52982e-07, -0.0193508, 0.999813, -1.49986e-07, -1.55855e-07, 1.46998e-07, 1, 6.50061e-10, 0.110454, -1.75987e-10)
 bones/46/enabled = true
 bones/46/position = Vector3(6.50061e-10, 0.110454, -1.75987e-10)
-bones/46/rotation = Quaternion(0.0816966, -0.000790754, -0.00964402, 0.99661)
+bones/46/rotation = Quaternion(0.104028, -0.00100687, -0.009624, 0.994527)
 bones/46/scale = Vector3(1, 1, 1)
 bones/47/name = "Foot.Bone.R"
 bones/47/parent = 46
@@ -5965,7 +5965,7 @@ bones/47/rotation = Quaternion(-0.707106, -6.97429e-06, -6.0408e-06, 0.707107)
 bones/47/scale = Vector3(1, 1, 1)
 
 [node name="AngryEyebrows_Object" type="BoneAttachment3D" parent="GoblinTemplate_Skeleton/Skeleton3D"]
-transform = Transform3D(0.999999, 1.82354e-05, -0.001217, -1.82662e-05, 1, -2.46922e-05, 0.001217, 2.47164e-05, 0.999999, 0.0661418, 0.90592, -0.154904)
+transform = Transform3D(0.999999, 2.32608e-05, -0.00155334, -2.33305e-05, 1, -4.02397e-05, 0.00155334, 4.0275e-05, 0.999999, 0.0650754, 0.90587, -0.154873)
 bone_name = "AngryEyebrows.Object"
 bone_idx = 15
 
@@ -5974,7 +5974,7 @@ mesh = SubResource("ArrayMesh_hr07p")
 skeleton = NodePath("")
 
 [node name="AngryMouth_Object" type="BoneAttachment3D" parent="GoblinTemplate_Skeleton/Skeleton3D"]
-transform = Transform3D(0.999999, 1.82354e-05, -0.001217, -1.82662e-05, 1, -2.46922e-05, 0.001217, 2.47164e-05, 0.999999, -0.00382997, 0.782922, -0.179992)
+transform = Transform3D(0.999999, 2.32608e-05, -0.00155334, -2.33305e-05, 1, -4.02397e-05, 0.00155334, 4.0275e-05, 0.999999, -0.0048885, 0.782873, -0.179987)
 bone_name = "AngryMouth.Object"
 bone_idx = 16
 
@@ -5983,7 +5983,7 @@ mesh = SubResource("ArrayMesh_4ok3y")
 skeleton = NodePath("")
 
 [node name="DeathEyes_Object" type="BoneAttachment3D" parent="GoblinTemplate_Skeleton/Skeleton3D"]
-transform = Transform3D(0.999999, 1.82354e-05, -0.001217, -1.82662e-05, 1, -2.46922e-05, 0.001217, 2.47164e-05, 0.999999, 0.0461434, 0.85992, -0.156929)
+transform = Transform3D(0.999999, 2.32608e-05, -0.00155334, -2.33305e-05, 1, -4.02397e-05, 0.00155334, 4.0275e-05, 0.999999, 0.0450775, 0.859871, -0.156906)
 bone_name = "DeathEyes.Object"
 bone_idx = 17
 
@@ -5992,7 +5992,7 @@ mesh = SubResource("ArrayMesh_evpx0")
 skeleton = NodePath("")
 
 [node name="DeathMouth_Object" type="BoneAttachment3D" parent="GoblinTemplate_Skeleton/Skeleton3D"]
-transform = Transform3D(0.999999, 1.82354e-05, -0.001217, -1.82662e-05, 1, -2.46922e-05, 0.001217, 2.47164e-05, 0.999999, -0.00382997, 0.782922, -0.179992)
+transform = Transform3D(0.999999, 2.32608e-05, -0.00155334, -2.33305e-05, 1, -4.02397e-05, 0.00155334, 4.0275e-05, 0.999999, -0.0048885, 0.782873, -0.179987)
 bone_name = "DeathMouth.Object"
 bone_idx = 18
 
@@ -6001,7 +6001,7 @@ mesh = SubResource("ArrayMesh_or8f3")
 skeleton = NodePath("")
 
 [node name="Eyes_Object" type="BoneAttachment3D" parent="GoblinTemplate_Skeleton/Skeleton3D"]
-transform = Transform3D(0.999999, 1.82354e-05, -0.001217, -1.82662e-05, 1, -2.46922e-05, 0.001217, 2.47164e-05, 0.999999, 0.0461312, 0.85992, -0.146929)
+transform = Transform3D(0.999999, 2.32608e-05, -0.00155334, -2.33305e-05, 1, -4.02397e-05, 0.00155334, 4.0275e-05, 0.999999, 0.045062, 0.85987, -0.146906)
 bone_name = "Eyes.Object"
 bone_idx = 19
 
@@ -6010,7 +6010,7 @@ mesh = SubResource("ArrayMesh_mpxmd")
 skeleton = NodePath("")
 
 [node name="GoblinEars_Object" type="BoneAttachment3D" parent="GoblinTemplate_Skeleton/Skeleton3D"]
-transform = Transform3D(0.999999, 1.82354e-05, -0.001217, -1.82662e-05, 1, -2.46922e-05, 0.001217, 2.47164e-05, 0.999999, 0.165961, 0.849915, -0.00678363)
+transform = Transform3D(0.999999, 2.32608e-05, -0.00155334, -2.33305e-05, 1, -4.02397e-05, 0.00155334, 4.0275e-05, 0.999999, 0.164844, 0.849862, -0.00672053)
 bone_name = "GoblinEars.Object"
 bone_idx = 20
 
@@ -6019,7 +6019,7 @@ mesh = SubResource("ArrayMesh_wapep")
 skeleton = NodePath("")
 
 [node name="GoblinRangedHood_Object" type="BoneAttachment3D" parent="GoblinTemplate_Skeleton/Skeleton3D"]
-transform = Transform3D(0.197119, 3.59455e-06, -0.000239893, -3.60061e-06, 0.197119, -4.86729e-06, 0.000239893, 4.87206e-06, 0.197119, -0.004112, 0.669916, 0.0500049)
+transform = Transform3D(0.197119, 4.58515e-06, -0.000306194, -4.59888e-06, 0.197119, -7.932e-06, 0.000306193, 7.93897e-06, 0.197119, -0.00524845, 0.669864, 0.050008)
 bone_name = "GoblinRangedHood.Object"
 bone_idx = 21
 
@@ -6028,7 +6028,7 @@ mesh = SubResource("ArrayMesh_rq6gv")
 skeleton = NodePath("")
 
 [node name="NeutralEyebrows_Object" type="BoneAttachment3D" parent="GoblinTemplate_Skeleton/Skeleton3D"]
-transform = Transform3D(0.999999, 1.82354e-05, -0.001217, -1.82662e-05, 1, -2.46922e-05, 0.001217, 2.47164e-05, 0.999999, -0.0738581, 0.905923, -0.155074)
+transform = Transform3D(0.999999, 2.32608e-05, -0.00155334, -2.33305e-05, 1, -4.02397e-05, 0.00155334, 4.0275e-05, 0.999999, -0.0749244, 0.905874, -0.155091)
 bone_name = "NeutralEyebrows.Object"
 bone_idx = 22
 
@@ -6037,7 +6037,7 @@ mesh = SubResource("ArrayMesh_qjl0k")
 skeleton = NodePath("")
 
 [node name="NeutralMouth_Object" type="BoneAttachment3D" parent="GoblinTemplate_Skeleton/Skeleton3D"]
-transform = Transform3D(0.999999, 1.82354e-05, -0.001217, -1.82662e-05, 1, -2.46922e-05, 0.001217, 2.47164e-05, 0.999999, -0.00382997, 0.782922, -0.179992)
+transform = Transform3D(0.999999, 2.32608e-05, -0.00155334, -2.33305e-05, 1, -4.02397e-05, 0.00155334, 4.0275e-05, 0.999999, -0.0048885, 0.782873, -0.179987)
 bone_name = "NeutralMouth.Object"
 bone_idx = 23
 
@@ -6046,7 +6046,7 @@ mesh = SubResource("ArrayMesh_4mnm6")
 skeleton = NodePath("")
 
 [node name="GoblinRangedCrossbow_Object" type="BoneAttachment3D" parent="GoblinTemplate_Skeleton/Skeleton3D"]
-transform = Transform3D(-0.545107, 0.341035, 0.765868, 0.824476, 0.383671, 0.415975, -0.151979, 0.858191, -0.490317, 0.16507, 0.720966, -0.163703)
+transform = Transform3D(-0.545051, 0.340749, 0.766035, 0.824481, 0.383656, 0.415979, -0.152149, 0.858311, -0.490053, 0.164006, 0.720916, -0.163642)
 bone_name = "GoblinRangedCrossbow.Object"
 bone_idx = 31
 
@@ -6055,7 +6055,7 @@ mesh = SubResource("ArrayMesh_oh4pa")
 skeleton = NodePath("")
 
 [node name="Arrow_Object" type="BoneAttachment3D" parent="GoblinTemplate_Skeleton/Skeleton3D"]
-transform = Transform3D(0.765868, -0.545107, 0.341035, 0.415975, 0.824476, 0.383671, -0.490317, -0.151979, 0.858191, 0.00901479, 0.804288, -0.138939)
+transform = Transform3D(0.766035, -0.545051, 0.340749, 0.415979, 0.824481, 0.383656, -0.490053, -0.152149, 0.858311, 0.00794251, 0.804239, -0.13893)
 bone_name = "Arrow.Object"
 bone_idx = 32
 
@@ -6064,7 +6064,7 @@ mesh = SubResource("ArrayMesh_1r3se")
 skeleton = NodePath("")
 
 [node name="GoblinRangerQuiver" type="BoneAttachment3D" parent="GoblinTemplate_Skeleton/Skeleton3D"]
-transform = Transform3D(0.999999, 1.82354e-05, -0.001217, -1.82662e-05, 1, -2.46922e-05, 0.001217, 2.47164e-05, 0.999999, -0.104272, 0.539915, 0.17988)
+transform = Transform3D(0.999999, 2.32608e-05, -0.00155334, -2.33305e-05, 1, -4.02397e-05, 0.00155334, 4.0275e-05, 0.999999, -0.105453, 0.539861, 0.179847)
 bone_name = "GoblinRangerQuiver"
 bone_idx = 35
 
@@ -6073,7 +6073,7 @@ mesh = SubResource("ArrayMesh_louuo")
 skeleton = NodePath("")
 
 [node name="Arrow1_Object" type="BoneAttachment3D" parent="GoblinTemplate_Skeleton/Skeleton3D"]
-transform = Transform3D(-0.00120227, 0.501307, 0.865269, -0.173673, -0.852225, 0.493508, 0.984803, -0.14968, 0.0880879, -0.150024, 0.613985, 0.195707)
+transform = Transform3D(-0.00153438, 0.501353, 0.865242, -0.173688, -0.852225, 0.493503, 0.9848, -0.149525, 0.0883866, -0.15121, 0.613931, 0.19566)
 bone_name = "Arrow1.Object"
 bone_idx = 36
 
@@ -6082,7 +6082,7 @@ mesh = SubResource("ArrayMesh_tkkue")
 skeleton = NodePath("")
 
 [node name="Arrow2_Object" type="BoneAttachment3D" parent="GoblinTemplate_Skeleton/Skeleton3D"]
-transform = Transform3D(-0.00118204, 0.343537, 0.939138, -0.258843, -0.907238, 0.331541, 0.965919, -0.242697, 0.0899944, -0.120024, 0.613985, 0.195744)
+transform = Transform3D(-0.00150822, 0.343614, 0.93911, -0.258858, -0.907236, 0.331535, 0.965914, -0.242596, 0.0903154, -0.12121, 0.613931, 0.195707)
 bone_name = "Arrow2.Object"
 bone_idx = 37
 
@@ -6091,7 +6091,7 @@ mesh = SubResource("ArrayMesh_fmhq1")
 skeleton = NodePath("")
 
 [node name="Arrow3_Object" type="BoneAttachment3D" parent="GoblinTemplate_Skeleton/Skeleton3D"]
-transform = Transform3D(-0.00121843, 0.574639, 0.818406, -2.51094e-05, -0.818407, 0.57464, 0.999999, 0.000679542, 0.0010115, -0.16, 0.613986, 0.175695)
+transform = Transform3D(-0.00155477, 0.574635, 0.818408, -4.06569e-05, -0.81841, 0.574635, 0.999999, 0.000860092, 0.0012957, -0.161179, 0.613932, 0.175645)
 bone_name = "Arrow3.Object"
 bone_idx = 38
 
@@ -6100,7 +6100,7 @@ mesh = SubResource("ArrayMesh_vrmrl")
 skeleton = NodePath("")
 
 [node name="Arrow4_Object" type="BoneAttachment3D" parent="GoblinTemplate_Skeleton/Skeleton3D"]
-transform = Transform3D(-0.00120275, 0.175135, 0.984544, -0.173672, -0.96962, 0.172268, 0.984803, -0.170781, 0.0315821, -0.109999, 0.633985, 0.175756)
+transform = Transform3D(-0.00153486, 0.175187, 0.984534, -0.173687, -0.969618, 0.172262, 0.9848, -0.170737, 0.0319159, -0.111178, 0.633931, 0.175723)
 bone_name = "Arrow4.Object"
 bone_idx = 39
 
@@ -6109,7 +6109,7 @@ mesh = SubResource("ArrayMesh_4v8xy")
 skeleton = NodePath("")
 
 [node name="Arrow5_Object" type="BoneAttachment3D" parent="GoblinTemplate_Skeleton/Skeleton3D"]
-transform = Transform3D(-0.00119546, 0.343041, 0.939319, 0.173623, -0.924983, 0.338027, 0.984811, 0.163492, -0.058454, -0.14, 0.613986, 0.175719)
+transform = Transform3D(-0.00152583, 0.342982, 0.939341, 0.173608, -0.924987, 0.338023, 0.984814, 0.163593, -0.0581328, -0.141179, 0.613932, 0.175676)
 bone_name = "Arrow5.Object"
 bone_idx = 40
 
@@ -6118,7 +6118,7 @@ mesh = SubResource("ArrayMesh_dhhd1")
 skeleton = NodePath("")
 
 [node name="Arrow6_Object" type="BoneAttachment3D" parent="GoblinTemplate_Skeleton/Skeleton3D"]
-transform = Transform3D(-0.001217, 0.343239, 0.939247, -2.46922e-05, -0.939248, 0.343239, 0.999999, 0.000394528, 0.00115154, -0.109999, 0.623985, 0.175756)
+transform = Transform3D(-0.00155334, 0.343234, 0.939248, -4.02397e-05, -0.93925, 0.343235, 0.999999, 0.000495367, 0.00147279, -0.111178, 0.623931, 0.175723)
 bone_name = "Arrow6.Object"
 bone_idx = 41
 

@@ -1,18 +1,18 @@
 [gd_scene load_steps=12 format=3 uid="uid://qjwug8c72y0u"]
 
-[ext_resource type="PackedScene" uid="uid://bqrbnfq84qs82" path="res://Assets/Goblins/CrossbowGoblin.glb" id="1_nfd3y"]
-[ext_resource type="Material" uid="uid://bmpvbvrscwc0f" path="res://Assets/Materials/Goblins and Player/GoblinBrown.tres" id="2_xyerx"]
-[ext_resource type="Material" uid="uid://cpcu7luqhw23j" path="res://Assets/Materials/Goblins and Player/GoblinBlack.tres" id="3_ik75h"]
-[ext_resource type="Material" uid="uid://b602kr7ch46gu" path="res://Assets/Materials/Goblins and Player/GoblinWhite.tres" id="4_ocmed"]
-[ext_resource type="Material" uid="uid://b5qg8d874cmsk" path="res://Assets/Materials/Goblins and Player/GoblinPink.tres" id="5_alhgg"]
-[ext_resource type="Material" uid="uid://bi10fnfyl3kct" path="res://Assets/Materials/Goblins and Player/GoblinBlueSeconary.tres" id="6_wrqpe"]
-[ext_resource type="Material" uid="uid://dij261kwkoqn5" path="res://Assets/Materials/Goblins and Player/GoblinLeatherBrown.tres" id="7_5gnbh"]
-[ext_resource type="Material" uid="uid://my2iboo3peb6" path="res://Assets/Materials/Goblins and Player/Wood1.tres" id="8_67l1f"]
-[ext_resource type="Material" uid="uid://l1n0s24gwru1" path="res://Assets/Materials/Goblins and Player/GoblinGray1.tres" id="9_pt762"]
-[ext_resource type="Material" uid="uid://bfr12pmyuyl4x" path="res://Assets/Materials/Goblins and Player/Wood2.tres" id="10_4aq0p"]
-[ext_resource type="Material" uid="uid://c8m8qttv74nxs" path="res://Assets/Materials/Goblins and Player/GoblinBlueMain.tres" id="11_s5fe8"]
+[ext_resource type="PackedScene" uid="uid://bqrbnfq84qs82" path="res://Assets/Goblins/CrossbowGoblin.glb" id="1_xjr07"]
+[ext_resource type="Material" uid="uid://bmpvbvrscwc0f" path="res://Assets/Materials/Goblins and Player/GoblinBrown.tres" id="2_h75da"]
+[ext_resource type="Material" uid="uid://cpcu7luqhw23j" path="res://Assets/Materials/Goblins and Player/GoblinBlack.tres" id="3_u1sn6"]
+[ext_resource type="Material" uid="uid://b602kr7ch46gu" path="res://Assets/Materials/Goblins and Player/GoblinWhite.tres" id="4_tj3oc"]
+[ext_resource type="Material" uid="uid://b5qg8d874cmsk" path="res://Assets/Materials/Goblins and Player/GoblinPink.tres" id="5_xovj8"]
+[ext_resource type="Material" uid="uid://bi10fnfyl3kct" path="res://Assets/Materials/Goblins and Player/GoblinBlueSeconary.tres" id="6_eophm"]
+[ext_resource type="Material" uid="uid://dij261kwkoqn5" path="res://Assets/Materials/Goblins and Player/GoblinLeatherBrown.tres" id="7_vlivm"]
+[ext_resource type="Material" uid="uid://my2iboo3peb6" path="res://Assets/Materials/Goblins and Player/Wood1.tres" id="8_6eft8"]
+[ext_resource type="Material" uid="uid://l1n0s24gwru1" path="res://Assets/Materials/Goblins and Player/GoblinGray1.tres" id="9_rbbne"]
+[ext_resource type="Material" uid="uid://bfr12pmyuyl4x" path="res://Assets/Materials/Goblins and Player/Wood2.tres" id="10_obb8f"]
+[ext_resource type="Material" uid="uid://c8m8qttv74nxs" path="res://Assets/Materials/Goblins and Player/GoblinBlueMain.tres" id="11_tppla"]
 
-[node name="CrossbowGoblin" instance=ExtResource("1_nfd3y")]
+[node name="CrossbowGoblin" instance=ExtResource("1_xjr07")]
 
 [node name="Skeleton3D" parent="GoblinTemplate_Skeleton" index="0"]
 bones/1/position = Vector3(3.98864e-11, 0.24, 7.567e-10)
@@ -49,135 +49,135 @@ transform = Transform3D(1, 2.65061e-08, 7.82734e-10, -2.64734e-08, 0.996195, 0.0
 visible = false
 
 [node name="AngryEyebrows_Object" parent="GoblinTemplate_Skeleton/Skeleton3D/AngryEyebrows_Object" index="0"]
-surface_material_override/0 = ExtResource("2_xyerx")
+surface_material_override/0 = ExtResource("2_h75da")
 
 [node name="AngryMouth_Object" parent="GoblinTemplate_Skeleton/Skeleton3D" index="1"]
 transform = Transform3D(1, 2.65061e-08, 7.82734e-10, -2.64734e-08, 0.996195, 0.0871558, 1.53045e-09, -0.0871558, 0.996195, 5.30985e-08, 0.737191, -0.176079)
 visible = false
 
 [node name="AngryMouth_Object" parent="GoblinTemplate_Skeleton/Skeleton3D/AngryMouth_Object" index="0"]
-surface_material_override/0 = ExtResource("3_ik75h")
-surface_material_override/1 = ExtResource("4_ocmed")
+surface_material_override/0 = ExtResource("3_u1sn6")
+surface_material_override/1 = ExtResource("4_tj3oc")
 
 [node name="DeathEyes_Object" parent="GoblinTemplate_Skeleton/Skeleton3D" index="2"]
 transform = Transform3D(1, 2.65061e-08, 7.82734e-10, -2.64734e-08, 0.996195, 0.0871558, 1.53045e-09, -0.0871558, 0.996195, 0.05, 0.815903, -0.159877)
 visible = false
 
 [node name="DeathEyes_Object" parent="GoblinTemplate_Skeleton/Skeleton3D/DeathEyes_Object" index="0"]
-surface_material_override/0 = ExtResource("3_ik75h")
+surface_material_override/0 = ExtResource("3_u1sn6")
 
 [node name="DeathMouth_Object" parent="GoblinTemplate_Skeleton/Skeleton3D" index="3"]
 transform = Transform3D(1, 2.65061e-08, 7.82734e-10, -2.64734e-08, 0.996195, 0.0871558, 1.53045e-09, -0.0871558, 0.996195, 5.30985e-08, 0.737191, -0.176079)
 visible = false
 
 [node name="DeathMouth_Object" parent="GoblinTemplate_Skeleton/Skeleton3D/DeathMouth_Object" index="0"]
-surface_material_override/0 = ExtResource("3_ik75h")
-surface_material_override/1 = ExtResource("4_ocmed")
-surface_material_override/2 = ExtResource("5_alhgg")
+surface_material_override/0 = ExtResource("3_u1sn6")
+surface_material_override/1 = ExtResource("4_tj3oc")
+surface_material_override/2 = ExtResource("5_xovj8")
 
 [node name="Eyes_Object" parent="GoblinTemplate_Skeleton/Skeleton3D" index="4"]
 transform = Transform3D(1, 2.65061e-08, 7.82734e-10, -2.64734e-08, 0.996195, 0.0871558, 1.53045e-09, -0.0871558, 0.996195, 0.05, 0.816774, -0.149915)
 
 [node name="Eyes_Object" parent="GoblinTemplate_Skeleton/Skeleton3D/Eyes_Object" index="0"]
-surface_material_override/0 = ExtResource("3_ik75h")
+surface_material_override/0 = ExtResource("3_u1sn6")
 
 [node name="GoblinEars_Object" parent="GoblinTemplate_Skeleton/Skeleton3D" index="5"]
 transform = Transform3D(1, 2.65061e-08, 7.82734e-10, -2.64734e-08, 0.996195, 0.0871558, 1.53045e-09, -0.0871558, 0.996195, 0.17, 0.819014, -0.00957651)
 
 [node name="GoblinEars_Object" parent="GoblinTemplate_Skeleton/Skeleton3D/GoblinEars_Object" index="0"]
-surface_material_override/0 = ExtResource("6_wrqpe")
+surface_material_override/0 = ExtResource("6_eophm")
 
 [node name="GoblinRangedHood_Object" parent="GoblinTemplate_Skeleton/Skeleton3D" index="6"]
 transform = Transform3D(0.197119, 5.22484e-09, 1.65549e-10, -5.21939e-09, 0.196369, 0.01718, 2.90463e-10, -0.01718, 0.196369, -7.61436e-09, 0.644667, 0.0628945)
 
 [node name="GoblinRangedHood_Object" parent="GoblinTemplate_Skeleton/Skeleton3D/GoblinRangedHood_Object" index="0"]
-surface_material_override/0 = ExtResource("7_5gnbh")
+surface_material_override/0 = ExtResource("7_vlivm")
 
 [node name="NeutralEyebrows_Object" parent="GoblinTemplate_Skeleton/Skeleton3D" index="7"]
 transform = Transform3D(1, 2.65061e-08, 7.82734e-10, -2.64734e-08, 0.996195, 0.0871558, 1.53045e-09, -0.0871558, 0.996195, -0.07, 0.861902, -0.161894)
 
 [node name="NeutralEyebrows_Object" parent="GoblinTemplate_Skeleton/Skeleton3D/NeutralEyebrows_Object" index="0"]
-surface_material_override/0 = ExtResource("2_xyerx")
+surface_material_override/0 = ExtResource("2_h75da")
 
 [node name="NeutralMouth_Object" parent="GoblinTemplate_Skeleton/Skeleton3D" index="8"]
 transform = Transform3D(1, 2.65061e-08, 7.82734e-10, -2.64734e-08, 0.996195, 0.0871558, 1.53045e-09, -0.0871558, 0.996195, 5.30985e-08, 0.737191, -0.176079)
 
 [node name="NeutralMouth_Object" parent="GoblinTemplate_Skeleton/Skeleton3D/NeutralMouth_Object" index="0"]
-surface_material_override/0 = ExtResource("3_ik75h")
-surface_material_override/1 = ExtResource("4_ocmed")
+surface_material_override/0 = ExtResource("3_u1sn6")
+surface_material_override/1 = ExtResource("4_tj3oc")
 
 [node name="GoblinRangedCrossbow_Object" parent="GoblinTemplate_Skeleton/Skeleton3D" index="9"]
 transform = Transform3D(0.00493929, 0.999974, -0.00520856, -0.0371243, -0.00502178, -0.999298, -0.999298, 0.00512937, 0.0370985, 0.188841, 0.463559, -0.211313)
 
 [node name="GoblinRangedCrossbow_Object" parent="GoblinTemplate_Skeleton/Skeleton3D/GoblinRangedCrossbow_Object" index="0"]
-surface_material_override/0 = ExtResource("8_67l1f")
-surface_material_override/1 = ExtResource("4_ocmed")
+surface_material_override/0 = ExtResource("8_6eft8")
+surface_material_override/1 = ExtResource("4_tj3oc")
 
 [node name="Arrow_Object" parent="GoblinTemplate_Skeleton/Skeleton3D" index="10"]
 transform = Transform3D(-0.00520868, 0.00493917, 0.999974, -0.999298, -0.0371243, -0.0050219, 0.0370985, -0.999298, 0.00512925, 0.190087, 0.554922, -0.364806)
 
 [node name="Arrow_Object" parent="GoblinTemplate_Skeleton/Skeleton3D/Arrow_Object" index="0"]
-surface_material_override/0 = ExtResource("2_xyerx")
-surface_material_override/1 = ExtResource("4_ocmed")
-surface_material_override/2 = ExtResource("9_pt762")
+surface_material_override/0 = ExtResource("2_h75da")
+surface_material_override/1 = ExtResource("4_tj3oc")
+surface_material_override/2 = ExtResource("9_rbbne")
 
 [node name="GoblinRangerQuiver" parent="GoblinTemplate_Skeleton/Skeleton3D" index="11"]
 transform = Transform3D(1, -7.46131e-09, 9.35074e-12, 7.46132e-09, 1, 9.31326e-10, -9.26548e-12, -9.31323e-10, 1, -0.1, 0.51, 0.18)
 
 [node name="GoblinRangerQuiver" parent="GoblinTemplate_Skeleton/Skeleton3D/GoblinRangerQuiver" index="0"]
-surface_material_override/0 = ExtResource("10_4aq0p")
+surface_material_override/0 = ExtResource("10_obb8f")
 
 [node name="Arrow1_Object" parent="GoblinTemplate_Skeleton/Skeleton3D" index="12"]
 transform = Transform3D(-5.94742e-07, 0.50114, 0.865366, -0.173648, -0.852219, 0.493527, 0.984808, -0.150269, 0.0870228, -0.145734, 0.58407, 0.195881)
 
 [node name="Arrow1_Object" parent="GoblinTemplate_Skeleton/Skeleton3D/Arrow1_Object" index="0"]
-surface_material_override/0 = ExtResource("2_xyerx")
-surface_material_override/1 = ExtResource("4_ocmed")
-surface_material_override/2 = ExtResource("9_pt762")
+surface_material_override/0 = ExtResource("2_h75da")
+surface_material_override/1 = ExtResource("4_tj3oc")
+surface_material_override/2 = ExtResource("9_rbbne")
 
 [node name="Arrow2_Object" parent="GoblinTemplate_Skeleton/Skeleton3D" index="13"]
 transform = Transform3D(-7.13316e-07, 0.343258, 0.939241, -0.258819, -0.907238, 0.331561, 0.965926, -0.243093, 0.0888423, -0.115734, 0.58407, 0.195881)
 
 [node name="Arrow2_Object" parent="GoblinTemplate_Skeleton/Skeleton3D/Arrow2_Object" index="0"]
-surface_material_override/0 = ExtResource("2_xyerx")
-surface_material_override/1 = ExtResource("4_ocmed")
-surface_material_override/2 = ExtResource("9_pt762")
+surface_material_override/0 = ExtResource("2_h75da")
+surface_material_override/1 = ExtResource("4_tj3oc")
+surface_material_override/2 = ExtResource("9_rbbne")
 
 [node name="Arrow3_Object" parent="GoblinTemplate_Skeleton/Skeleton3D" index="14"]
 transform = Transform3D(-7.15246e-07, 0.574655, 0.818396, -4.46103e-07, -0.818396, 0.574655, 1, 6.03615e-08, 8.93527e-07, -0.155734, 0.58407, 0.175881)
 
 [node name="Arrow3_Object" parent="GoblinTemplate_Skeleton/Skeleton3D/Arrow3_Object" index="0"]
-surface_material_override/0 = ExtResource("2_xyerx")
-surface_material_override/1 = ExtResource("4_ocmed")
-surface_material_override/2 = ExtResource("9_pt762")
+surface_material_override/0 = ExtResource("2_h75da")
+surface_material_override/1 = ExtResource("4_tj3oc")
+surface_material_override/2 = ExtResource("9_rbbne")
 
 [node name="Arrow4_Object" parent="GoblinTemplate_Skeleton/Skeleton3D" index="15"]
 transform = Transform3D(-8.3316e-07, 0.174945, 0.984578, -0.173648, -0.96962, 0.172287, 0.984808, -0.17097, 0.0303796, -0.105734, 0.60407, 0.175881)
 
 [node name="Arrow4_Object" parent="GoblinTemplate_Skeleton/Skeleton3D/Arrow4_Object" index="0"]
-surface_material_override/0 = ExtResource("2_xyerx")
-surface_material_override/1 = ExtResource("4_ocmed")
-surface_material_override/2 = ExtResource("9_pt762")
+surface_material_override/0 = ExtResource("2_h75da")
+surface_material_override/1 = ExtResource("4_tj3oc")
+surface_material_override/2 = ExtResource("9_rbbne")
 
 [node name="Arrow5_Object" parent="GoblinTemplate_Skeleton/Skeleton3D" index="16"]
 transform = Transform3D(-4.78124e-07, 0.343258, 0.939241, 0.173648, -0.924972, 0.338043, 0.984808, 0.163097, -0.0596054, -0.135734, 0.58407, 0.175881)
 
 [node name="Arrow5_Object" parent="GoblinTemplate_Skeleton/Skeleton3D/Arrow5_Object" index="0"]
-surface_material_override/0 = ExtResource("2_xyerx")
-surface_material_override/1 = ExtResource("4_ocmed")
-surface_material_override/2 = ExtResource("9_pt762")
+surface_material_override/0 = ExtResource("2_h75da")
+surface_material_override/1 = ExtResource("4_tj3oc")
+surface_material_override/2 = ExtResource("9_rbbne")
 
 [node name="Arrow6_Object" parent="GoblinTemplate_Skeleton/Skeleton3D" index="17"]
 transform = Transform3D(-5.96037e-07, 0.343258, 0.939241, -1.92784e-07, -0.939241, 0.343258, 1, 1.57727e-08, 5.36113e-07, -0.105734, 0.59407, 0.175881)
 
 [node name="Arrow6_Object" parent="GoblinTemplate_Skeleton/Skeleton3D/Arrow6_Object" index="0"]
-surface_material_override/0 = ExtResource("2_xyerx")
-surface_material_override/1 = ExtResource("4_ocmed")
-surface_material_override/2 = ExtResource("9_pt762")
+surface_material_override/0 = ExtResource("2_h75da")
+surface_material_override/1 = ExtResource("4_tj3oc")
+surface_material_override/2 = ExtResource("9_rbbne")
 
 [node name="GoblinRangedArmor_Objec" parent="GoblinTemplate_Skeleton/Skeleton3D" index="18"]
-surface_material_override/0 = ExtResource("7_5gnbh")
+surface_material_override/0 = ExtResource("7_vlivm")
 
 [node name="GoblinTemplate_Object" parent="GoblinTemplate_Skeleton/Skeleton3D" index="19"]
-surface_material_override/0 = ExtResource("11_s5fe8")
-surface_material_override/1 = ExtResource("6_wrqpe")
+surface_material_override/0 = ExtResource("11_tppla")
+surface_material_override/1 = ExtResource("6_eophm")

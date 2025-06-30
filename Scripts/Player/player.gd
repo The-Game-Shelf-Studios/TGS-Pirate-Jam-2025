@@ -37,7 +37,8 @@ var direction: Vector3 ## Input Direction
 static var can_control := true 
 
 func _ready() -> void:
-	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
+	#initializing mouse mode/hide win/lose text and held goblins
+	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	current_hurt_box.damage = MeleeDamage
 	WeaponGoblinBow.visible = false
 	WeaponGoblinSword.visible = false
@@ -45,6 +46,7 @@ func _ready() -> void:
 	LoserLabel.visible = false
 
 func _process(delta: float) -> void:
+	#update health bar and die if its empty
 	set_health_bar()
 	if isDead:
 		Die()

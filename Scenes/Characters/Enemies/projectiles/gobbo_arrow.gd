@@ -24,10 +24,10 @@ func MoveTowardTargetLocation() -> void:
 	var direction := Vector3(Target - startpos)
 	if direction:
 		velocity = direction * speed
-	else:
-		velocity.x = move_toward(velocity.x, 0, speed)
-		velocity.y = move_toward(velocity.y, 0 , speed)
-		velocity.z = move_toward(velocity.z, 0, speed)
+	#else:
+		#velocity.x = move_toward(velocity.x, 0, speed)
+		#velocity.y = move_toward(velocity.y, 0 , speed)
+		#velocity.z = move_toward(velocity.z, 0, speed)
 	#print(velocity)
 	translate(velocity.normalized())
 	pass

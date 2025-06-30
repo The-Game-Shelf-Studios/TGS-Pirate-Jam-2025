@@ -1,10 +1,10 @@
 [gd_scene load_steps=31 format=4 uid="uid://blgohsh2xhruv"]
 
 [ext_resource type="Script" path="res://Scripts/Player/player.gd" id="1_2ka0k"]
-[ext_resource type="PackedScene" uid="uid://hyjk1q1svioe" path="res://Assets/Player/Weapons/weapon_goblin_bow.tscn" id="2_4awbr"]
+[ext_resource type="PackedScene" uid="uid://hyjk1q1svioe" path="res://Scenes/Characters/Weapons/weapon_goblin_bow.tscn" id="2_4awbr"]
 [ext_resource type="PackedScene" uid="uid://gavltsmsvff" path="res://Scenes/Utilities/hit_box.tscn" id="2_sgdj8"]
 [ext_resource type="Script" path="res://Scripts/Utilities/hurt_box.gd" id="3_dui0v"]
-[ext_resource type="PackedScene" uid="uid://cxh1ntyno0vdd" path="res://Assets/Player/Weapons/weapon_goblin_sword.tscn" id="3_lrpyr"]
+[ext_resource type="PackedScene" uid="uid://cxh1ntyno0vdd" path="res://Scenes/Characters/Weapons/weapon_goblin_sword.tscn" id="3_lrpyr"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_0lyld"]
 

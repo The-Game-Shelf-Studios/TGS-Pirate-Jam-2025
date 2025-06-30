@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://clxxdtryn1413"]
 
-[ext_resource type="Script" path="res://Scripts/Enemies/EnemyMovementBomb.gd" id="1_xojf5"]
-[ext_resource type="Script" path="res://Scripts/Enemies/player_tracker_node.gd" id="2_blyx5"]
+[ext_resource type="Script" path="res://Scripts/Enemies/EnemyMovementBomb.gd" id="1_md7ib"]
+[ext_resource type="Script" path="res://Scripts/Enemies/player_tracker_node.gd" id="2_b3krc"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lh82a"]
 
@@ -13,7 +13,7 @@ height = 1.0
 
 [node name="EnemyBomb" type="CharacterBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.25, 0)
-script = ExtResource("1_xojf5")
+script = ExtResource("1_md7ib")
 
 [node name="BombEnemyMesh" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
@@ -25,4 +25,4 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
 shape = SubResource("CapsuleShape3D_8lfb8")
 
 [node name="PlayerTrackerNode" type="Node" parent="."]
-script = ExtResource("2_blyx5")
+script = ExtResource("2_b3krc")

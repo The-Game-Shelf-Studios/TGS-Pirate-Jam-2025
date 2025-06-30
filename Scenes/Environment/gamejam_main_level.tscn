@@ -792,7 +792,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.33278, 0, 16.2651)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.99764, 0, 6.97192)
 
 [node name="BowGoblin7" parent="Enemies" instance=ExtResource("11_gq501")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.9439, 0, -8.34362)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.9451, 0, -6.74992)
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = SubResource("AudioStreamPlaylist_i1qcg")
